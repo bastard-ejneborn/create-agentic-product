@@ -174,6 +174,8 @@ Create a Custom GPT that knows your role and strategy:
    ```
 4. In your first conversation, upload or paste the contents of the relevant skill files:
    - `.claude/skills/company-strategy/SKILL.md`
+   - `.claude/skills/budget-tracker/SKILL.md`
+   - `.claude/skills/project-portfolio/SKILL.md`
    - `.claude/skills/decision-framework/SKILL.md`
    - `.claude/skills/stakeholder-briefing/SKILL.md`
 5. Name your GPT (e.g., "My CTO Advisor") and save
@@ -223,6 +225,8 @@ Since ChatGPT can't write files directly, you'll need to manually save outputs:
 | What | Where to Save |
 |------|--------------|
 | Company strategy | `docs/strategy/company-strategy.md` |
+| Budget overview | `docs/finance/budget.md` |
+| Project portfolio | `docs/projects/portfolio.md` |
 | Decisions | `docs/decisions/YYYY-MM-DD-topic.md` |
 | Briefings | `docs/briefings/YYYY-MM-DD-type-topic.md` |
 
@@ -263,7 +267,25 @@ Three advisory agents tailored to your role, powered by three shared skills:
 | **decision-framework** | Helps you make and document structured decisions |
 | **stakeholder-briefing** | Generates board updates, business cases, team updates, incident reports |
 
+### How the Skills Connect
+
+```
+company-strategy        ← Define what you want to achieve
+       ↓
+project-portfolio       ← Track what you're doing about it
+       ↓
+budget-tracker          ← Know what you can afford
+       ↓
+decision-framework      ← Make informed decisions (grounded in all of the above)
+       ↓
+stakeholder-briefing    ← Report to stakeholders (pulls from everything)
+```
+
+Each skill strengthens the others. A board update references budget status and project progress. A build-vs-buy decision checks available budget and competing projects. Strategy changes flag affected decisions and projects.
+
 ### Getting Started: Your First Session
+
+Set up in this order — each step adds context for the next.
 
 #### 1. Define your company strategy
 
@@ -285,7 +307,25 @@ This creates a living document at `docs/strategy/company-strategy.md` that all a
 
 > **Tip**: If you already have a strategy document, paste it or point to the file. The agent will structure it and ask follow-up questions to fill gaps.
 
-#### 2. Ask for advice in your domain
+#### 2. Set up your budget
+
+```
+Help me set up our IT budget overview
+```
+
+The agent walks you through categories (infrastructure, licensing, personnel, projects, etc.), committed vs. discretionary spend, and forecasts. Output goes to `docs/finance/budget.md`.
+
+#### 3. Register your active projects
+
+```
+Help me build our project portfolio
+```
+
+List your active initiatives — the agent captures status, owners, budgets, dependencies, and strategic alignment. Output goes to `docs/projects/portfolio.md`.
+
+> **Tip**: Steps 2 and 3 can be done in any order, or skipped initially. The agents work without them but give better advice when budget and project context is available.
+
+#### 4. Ask for advice in your domain
 
 Once strategy is set, ask questions naturally:
 
@@ -315,7 +355,7 @@ We had a major outage yesterday. Help me write the incident report.
 Compare Datadog vs Grafana Cloud for our observability stack
 ```
 
-#### 3. Prepare stakeholder communications
+#### 5. Prepare stakeholder communications
 
 ```
 Prepare a board update for Q1 covering our digital transformation progress
