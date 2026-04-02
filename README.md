@@ -215,6 +215,7 @@ Create a Custom GPT that knows your role and strategy:
    - `.claude/skills/brand-guidelines/SKILL.md`
    - `.claude/skills/competitor-watch/SKILL.md`
    - `.claude/skills/google-stitch/SKILL.md`
+   - `.claude/skills/local-marketing/SKILL.md`
    - `.claude/skills/company-strategy/SKILL.md`
    - `.claude/skills/budget-tracker/SKILL.md`
 
@@ -549,6 +550,9 @@ Plan a product launch campaign for our new analytics platform
 | Campaign report | "Write the post-campaign analysis for the spring launch" |
 | Design a landing page | "Generate a landing page design for our new product launch" |
 | App mockup | "Design a mobile onboarding flow for our fitness app" |
+| Local marketing plan | "Plan this week's local marketing for our Kungsholmen location" |
+| Track local activity | "Log today's store visits — we hit 5 offices in the north zone" |
+| Local suggestions | "What should we do next for local marketing at Södermalm?" |
 | Budget allocation | "How should we split our Q3 marketing budget across channels?" |
 
 ### Where Outputs Go
@@ -678,6 +682,7 @@ create-agentic-product/
 | `competitor-watch` | Competitive intelligence — profiles, activity log, battle cards |
 | `freshservice` | FreshService helpdesk — tickets, SLA, dashboard, assets (read-only) |
 | `google-stitch` | AI UI design — landing pages, app screens, dashboards from text prompts |
+| `local-marketing` | Local/guerrilla marketing — store visits, sampling, partnerships, flyer drops, activity tracking |
 | `agent-builder` | Create new custom agents |
 | `gemini-imagegen` | Image generation via Google Gemini |
 | `elevenlabs-skill` | Voice style descriptions for ElevenLabs |
