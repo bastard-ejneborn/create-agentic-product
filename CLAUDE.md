@@ -132,6 +132,7 @@ Se `.claude/skills/agent-builder/SKILL.md` för att skapa nya agenter.
 | `freshservice` | FreshService helpdesk — ärenden, SLA, dashboard, assets, changes (read-only) |
 | `google-stitch` | AI UI-design — generera wireframes, landningssidor, appskärmar från text (HTML/Tailwind) |
 | `local-marketing` | Lokal marknadsföring — butiksbesök, sampling, partnerskap, flygblad, aktivitetslogg per restaurang |
+| `simphony` | Oracle Simphony — försäljning, gästnotor, produktmix, personal, betalningar per restaurang (read-only) |
 
 ## Teknik & Plattform
 

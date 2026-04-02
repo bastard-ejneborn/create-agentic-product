@@ -66,6 +66,7 @@ cp .env.example .env
 | `FRESHSERVICE_DOMAIN` | FreshService helpdesk data | Your subdomain (e.g., `yourcompany`) |
 | `FRESHSERVICE_API_KEY` | FreshService helpdesk data | FreshService → Profile → API Key |
 | `STITCH_API_KEY` | UI design generation | [stitch.withgoogle.com](https://stitch.withgoogle.com) → Settings → API Key |
+| `SIMPHONY_*` (6 vars) | Oracle Simphony POS data | R&A Back Office → API Accounts |
 | `OPENROUTER_API_KEY` | Image generation | [openrouter.ai/keys](https://openrouter.ai/keys) |
 | `ELEVENLABS_API_KEY` | Voice generation | [elevenlabs.io/api](https://elevenlabs.io/api) |
 
@@ -689,6 +690,7 @@ create-agentic-product/
 | `freshservice` | FreshService helpdesk — tickets, SLA, dashboard, assets (read-only) |
 | `google-stitch` | AI UI design — landing pages, app screens, dashboards from text prompts |
 | `local-marketing` | Local/guerrilla marketing — store visits, sampling, partnerships, flyer drops, activity tracking |
+| `simphony` | Oracle Simphony POS — sales, guest checks, product mix, labor, payments (read-only) |
 | `agent-builder` | Create new custom agents |
 | `gemini-imagegen` | Image generation via Google Gemini |
 | `elevenlabs-skill` | Voice style descriptions for ElevenLabs |
