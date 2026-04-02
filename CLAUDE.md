@@ -106,6 +106,9 @@ Se `.claude/skills/agent-builder/SKILL.md` för att skapa nya agenter.
 | `gemini-imagegen` | Bildgenerering via Google Gemini (text-to-image, image-to-image) |
 | `suno-music-skill` | Musikskapande — stilbeskrivning och lyrics för Suno AI |
 | `elevenlabs-skill` | Röstdesign — 300-teckens röstbeskrivningar för ElevenLabs |
+| `company-strategy` | Fånga och strukturera företagets strategi, vision, OKR:er och prioriteringar |
+| `decision-framework` | Strukturerad beslutsprocess med adaptiv formalitet och beslutslogg |
+| `stakeholder-briefing` | Exekutiv kommunikation — styrelseuppdateringar, business cases, incidentrapporter |
 
 ## Teknik & Plattform
 
