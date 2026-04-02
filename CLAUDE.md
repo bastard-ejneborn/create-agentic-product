@@ -96,6 +96,12 @@ Alla agenter finns i `.claude/agents/`. Varje agent har:
 - **cdo-advisor** — Digital strategi, datahantering, kundupplevelse, KPI:er, förändringsledning
 - **cto-advisor** — Teknikstrategi, arkitektur, teknisk skuld, build vs buy, plattformstillförlitlighet
 
+### Projektledning
+- **project-manager** — Projektplanering, statusrapportering, riskhantering, RACI, retrospektiv
+
+### Marknadsföring
+- **marketing-strategist** — Kampanjplanering, varumärkesutveckling, innehållsstrategi, positionering
+
 Se `.claude/skills/agent-builder/SKILL.md` för att skapa nya agenter.
 
 ## Skills
@@ -115,6 +121,13 @@ Se `.claude/skills/agent-builder/SKILL.md` för att skapa nya agenter.
 | `vendor-manager` | Leverantörshantering — kontrakt, SLA:er, förnyelsekalender, kostnader |
 | `team-structure` | Teamstruktur — kompetenser, kapacitet, nyckelrisker, rekryteringsplan |
 | `meeting-prep` | Mötesförberedelser — samlar kontext och skapar fokuserade briefings |
+| `project-planner` | Detaljerad projektplanering — WBS, milstolpar, beroenden, resursallokering |
+| `status-report` | Operativa statusrapporter — veckovis team, styrgrupp, sponsor |
+| `retro-facilitator` | Retrospektiv och post-mortems — insikter och uppföljning |
+| `raci-matrix` | Ansvarsmatris — Responsible, Accountable, Consulted, Informed |
+| `campaign-planner` | Kampanjplanering — mål, målgrupp, kanaler, budget, KPI:er |
+| `brand-guidelines` | Varumärkesriktlinjer — tonalitet, visuell identitet, budskapsramverk |
+| `tech-radar` | Teknikradar — Adopt/Trial/Assess/Hold för organisationens teknologier |
 
 ## Teknik & Plattform
 

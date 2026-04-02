@@ -441,7 +441,9 @@ create-agentic-product/
 │   ├── vendors/          # Vendor register and contracts
 │   ├── team/             # Team structure and capabilities
 │   ├── decisions/        # Decision log (one file per decision)
-│   └── briefings/        # Stakeholder communications and meeting preps
+│   ├── briefings/        # Stakeholder communications and meeting preps
+│   ├── marketing/        # Campaigns, brand guidelines, personas
+│   └── tech/             # Technology radar
 ├── assets/               # Generated images, audio, video
 ├── CLAUDE.md             # Project instructions for Claude Code
 ├── .env.example          # Template for API keys
@@ -456,6 +458,16 @@ create-agentic-product/
 | `cio-advisor` | IT strategy, vendor management, security, compliance, budgets |
 | `cdo-advisor` | Digital strategy, data governance, customer experience, KPIs |
 | `cto-advisor` | Tech strategy, architecture, technical debt, build vs. buy |
+
+### Project Management
+| Agent | Description |
+|-------|-------------|
+| `project-manager` | Project planning, status reports, risk tracking, RACI, retrospectives |
+
+### Marketing
+| Agent | Description |
+|-------|-------------|
+| `marketing-strategist` | Campaign planning, brand development, content strategy, positioning |
 
 ### Creative Agents
 | Agent | Description |
@@ -477,6 +489,13 @@ create-agentic-product/
 | `vendor-manager` | Vendor contracts, SLAs, renewals, and spend tracking |
 | `team-structure` | Team composition, capabilities, gaps, and capacity |
 | `meeting-prep` | Context-aware meeting preparation briefs |
+| `project-planner` | Detailed project plans with WBS, milestones, dependencies |
+| `status-report` | Weekly/biweekly operational status reports |
+| `retro-facilitator` | Sprint retrospectives and project post-mortems |
+| `raci-matrix` | Responsibility assignments (Responsible, Accountable, Consulted, Informed) |
+| `campaign-planner` | Marketing campaign planning from brief to analysis |
+| `brand-guidelines` | Brand identity — tone of voice, visual identity, messaging |
+| `tech-radar` | Technology landscape — Adopt, Trial, Assess, Hold |
 | `agent-builder` | Create new custom agents |
 | `gemini-imagegen` | Image generation via Google Gemini |
 | `elevenlabs-skill` | Voice style descriptions for ElevenLabs |
