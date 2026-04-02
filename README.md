@@ -227,8 +227,12 @@ Since ChatGPT can't write files directly, you'll need to manually save outputs:
 | Company strategy | `docs/strategy/company-strategy.md` |
 | Budget overview | `docs/finance/budget.md` |
 | Project portfolio | `docs/projects/portfolio.md` |
+| Risk register | `docs/risk/risk-register.md` |
+| Vendor register | `docs/vendors/vendor-register.md` |
+| Team structure | `docs/team/team-structure.md` |
 | Decisions | `docs/decisions/YYYY-MM-DD-topic.md` |
 | Briefings | `docs/briefings/YYYY-MM-DD-type-topic.md` |
+| Meeting preps | `docs/briefings/prep/YYYY-MM-DD-type-prep.md` |
 
 **Tip**: Keep the folder structure even without git. It makes everything findable and you can always add git later.
 
@@ -264,24 +268,36 @@ Three advisory agents tailored to your role, powered by three shared skills:
 | **company-strategy** | Captures your company's strategic vision, priorities, and constraints |
 | **budget-tracker** | Tracks IT/digital/tech budgets — allocated, spent, remaining, by category |
 | **project-portfolio** | Tracks ongoing projects — status, owners, dependencies, capacity |
+| **risk-register** | Tracks organizational risks — scored, owned, with mitigations |
+| **vendor-manager** | Tracks vendor contracts, SLAs, renewals, costs, and lock-in |
+| **team-structure** | Documents team composition, capabilities, skill gaps, and capacity |
 | **decision-framework** | Helps you make and document structured decisions |
 | **stakeholder-briefing** | Generates board updates, business cases, team updates, incident reports |
+| **meeting-prep** | Pulls context from all docs to create focused meeting briefs |
 
 ### How the Skills Connect
 
 ```
 company-strategy        ← Define what you want to achieve
        ↓
+budget-tracker          ← Know what you can afford
+       ↓
 project-portfolio       ← Track what you're doing about it
        ↓
-budget-tracker          ← Know what you can afford
+team-structure          ← Know who can do the work
+       ↓
+vendor-manager          ← Track external partners and contracts
+       ↓
+risk-register           ← Identify what could go wrong
        ↓
 decision-framework      ← Make informed decisions (grounded in all of the above)
        ↓
 stakeholder-briefing    ← Report to stakeholders (pulls from everything)
+       ↓
+meeting-prep            ← Prepare for any meeting (pulls relevant context)
 ```
 
-Each skill strengthens the others. A board update references budget status and project progress. A build-vs-buy decision checks available budget and competing projects. Strategy changes flag affected decisions and projects.
+Every skill cross-references the others. A board update includes budget status, project progress, and top risks. A build-vs-buy decision checks available budget, team capacity, and vendor alternatives. Meeting prep pulls exactly the context you need from all docs.
 
 ### Getting Started: Your First Session
 
@@ -421,8 +437,11 @@ create-agentic-product/
 │   ├── strategy/         # Company strategy (living document)
 │   ├── finance/          # Budget tracking and financial overview
 │   ├── projects/         # Project portfolio and status
+│   ├── risk/             # Risk register
+│   ├── vendors/          # Vendor register and contracts
+│   ├── team/             # Team structure and capabilities
 │   ├── decisions/        # Decision log (one file per decision)
-│   └── briefings/        # Generated stakeholder communications
+│   └── briefings/        # Stakeholder communications and meeting preps
 ├── assets/               # Generated images, audio, video
 ├── CLAUDE.md             # Project instructions for Claude Code
 ├── .env.example          # Template for API keys
@@ -454,6 +473,10 @@ create-agentic-product/
 | `stakeholder-briefing` | Executive communications (5 templates) |
 | `budget-tracker` | IT/digital/tech budget tracking and analysis |
 | `project-portfolio` | Project portfolio management and capacity overview |
+| `risk-register` | Organizational risk tracking with scoring and mitigations |
+| `vendor-manager` | Vendor contracts, SLAs, renewals, and spend tracking |
+| `team-structure` | Team composition, capabilities, gaps, and capacity |
+| `meeting-prep` | Context-aware meeting preparation briefs |
 | `agent-builder` | Create new custom agents |
 | `gemini-imagegen` | Image generation via Google Gemini |
 | `elevenlabs-skill` | Voice style descriptions for ElevenLabs |

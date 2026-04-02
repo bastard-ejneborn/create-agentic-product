@@ -111,6 +111,10 @@ Se `.claude/skills/agent-builder/SKILL.md` för att skapa nya agenter.
 | `stakeholder-briefing` | Exekutiv kommunikation — styrelseuppdateringar, business cases, incidentrapporter |
 | `budget-tracker` | IT/digital/tech-budget — kategoriserad spend, committed vs discretionary, prognoser |
 | `project-portfolio` | Projektportfölj — aktiva projekt, status, kapacitet, beroenden |
+| `risk-register` | Riskregister — organisatoriska risker, scoring, mitigering, ägarskap |
+| `vendor-manager` | Leverantörshantering — kontrakt, SLA:er, förnyelsekalender, kostnader |
+| `team-structure` | Teamstruktur — kompetenser, kapacitet, nyckelrisker, rekryteringsplan |
+| `meeting-prep` | Mötesförberedelser — samlar kontext och skapar fokuserade briefings |
 
 ## Teknik & Plattform
 
