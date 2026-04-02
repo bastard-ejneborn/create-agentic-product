@@ -128,6 +128,7 @@ Se `.claude/skills/agent-builder/SKILL.md` för att skapa nya agenter.
 | `campaign-planner` | Kampanjplanering — mål, målgrupp, kanaler, budget, KPI:er |
 | `brand-guidelines` | Varumärkesriktlinjer — tonalitet, visuell identitet, budskapsramverk |
 | `tech-radar` | Teknikradar — Adopt/Trial/Assess/Hold för organisationens teknologier |
+| `competitor-watch` | Konkurrensbevakning — profiler, aktivitetslogg, battle cards, feature-jämförelse |
 
 ## Teknik & Plattform
 

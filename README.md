@@ -496,6 +496,7 @@ create-agentic-product/
 | `campaign-planner` | Marketing campaign planning from brief to analysis |
 | `brand-guidelines` | Brand identity — tone of voice, visual identity, messaging |
 | `tech-radar` | Technology landscape — Adopt, Trial, Assess, Hold |
+| `competitor-watch` | Competitive intelligence — profiles, activity log, battle cards |
 | `agent-builder` | Create new custom agents |
 | `gemini-imagegen` | Image generation via Google Gemini |
 | `elevenlabs-skill` | Voice style descriptions for ElevenLabs |
