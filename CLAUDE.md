@@ -129,6 +129,7 @@ Se `.claude/skills/agent-builder/SKILL.md` för att skapa nya agenter.
 | `brand-guidelines` | Varumärkesriktlinjer — tonalitet, visuell identitet, budskapsramverk |
 | `tech-radar` | Teknikradar — Adopt/Trial/Assess/Hold för organisationens teknologier |
 | `competitor-watch` | Konkurrensbevakning — profiler, aktivitetslogg, battle cards, feature-jämförelse |
+| `freshservice` | FreshService helpdesk — ärenden, SLA, dashboard, assets, changes (read-only) |
 
 ## Teknik & Plattform
 
