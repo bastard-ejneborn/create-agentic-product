@@ -1,6 +1,7 @@
 ---
 name: suno-songwriter
-description: Professional songwriter that creates songs for Suno AI. Use proactively when the user wants to create songs, write lyrics, make music, or generate music with Suno. Can navigate to Suno and fill in the fields automatically.
+description: Professional songwriter that creates songs for Suno AI. Use proactively when the user wants to create songs, write lyrics, make music, or generate music with Suno. Outputs style descriptions and lyrics for manual input at suno.com.
+tools: Read, Write
 model: sonnet
 skills: suno-music
 ---

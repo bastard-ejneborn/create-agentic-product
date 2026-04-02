@@ -58,7 +58,7 @@ Mellan faserna: granska leveranser, stäm av med användaren, justera kursen.
 
 ### Steg 4: Generera kreativt material
 
-Använd skills och agenter (se Skills-tabellen nedan) för att skapa bilder, video, musik och röst. Allt material sparas i `assets/` organiserat per typ.
+Använd skills och agenter (se Skills-tabellen nedan) för att skapa bilder, musik och röst. Allt material sparas i `assets/` organiserat per typ.
 
 ## Projektstruktur
 
@@ -86,6 +86,16 @@ Alla agenter finns i `.claude/agents/`. Varje agent har:
 - **Arbetsprocess**: Steg-för-steg workflow
 - **Samarbete**: Hur agenten interagerar med andra
 
+### Kreativa agenter
+- **image-creator** — Bildgenerering via Gemini (text-to-image, image-to-image)
+- **elevenlabs-voice** — Röstdesign och dialoggenerering via ElevenLabs
+- **suno-songwriter** — Musikskapande med stilbeskrivningar och lyrics för Suno AI
+
+### C-level rådgivare
+- **cio-advisor** — IT-strategi, leverantörshantering, säkerhet, compliance, budgetar, infrastruktur
+- **cdo-advisor** — Digital strategi, datahantering, kundupplevelse, KPI:er, förändringsledning
+- **cto-advisor** — Teknikstrategi, arkitektur, teknisk skuld, build vs buy, plattformstillförlitlighet
+
 Se `.claude/skills/agent-builder/SKILL.md` för att skapa nya agenter.
 
 ## Skills
@@ -94,7 +104,6 @@ Se `.claude/skills/agent-builder/SKILL.md` för att skapa nya agenter.
 |-------|-----------|
 | `agent-builder` | Skapa nya agenter |
 | `gemini-imagegen` | Bildgenerering via Google Gemini (text-to-image, image-to-image) |
-| `sora-video` | Videogenerering via OpenAI Sora (text-to-video, image-to-video, remix) |
 | `suno-music-skill` | Musikskapande — stilbeskrivning och lyrics för Suno AI |
 | `elevenlabs-skill` | Röstdesign — 300-teckens röstbeskrivningar för ElevenLabs |
 
@@ -112,7 +121,7 @@ Föreslå lösningar baserat på projektets behov, budget och tidplan. Dokumente
 
 Skills som bildgenerering, video och musik kräver API-nycklar. Innan generering kan börja:
 
-1. Fråga användaren vilka nycklar de har (OpenRouter, OpenAI, ElevenLabs, etc.)
+1. Fråga användaren vilka nycklar de har (OpenRouter, ElevenLabs, etc.)
 2. Fråga om de vill klistra in nycklarna så att `.env` skapas automatiskt, eller om de föredrar att lägga in dem själva
 3. `.env`-filen ska ligga i projektroten (`/create-agentic-product/.env`) och är gitignored
 4. Skapa aldrig `.env` utan användarens godkännande — berätta var filen ska ligga och vad som behövs
@@ -123,7 +132,7 @@ Skills som bildgenerering, video och musik kräver API-nycklar. Innan generering
 - Tidigt i processen ska en **produktbild i studiokvalitet** tas fram (genererad eller uppladdad av användaren)
 - Användaren måste **godkänna produktbilden** innan den används vidare
 - Den godkända bilden sparas i `assets/images/reference/` och används som **referensbild** vid all efterföljande bildgenerering (via image-to-image i gemini-imagegen)
-- **Videor ska också baseras på en bild** — använd alltid image-to-video i sora-video snarare än ren text-to-video
+- **Videor**: Om videogenerering behövs, utvärdera aktuella verktyg (Runway, Kling AI, Google Veo) — OpenAI Sora är avvecklat
 
 ### Internationalisering
 - Alltid analysera kulturella skillnader innan marknadsinträde

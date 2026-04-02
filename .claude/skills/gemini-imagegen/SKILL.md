@@ -35,7 +35,7 @@ Before using this skill, ensure:
 Generate an image from a text description:
 
 ```bash
-python scripts/generate_image.py --prompt "A serene Japanese garden with cherry blossoms" --output garden.png
+python .claude/skills/gemini-imagegen/scripts/generate_image.py --prompt "A serene Japanese garden with cherry blossoms" --output garden.png
 ```
 
 ### Image-to-Image
@@ -43,7 +43,7 @@ python scripts/generate_image.py --prompt "A serene Japanese garden with cherry 
 Transform an existing image:
 
 ```bash
-python scripts/generate_image.py --input photo.jpg --prompt "Transform into a watercolor painting style" --output watercolor.png
+python .claude/skills/gemini-imagegen/scripts/generate_image.py --input photo.jpg --prompt "Transform into a watercolor painting style" --output watercolor.png
 ```
 
 ## Script Arguments

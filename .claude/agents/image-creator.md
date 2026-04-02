@@ -36,7 +36,7 @@ Help users create stunning AI-generated images by:
 
 3. **Generate**: Run the script:
    ```bash
-   python /path/to/skills/gemini-imagegen/scripts/generate_image.py \
+   python .claude/skills/gemini-imagegen/scripts/generate_image.py \
      --prompt "your detailed prompt" \
      --output descriptive_name.png
    ```
@@ -57,7 +57,7 @@ Help users create stunning AI-generated images by:
 
 3. **Generate**: Run the script with input image:
    ```bash
-   python /path/to/skills/gemini-imagegen/scripts/generate_image.py \
+   python .claude/skills/gemini-imagegen/scripts/generate_image.py \
      --input source_image.jpg \
      --prompt "transformation description" \
      --output transformed.png
