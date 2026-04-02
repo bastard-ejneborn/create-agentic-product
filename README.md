@@ -1,6 +1,6 @@
 # Create Agentic Product
 
-A framework of AI agents and skills that helps you take a product idea from concept to launch — or supports C-level executives (CIO/CTO/CDO) in their daily strategic work.
+A framework of AI agents and skills that helps C-level executives (CIO/CTO/CDO), project managers, and marketing teams in their daily work — plus creative agents for product development from concept to launch.
 
 Works with **Claude Code**, **OpenAI Codex CLI**, or **ChatGPT** — pick the setup that matches your tools.
 
@@ -55,14 +55,20 @@ That's it. Claude Code automatically reads the project configuration (CLAUDE.md,
 
 ### Step 4: Set Up API Keys (Optional)
 
-Some skills (image generation, voice, music) require API keys. If you plan to use them:
+Some skills require API keys. Copy the example and add the ones you need:
 
-1. Copy the example file: `cp .env.example .env`
-2. Add your keys to `.env`:
-   - `OPENROUTER_API_KEY` — for image generation ([get key](https://openrouter.ai/keys))
-   - `ELEVENLABS_API_KEY` — for voice generation ([get key](https://elevenlabs.io/api))
+```bash
+cp .env.example .env
+```
 
-The C-level advisory agents (CIO/CTO/CDO) don't require any API keys — they work out of the box.
+| Key | Required For | Get It |
+|-----|-------------|--------|
+| `FRESHSERVICE_DOMAIN` | FreshService helpdesk data | Your subdomain (e.g., `yourcompany`) |
+| `FRESHSERVICE_API_KEY` | FreshService helpdesk data | FreshService → Profile → API Key |
+| `OPENROUTER_API_KEY` | Image generation | [openrouter.ai/keys](https://openrouter.ai/keys) |
+| `ELEVENLABS_API_KEY` | Voice generation | [elevenlabs.io/api](https://elevenlabs.io/api) |
+
+Most agents work without any API keys. FreshService keys are only needed if you want to pull helpdesk data. Creative keys are only needed for image/voice/music generation.
 
 ---
 
@@ -163,21 +169,55 @@ Create a Custom GPT that knows your role and strategy:
 
 1. Go to [ChatGPT](https://chat.openai.com) → **Explore GPTs** → **Create**
 2. In the **Instructions** field, paste the contents of the agent file matching your role:
-   - CIO: copy content from `.claude/agents/cio-advisor.md`
-   - CTO: copy content from `.claude/agents/cto-advisor.md`
-   - CDO: copy content from `.claude/agents/cdo-advisor.md`
+
+   | Role | Agent File |
+   |------|-----------|
+   | CIO | `.claude/agents/cio-advisor.md` |
+   | CTO | `.claude/agents/cto-advisor.md` |
+   | CDO | `.claude/agents/cdo-advisor.md` |
+   | Project Manager | `.claude/agents/project-manager.md` |
+   | Marketing | `.claude/agents/marketing-strategist.md` |
+
 3. Add to the instructions:
    ```
    When I share my company strategy document, remember it and reference 
    it in all future advice. Always check recommendations against our 
    stated priorities and constraints.
    ```
-4. In your first conversation, upload or paste the contents of the relevant skill files:
+4. In your first conversation, upload or paste the skill files relevant to your role:
+
+   **For CIO/CTO/CDO** (core skills):
    - `.claude/skills/company-strategy/SKILL.md`
    - `.claude/skills/budget-tracker/SKILL.md`
    - `.claude/skills/project-portfolio/SKILL.md`
+   - `.claude/skills/risk-register/SKILL.md`
+   - `.claude/skills/vendor-manager/SKILL.md`
+   - `.claude/skills/team-structure/SKILL.md`
    - `.claude/skills/decision-framework/SKILL.md`
    - `.claude/skills/stakeholder-briefing/SKILL.md`
+   - `.claude/skills/meeting-prep/SKILL.md`
+
+   **Additional for CTO**: `.claude/skills/tech-radar/SKILL.md`
+   **Additional for CDO**: `.claude/skills/competitor-watch/SKILL.md`
+
+   **For Project Managers**:
+   - `.claude/skills/project-planner/SKILL.md`
+   - `.claude/skills/status-report/SKILL.md`
+   - `.claude/skills/raci-matrix/SKILL.md`
+   - `.claude/skills/retro-facilitator/SKILL.md`
+   - `.claude/skills/project-portfolio/SKILL.md`
+   - `.claude/skills/budget-tracker/SKILL.md`
+   - `.claude/skills/team-structure/SKILL.md`
+
+   **For Marketing**:
+   - `.claude/skills/campaign-planner/SKILL.md`
+   - `.claude/skills/brand-guidelines/SKILL.md`
+   - `.claude/skills/competitor-watch/SKILL.md`
+   - `.claude/skills/company-strategy/SKILL.md`
+   - `.claude/skills/budget-tracker/SKILL.md`
+
+   > **Tip**: You don't need to paste all skills at once. Start with 2-3 and add more as needed. ChatGPT has context limits.
+
 5. Name your GPT (e.g., "My CTO Advisor") and save
 
 #### Approach 2: Per-Conversation Context
@@ -230,9 +270,17 @@ Since ChatGPT can't write files directly, you'll need to manually save outputs:
 | Risk register | `docs/risk/risk-register.md` |
 | Vendor register | `docs/vendors/vendor-register.md` |
 | Team structure | `docs/team/team-structure.md` |
+| Tech radar | `docs/tech/tech-radar.md` |
+| Competitor watch | `docs/marketing/competitor-watch.md` |
 | Decisions | `docs/decisions/YYYY-MM-DD-topic.md` |
 | Briefings | `docs/briefings/YYYY-MM-DD-type-topic.md` |
 | Meeting preps | `docs/briefings/prep/YYYY-MM-DD-type-prep.md` |
+| Project plans | `docs/projects/plans/YYYY-MM-DD-project-plan.md` |
+| Status reports | `docs/projects/reports/YYYY-MM-DD-project-status.md` |
+| RACI matrices | `docs/projects/project-raci.md` |
+| Retrospectives | `docs/projects/retros/YYYY-MM-DD-retro.md` |
+| Campaigns | `docs/marketing/campaigns/YYYY-MM-DD-campaign.md` |
+| Brand guidelines | `docs/marketing/brand-guidelines.md` |
 
 **Tip**: Keep the folder structure even without git. It makes everything findable and you can always add git later.
 
@@ -255,7 +303,7 @@ Despite these limitations, the **agents, skills, and templates are fully usable*
 
 ### What You Get
 
-Three advisory agents tailored to your role, powered by three shared skills:
+Three advisory agents tailored to your role, powered by shared skills:
 
 | Agent | Focus Areas |
 |-------|-------------|
@@ -274,6 +322,9 @@ Three advisory agents tailored to your role, powered by three shared skills:
 | **decision-framework** | Helps you make and document structured decisions |
 | **stakeholder-briefing** | Generates board updates, business cases, team updates, incident reports |
 | **meeting-prep** | Pulls context from all docs to create focused meeting briefs |
+| **tech-radar** | Technology landscape tracking (CTO) |
+| **competitor-watch** | Competitive intelligence and battle cards (CDO) |
+| **freshservice** | Live helpdesk data — tickets, SLA, dashboard (requires API key) |
 
 ### How the Skills Connect
 
@@ -341,6 +392,21 @@ List your active initiatives — the agent captures status, owners, budgets, dep
 
 > **Tip**: Steps 2 and 3 can be done in any order, or skipped initially. The agents work without them but give better advice when budget and project context is available.
 
+#### 3b. Connect FreshService (Optional)
+
+If you use FreshService as your helpdesk, add your API key to `.env`:
+
+```bash
+FRESHSERVICE_DOMAIN=yourcompany
+FRESHSERVICE_API_KEY=your-api-key
+```
+
+Then you can pull live helpdesk data:
+
+```
+Show me the helpdesk dashboard for the last 30 days
+```
+
 #### 4. Ask for advice in your domain
 
 Once strategy is set, ask questions naturally:
@@ -396,6 +462,7 @@ A typical day using the agents:
 | Pre-meeting | Prepare briefing | "Prepare a team update on the platform migration" |
 | During work | Get advice | "Should we invest in a service mesh or keep our current setup?" |
 | After incident | Document | "Help me write an incident report for today's outage" |
+| Helpdesk check | Review SLA | "Are we meeting our helpdesk SLAs? Show me the dashboard" |
 | Weekly | Strategic review | "Review our strategy — anything we should update based on recent decisions?" |
 
 ### Key Concepts
@@ -408,6 +475,114 @@ A typical day using the agents:
 **Agents read your strategy.** Before giving advice, agents check `docs/strategy/company-strategy.md`. This is what prevents generic "best practice" answers and gives you advice grounded in your actual constraints and priorities.
 
 **Decisions build institutional memory.** Every decision you document in `docs/decisions/` becomes context for future decisions. When you ask "should we use Kubernetes?", the agent can reference your past architecture decisions.
+
+---
+
+## For Project Managers
+
+### What You Get
+
+| Agent | Skills |
+|-------|--------|
+| **project-manager** | project-planner, project-portfolio, status-report, raci-matrix, retro-facilitator, budget-tracker, team-structure, risk-register, meeting-prep, decision-framework |
+
+### Getting Started
+
+```
+Help me create a project plan for our platform migration
+```
+
+The agent will ask about goals, timeline, budget, team, and constraints — then produce a structured plan in `docs/projects/plans/`.
+
+### Example Tasks
+
+| Task | What to Say |
+|------|-------------|
+| Plan a project | "Create a project plan for the CRM implementation" |
+| Weekly status | "Write this week's status report for the migration project" |
+| Define responsibilities | "Build a RACI matrix for the data platform project" |
+| Run a retro | "Facilitate a sprint retrospective for Team Alpha" |
+| Check capacity | "Can we take on a new project? Check team capacity and active projects" |
+| Prepare for steering | "Prep me for Thursday's steering committee — pull project status and risks" |
+
+### Where Outputs Go
+
+| Output | Location |
+|--------|----------|
+| Project plans | `docs/projects/plans/` |
+| Status reports | `docs/projects/reports/` |
+| RACI matrices | `docs/projects/` |
+| Retrospectives | `docs/projects/retros/` |
+
+---
+
+## For Marketing Teams
+
+### What You Get
+
+| Agent | Skills |
+|-------|--------|
+| **marketing-strategist** | campaign-planner, brand-guidelines, competitor-watch, company-strategy, budget-tracker, stakeholder-briefing, meeting-prep, decision-framework |
+
+### Getting Started
+
+```
+Help me define our brand guidelines
+```
+
+Or jump straight into a campaign:
+
+```
+Plan a product launch campaign for our new analytics platform
+```
+
+### Example Tasks
+
+| Task | What to Say |
+|------|-------------|
+| Build brand guidelines | "Help me create our brand guidelines — tone, visual identity, messaging" |
+| Plan a campaign | "Plan a lead-gen campaign for Q3 targeting enterprise CTOs" |
+| Competitive analysis | "Set up our competitive watch — profile our top 5 competitors" |
+| Review positioning | "How should we position against Competitor X? Build a battle card" |
+| Campaign report | "Write the post-campaign analysis for the spring launch" |
+| Budget allocation | "How should we split our Q3 marketing budget across channels?" |
+
+### Where Outputs Go
+
+| Output | Location |
+|--------|----------|
+| Brand guidelines | `docs/marketing/brand-guidelines.md` |
+| Campaigns | `docs/marketing/campaigns/` |
+| Competitor watch | `docs/marketing/competitor-watch.md` |
+| Personas | `docs/marketing/personas/` |
+
+---
+
+## FreshService Integration
+
+C-level agents can pull live helpdesk data from FreshService (read-only). Requires API key setup.
+
+### Setup
+
+Add to `.env`:
+```bash
+FRESHSERVICE_DOMAIN=yourcompany
+FRESHSERVICE_API_KEY=your-api-key
+```
+
+### Example Usage
+
+```
+Show me the helpdesk dashboard for the last 30 days
+
+Are we meeting our SLAs?
+
+What are the current urgent open tickets?
+
+Pull the helpdesk stats — I need them for the board update
+```
+
+The agent runs the FreshService script and returns ticket volume, SLA compliance, backlog aging, group performance, and open problems/changes. This data can feed directly into stakeholder briefings and meeting preps.
 
 ---
 
