@@ -65,6 +65,7 @@ cp .env.example .env
 |-----|-------------|--------|
 | `FRESHSERVICE_DOMAIN` | FreshService helpdesk data | Your subdomain (e.g., `yourcompany`) |
 | `FRESHSERVICE_API_KEY` | FreshService helpdesk data | FreshService → Profile → API Key |
+| `STITCH_API_KEY` | UI design generation | [stitch.withgoogle.com](https://stitch.withgoogle.com) → Settings → API Key |
 | `OPENROUTER_API_KEY` | Image generation | [openrouter.ai/keys](https://openrouter.ai/keys) |
 | `ELEVENLABS_API_KEY` | Voice generation | [elevenlabs.io/api](https://elevenlabs.io/api) |
 
@@ -213,6 +214,7 @@ Create a Custom GPT that knows your role and strategy:
    - `.claude/skills/campaign-planner/SKILL.md`
    - `.claude/skills/brand-guidelines/SKILL.md`
    - `.claude/skills/competitor-watch/SKILL.md`
+   - `.claude/skills/google-stitch/SKILL.md`
    - `.claude/skills/company-strategy/SKILL.md`
    - `.claude/skills/budget-tracker/SKILL.md`
 
@@ -545,6 +547,8 @@ Plan a product launch campaign for our new analytics platform
 | Competitive analysis | "Set up our competitive watch — profile our top 5 competitors" |
 | Review positioning | "How should we position against Competitor X? Build a battle card" |
 | Campaign report | "Write the post-campaign analysis for the spring launch" |
+| Design a landing page | "Generate a landing page design for our new product launch" |
+| App mockup | "Design a mobile onboarding flow for our fitness app" |
 | Budget allocation | "How should we split our Q3 marketing budget across channels?" |
 
 ### Where Outputs Go
@@ -673,6 +677,7 @@ create-agentic-product/
 | `tech-radar` | Technology landscape — Adopt, Trial, Assess, Hold |
 | `competitor-watch` | Competitive intelligence — profiles, activity log, battle cards |
 | `freshservice` | FreshService helpdesk — tickets, SLA, dashboard, assets (read-only) |
+| `google-stitch` | AI UI design — landing pages, app screens, dashboards from text prompts |
 | `agent-builder` | Create new custom agents |
 | `gemini-imagegen` | Image generation via Google Gemini |
 | `elevenlabs-skill` | Voice style descriptions for ElevenLabs |

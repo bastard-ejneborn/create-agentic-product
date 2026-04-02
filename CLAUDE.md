@@ -130,6 +130,7 @@ Se `.claude/skills/agent-builder/SKILL.md` för att skapa nya agenter.
 | `tech-radar` | Teknikradar — Adopt/Trial/Assess/Hold för organisationens teknologier |
 | `competitor-watch` | Konkurrensbevakning — profiler, aktivitetslogg, battle cards, feature-jämförelse |
 | `freshservice` | FreshService helpdesk — ärenden, SLA, dashboard, assets, changes (read-only) |
+| `google-stitch` | AI UI-design — generera wireframes, landningssidor, appskärmar från text (HTML/Tailwind) |
 
 ## Teknik & Plattform
 
