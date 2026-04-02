@@ -1,16 +1,28 @@
 # Create Agentic Product
 
-A framework of AI agents and skills for Claude Code that helps you take a product idea from concept to launch — or supports C-level executives (CIO/CTO/CDO) in their daily strategic work.
+A framework of AI agents and skills that helps you take a product idea from concept to launch — or supports C-level executives (CIO/CTO/CDO) in their daily strategic work.
+
+Works with **Claude Code**, **OpenAI Codex CLI**, or **ChatGPT** — pick the setup that matches your tools.
 
 ## What This Is
 
-This project gives you a team of specialized AI agents that work together inside [Claude Code](https://docs.anthropic.com/en/docs/claude-code). Instead of chatting with a single AI, you get purpose-built agents for strategy, decisions, communication, image generation, music, and more.
+This project gives you a team of specialized AI agents that share context and collaborate. Instead of chatting with a single AI, you get purpose-built agents for strategy, decisions, communication, image generation, music, and more.
 
-**If you're coming from ChatGPT or Codex**: Think of this as having a team of GPTs that share context and collaborate — but running locally in your terminal with full access to your files, git, and tools.
+Think of it as having a team of specialized assistants that all know your company strategy, remember past decisions, and produce structured outputs you can actually use.
 
 ---
 
-## Quick Start
+## Choose Your Setup
+
+- [**Setup A: Claude Code**](#setup-a-claude-code) — Full experience. Agents run automatically, read/write files, collaborate.
+- [**Setup B: OpenAI Codex CLI**](#setup-b-openai-codex-cli) — Similar terminal experience using OpenAI's CLI tool.
+- [**Setup C: ChatGPT (browser)**](#setup-c-chatgpt-browser) — No installation needed. Manual but effective.
+
+---
+
+## Setup A: Claude Code
+
+Best experience. Agents and skills work automatically.
 
 ### Prerequisites
 
@@ -26,8 +38,6 @@ npm install -g @anthropic-ai/claude-code
 
 You'll need an Anthropic API key or a Claude Max subscription. Follow the setup prompts on first run.
 
-> **Coming from ChatGPT?** Claude Code runs in your terminal, not a browser. You type commands and have conversations directly in the terminal. It can read and write files on your computer, run commands, and search the web.
-
 ### Step 2: Clone This Project
 
 ```bash
@@ -41,7 +51,7 @@ cd create-agentic-product
 claude
 ```
 
-That's it. Claude Code will automatically read the project's configuration (CLAUDE.md and the agents/skills directories) and know what agents and skills are available.
+That's it. Claude Code automatically reads the project configuration (CLAUDE.md, agents, skills) and knows what's available.
 
 ### Step 4: Set Up API Keys (Optional)
 
@@ -53,6 +63,183 @@ Some skills (image generation, voice, music) require API keys. If you plan to us
    - `ELEVENLABS_API_KEY` — for voice generation ([get key](https://elevenlabs.io/api))
 
 The C-level advisory agents (CIO/CTO/CDO) don't require any API keys — they work out of the box.
+
+---
+
+## Setup B: OpenAI Codex CLI
+
+If you use OpenAI and prefer a terminal-based workflow similar to Claude Code.
+
+### Prerequisites
+
+- **Node.js 18+** — [Download here](https://nodejs.org/)
+- **Git** — [Download here](https://git-scm.com/)
+- An **OpenAI API key** — [Get one here](https://platform.openai.com/api-keys)
+
+### Step 1: Install Codex CLI
+
+```bash
+npm install -g @openai/codex
+```
+
+### Step 2: Clone This Project
+
+```bash
+git clone https://github.com/ejneborn/create-agentic-product.git
+cd create-agentic-product
+```
+
+### Step 3: Create a Codex Instructions File
+
+Codex CLI reads its instructions from `AGENTS.md` (similar to how Claude Code reads `CLAUDE.md`). Create one:
+
+```bash
+cp CLAUDE.md AGENTS.md
+```
+
+Then open `AGENTS.md` and adjust any Claude-specific references if needed. The content (strategy workflow, project structure, agent descriptions) applies to any AI tool.
+
+### Step 4: Start Codex
+
+```bash
+codex
+```
+
+### How Agents Work in Codex
+
+Codex CLI doesn't auto-discover `.claude/agents/` files, but you can use them manually:
+
+**Option 1 — Reference agent files directly:**
+```
+Read .claude/agents/cto-advisor.md and follow its instructions. 
+Then help me evaluate our cloud architecture.
+```
+
+**Option 2 — Create custom instructions:**
+Copy the agent content you need into your `AGENTS.md` file or into Codex's system instructions.
+
+**Option 3 — Paste agent context per session:**
+At the start of each session, tell Codex which role to adopt:
+```
+You are a CTO advisor. Read .claude/agents/cto-advisor.md for your role 
+and .claude/skills/company-strategy/SKILL.md for how to handle strategy. 
+Our company strategy is in docs/strategy/company-strategy.md.
+```
+
+### Using Skills in Codex
+
+Skills are markdown documentation files — any AI can follow them. Point Codex to the skill file:
+
+```
+Follow the process in .claude/skills/decision-framework/SKILL.md 
+to help me evaluate build vs. buy for our CRM.
+```
+
+Codex can read and write files just like Claude Code, so all outputs (strategy docs, decisions, briefings) will be saved to `docs/` as described.
+
+---
+
+## Setup C: ChatGPT (Browser)
+
+No installation required. You use ChatGPT as the AI and manage files manually.
+
+### Step 1: Download the Project
+
+**Option A — Git clone** (if you have git):
+```bash
+git clone https://github.com/ejneborn/create-agentic-product.git
+```
+
+**Option B — Download ZIP:**
+Go to https://github.com/ejneborn/create-agentic-product and click **Code > Download ZIP**. Extract it somewhere on your computer.
+
+### Step 2: Set Up Your ChatGPT
+
+You have two approaches:
+
+#### Approach 1: Custom GPT (Recommended)
+
+Create a Custom GPT that knows your role and strategy:
+
+1. Go to [ChatGPT](https://chat.openai.com) → **Explore GPTs** → **Create**
+2. In the **Instructions** field, paste the contents of the agent file matching your role:
+   - CIO: copy content from `.claude/agents/cio-advisor.md`
+   - CTO: copy content from `.claude/agents/cto-advisor.md`
+   - CDO: copy content from `.claude/agents/cdo-advisor.md`
+3. Add to the instructions:
+   ```
+   When I share my company strategy document, remember it and reference 
+   it in all future advice. Always check recommendations against our 
+   stated priorities and constraints.
+   ```
+4. In your first conversation, upload or paste the contents of the relevant skill files:
+   - `.claude/skills/company-strategy/SKILL.md`
+   - `.claude/skills/decision-framework/SKILL.md`
+   - `.claude/skills/stakeholder-briefing/SKILL.md`
+5. Name your GPT (e.g., "My CTO Advisor") and save
+
+#### Approach 2: Per-Conversation Context
+
+For each new ChatGPT conversation:
+
+1. Start with a system message that sets the role. Copy-paste from the agent file:
+   ```
+   I want you to act as my CTO advisor. Here are your instructions:
+   [paste content from .claude/agents/cto-advisor.md]
+   ```
+
+2. Share your company strategy:
+   ```
+   Here is our company strategy. Reference this in all your advice:
+   [paste content from docs/strategy/company-strategy.md]
+   ```
+
+3. When you need a specific skill, paste the skill instructions:
+   ```
+   Follow this decision framework for our discussion:
+   [paste content from .claude/skills/decision-framework/SKILL.md]
+   ```
+
+### Step 3: Build Your Strategy Document
+
+Even without Claude Code, you can use the company-strategy skill:
+
+1. Open `.claude/skills/company-strategy/SKILL.md` and read the interview questions
+2. Start a ChatGPT conversation:
+   ```
+   Help me define my company strategy. Ask me the following questions 
+   one at a time: company overview, vision & mission, strategic priorities, 
+   OKRs, constraints, competitive context, and timeline.
+   Then format the result using this template:
+   [paste the output format from the skill file]
+   ```
+3. Save ChatGPT's output as `docs/strategy/company-strategy.md` on your computer
+4. Use this document as context in future conversations
+
+### Step 4: Managing Outputs
+
+Since ChatGPT can't write files directly, you'll need to manually save outputs:
+
+| What | Where to Save |
+|------|--------------|
+| Company strategy | `docs/strategy/company-strategy.md` |
+| Decisions | `docs/decisions/YYYY-MM-DD-topic.md` |
+| Briefings | `docs/briefings/YYYY-MM-DD-type-topic.md` |
+
+**Tip**: Keep the folder structure even without git. It makes everything findable and you can always add git later.
+
+### Limitations vs. Claude Code / Codex
+
+| Capability | Claude Code / Codex | ChatGPT |
+|-----------|-------------------|---------|
+| Auto-reads project files | Yes | No — you paste context manually |
+| Writes output to files | Yes | No — you copy-paste to save |
+| Remembers between sessions | Via files on disk | Via Custom GPT or re-pasting |
+| Multiple agents collaborate | Automatic | One role per conversation |
+| Decision log as context | Agents read `docs/decisions/` | You paste relevant decisions |
+| Strategy always loaded | Automatic | You upload/paste each session |
+
+Despite these limitations, the **agents, skills, and templates are fully usable** — you just provide the context manually instead of the tool doing it automatically.
 
 ---
 
@@ -166,17 +353,18 @@ A typical day using the agents:
 
 ---
 
-## How It Compares to ChatGPT / Codex
+## Platform Comparison
 
-| Feature | ChatGPT / Codex | This Project |
-|---------|----------------|-------------|
-| Context | Conversation-based, resets each chat | Persistent files, git history, strategy docs |
-| Specialization | One general-purpose AI | Multiple specialized agents |
-| File access | Upload/download | Direct read/write on your machine |
-| Decision history | Lost after conversation | Versioned in `docs/decisions/` |
-| Strategy alignment | You re-explain each time | Agents read `docs/strategy/` automatically |
-| Output | Copy-paste from chat | Files committed to git, ready to share |
-| Collaboration | Share chat links | Share the git repo, PRs, docs |
+| Feature | Claude Code | Codex CLI | ChatGPT |
+|---------|------------|-----------|---------|
+| Agent auto-discovery | Automatic | Manual reference | Copy-paste |
+| File read/write | Automatic | Automatic | Manual save |
+| Strategy always loaded | Yes | Yes (with setup) | Paste per session |
+| Decision log as context | Automatic | Automatic | Paste relevant ones |
+| Multi-agent collaboration | Built-in | One at a time | One per conversation |
+| Requires installation | Yes (npm) | Yes (npm) | No |
+| API key needed | Anthropic | OpenAI | OpenAI (or subscription) |
+| Best for | Full automation | OpenAI users wanting CLI | Quick start, no setup |
 
 ---
 
@@ -252,6 +440,8 @@ The agent updates the living document and flags any decisions that may be affect
 
 ## Troubleshooting
 
+### Claude Code
+
 **"Claude Code not found"**
 - Make sure Node.js 18+ is installed: `node --version`
 - Reinstall: `npm install -g @anthropic-ai/claude-code`
@@ -259,13 +449,33 @@ The agent updates the living document and flags any decisions that may be affect
 **"Permission denied" when running scripts**
 - Run: `chmod +x .claude/skills/*/scripts/*.py`
 
+### Codex CLI
+
+**"Codex not found"**
+- Make sure Node.js 18+ is installed: `node --version`
+- Reinstall: `npm install -g @openai/codex`
+
+**Codex doesn't know about the agents**
+- Codex doesn't auto-discover `.claude/agents/`. Reference agent files explicitly:
+  `Read .claude/agents/cto-advisor.md and follow its instructions.`
+
+### ChatGPT
+
+**ChatGPT forgets my strategy between sessions**
+- Use a Custom GPT with the agent instructions built in
+- Upload your strategy document at the start of each conversation
+- Consider switching to Claude Code or Codex CLI for persistent context
+
+### All Platforms
+
 **Agents seem to give generic advice**
-- Have you defined your company strategy? Run: "Help me define our company strategy"
-- Check that `docs/strategy/company-strategy.md` exists and is up to date
+- Have you defined your company strategy? Create `docs/strategy/company-strategy.md`
+- For Claude Code: say "Help me define our company strategy"
+- For Codex/ChatGPT: follow the interview process in `.claude/skills/company-strategy/SKILL.md`
 
 **API key errors for image/voice/music**
 - Copy `.env.example` to `.env` and add your keys
-- The C-level advisory agents don't need API keys
+- The C-level advisory agents don't need API keys — they work with just the base AI subscription
 
 ## License
 
