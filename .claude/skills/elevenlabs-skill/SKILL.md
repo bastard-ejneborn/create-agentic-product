@@ -1,6 +1,6 @@
 ---
-name: elevenlabs-voice-style
-description: Create voice style descriptions for ElevenLabs. Use when the user wants to describe a voice, create a voice profile, or generate voice style text. Outputs exactly 300 characters describing voice characteristics.
+name: elevenlabs-skill
+description: Use when the user wants to describe a voice, create a voice profile, or generate voice style text for ElevenLabs.
 ---
 
 # ElevenLabs Voice Style Creator

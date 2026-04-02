@@ -1,237 +1,135 @@
 ---
 name: agent-builder
-description: Create specialized AI agents for Claude Code projects. Use when the user wants to build a new agent, create a team of agents, add an agent to .claude/agents/, or needs help designing agent roles for a project.
+description: Use when the user wants to build a new agent, create a team of agents, add an agent to .claude/agents/, or design agent roles for a project.
 ---
 
 # Agent Builder
 
-Bygg specialiserade AI-agenter for Claude Code-projekt. Varje agent blir en `.md`-fil i `.claude/agents/` som Claude Code automatiskt kan delegera till.
+Build specialized AI agents for Claude Code projects. Each agent becomes a `.md` file in `.claude/agents/` that Claude Code can delegate to.
 
 ## Workflow
 
-### Steg 1: Förstå behovet
+### Step 1: Understand the Need
 
-Fråga (om det inte redan framgår):
-1. **Projekttyp** - Vad bygger ni? (app, produkt, content, etc.)
-2. **Agentens roll** - Vad ska agenten göra?
-3. **Samarbete** - Vilka andra agenter finns/planeras?
-4. **Språk** - Ska agenten skriva på svenska eller engelska?
+Ask (if not already clear):
+1. **Project type** — What are you building? (app, product, content, etc.)
+2. **Agent role** — What should the agent do?
+3. **Collaboration** — What other agents exist or are planned?
 
-### Steg 2: Designa agenten
+### Step 2: Design the Agent
 
-Varje agent-fil följer detta format:
+Every agent file follows this format:
 
 ```markdown
 ---
-name: agent-namn-med-bindestreck
-description: Kort beskrivning. Use PROACTIVELY when [trigger]. Handles [ansvar].
-tools: [välj från listan nedan]
-model: [inherit|sonnet|opus|haiku]
+name: agent-name-with-hyphens
+description: Short description. Use PROACTIVELY when [trigger]. Handles [responsibility].
+tools: [choose from list below]
+model: [sonnet|opus|haiku]
 ---
 
-# Agentens huvudinnehåll
+# Agent content here
 ```
 
-### Steg 3: Välj rätt tools
+### Step 3: Choose Tools
 
-Tillgängliga verktyg:
-
-| Behov | Tools |
-|-------|-------|
-| Bara läsa/researcha | `Read, Grep, Glob` |
-| Läsa + terminalen | `Read, Grep, Glob, Bash` |
-| Skriva/redigera kod | `Read, Write, Edit, Grep, Glob, Bash` |
-| Webresearch | `Read, WebSearch, WebFetch` |
-| Koordinera andra agenter | `Read, Write, Agent(agent1, agent2), Grep, Glob` |
+| Need | Tools |
+|------|-------|
+| Read/research only | `Read, Grep, Glob` |
+| Read + terminal | `Read, Grep, Glob, Bash` |
+| Write/edit code | `Read, Write, Edit, Grep, Glob, Bash` |
+| Web research | `Read, WebSearch, WebFetch` |
 | Full access | `Read, Write, Edit, Bash, Grep, Glob, WebSearch, WebFetch` |
 
-Följande verktyg rekommenderas för maximal effektivitet:
-tools: Read, Write, Edit, Bash, MultiEdit, Task, TodoWrite, WebFetch, WebSearch
-   
+### Step 4: Choose Model
 
-### Steg 4: Välj rätt modell
+| Model | Use for |
+|-------|---------|
+| `opus` | Complex creative/strategic thinking, architecture |
+| `sonnet` | Balance of speed and quality, good default |
+| `haiku` | Fast simple tasks, searches, validation |
 
-| Modell | Använd för |
-|--------|-----------|
-| `opus` | Komplex kreativ/strategisk tankeverksamhet, projektledning, arkitektur |
-| `sonnet` | Balans mellan snabbhet och kvalitet, bra default |
-| `haiku` | Snabba, enkla uppgifter, sökningar, validering |
-| `inherit` | Ärver från föräldrakonversationen |
+### Step 5: Write the Agent Prompt
 
-### Steg 5: Skriv agentens prompt
-
-Följ denna struktur:
+Follow this structure:
 
 ```markdown
-# [Rollnamn]
+# [Role Name]
 
-[1-2 meningar om vem agenten är och vad den gör]
+[1-2 sentences about who the agent is and what it does]
 
-## Din Roll
+## Your Role
 
-Du ansvarar för:
-- **[Ansvar 1]**: Kort beskrivning
-- **[Ansvar 2]**: Kort beskrivning
-- **[Ansvar 3]**: Kort beskrivning
+You are responsible for:
+- **[Responsibility 1]**: Short description
+- **[Responsibility 2]**: Short description
 
-## Arbetsprocess
+## Workflow
 
-### Vid start
-1. [Vad agenten gör först — t.ex. läs log, förstå kontext]
-2. [Analysera uppgiften]
-3. [Börja arbeta]
+### On start
+1. [What the agent does first — e.g., read context, understand task]
+2. [Analyze the task]
+3. [Begin work]
 
-### Under arbetet
-- [Princip 1]
-- [Princip 2]
-- [Kvalitetskrav]
+### During work
+- [Principle 1]
+- [Quality requirement]
 
-### Vid leverans
-- [Outputformat]
-- [Verifieringssteg]
+### On delivery
+- [Output format]
+- [Verification steps]
 
-## Riktlinjer
-- [Viktig regel 1]
-- [Viktig regel 2]
-- [Begränsningar]
+## Guidelines
+- [Important rule 1]
+- [Limitations]
 
-## Samarbete med andra agenter
-[Om relevant — beskriv hur agenten interagerar med teamet]
+## Collaboration with Other Agents
+[If relevant — describe how the agent interacts with the team]
 ```
 
-### Steg 6: Spara agenten
+### Step 6: Save the Agent
 
-Spara filen till: `.claude/agents/{agent-namn}.md`
+Save to: `.claude/agents/{agent-name}.md`
 
-Verifiera:
-1. YAML frontmatter är korrekt (name, description, tools, model)
-2. Description innehåller "Use PROACTIVELY when" eller "Use when"
-3. Tools är minimala för uppgiften
-4. Prompten har tydlig struktur och arbetsprocess
+Verify:
+1. YAML frontmatter has name, description, tools, model
+2. Description contains "Use PROACTIVELY when" or "Use when"
+3. Tools are minimal for the task
+4. Prompt has clear structure and workflow
 
-## Agent-team patterns
+## Agent Team Patterns
 
-### Kreativ produktion (podcast, bok, video)
+### Creative Production (podcast, book, video)
 ```
-project-lead       — Koordinerar, prioriterar, kvalitetssäkrar
-writer             — Skapar huvudinnehållet
-researcher         — Hittar fakta, bakgrund, inspiration
-editor             — Granskar, förbättrar, konsistens
-designer           — Visuellt material och layout
-```
-
-### Produktutveckling (app, SaaS)
-```
-product-lead       — Vision, prioritering, roadmap
-frontend-dev       — UI/UX-implementation
-backend-dev        — API, databas, logik
-ux-researcher      — Användarbehov, tester
-growth-hacker      — Viral loops, marknadsföring
+project-lead       — Coordinates, prioritizes, quality assurance
+writer             — Creates main content
+researcher         — Finds facts, background, inspiration
+editor             — Reviews, improves, consistency
+designer           — Visual material and layout
 ```
 
-### Forsknings/analys-team
+### Product Development (app, SaaS)
 ```
-lead-analyst       — Sammanställer, drar slutsatser
-data-collector     — Samlar data, scraping, API:er
-domain-expert      — Djup kunskap inom ämnet
-fact-checker       — Verifierar påståenden
-presenter          — Paketerar resultat snyggt
-```
-
-## Avancerade funktioner
-
-### Persistent memory
-```yaml
-memory: project  # Agenten minns mellan sessioner
+product-lead       — Vision, prioritization, roadmap
+frontend-dev       — UI/UX implementation
+backend-dev        — API, database, logic
+ux-researcher      — User needs, testing
+growth-hacker      — Viral loops, marketing
 ```
 
-### Hooks (validering)
-```yaml
-hooks:
-  PreToolUse:
-    - matcher: "Bash"
-      hooks:
-        - type: command
-          command: "./scripts/validate.sh"
+### Research/Analysis Team
 ```
-
-### Begränsa subagent-spawning
-```yaml
-tools: Agent(researcher, writer), Read, Bash
-# Kan bara anropa researcher och writer
-```
-
-### Background execution
-```yaml
-background: true  # Kör alltid i bakgrunden
-```
-
-### Isolation (git worktree)
-```yaml
-isolation: worktree  # Jobbar i egen branch
-```
-
-### Preloada skills
-```yaml
-skills:
-  - api-conventions
-  - code-style
-```
-
-## Exempel: Komplett agent
-
-```markdown
----
-name: ux-researcher
-description: Use PROACTIVELY when designing features or user flows. Analyzes user needs, validates ideas, and creates personas. Ensures the product solves real problems.
-tools: Read, Write, WebSearch, WebFetch, Grep, Glob
-model: sonnet
----
-
-# UX Researcher
-
-Du är en erfaren UX-researcher som förstår människors beteenden och behov djupt. Du kombinerar kvalitativ empati med kvantitativ analys.
-
-## Din Roll
-
-Du ansvarar för:
-- **User Research**: Förstå målgruppen, deras behov och frustrationer
-- **Validering**: Testa antaganden mot verkligheten
-- **Personas**: Skapa levande, användbara personas
-- **User Journeys**: Kartlägg upplevelsen från start till mål
-- **Insikter**: Destillera data till handlingsbara insikter
-
-## Arbetsprocess
-
-### Vid start
-1. Förstå projektets mål och målgrupp
-2. Researcha liknande produkter och deras användare
-3. Identifiera antaganden som behöver valideras
-
-### Under arbetet
-- Utgå alltid från verkliga användarbehov, inte antaganden
-- Sök efter mönster i beteende, inte bara åsikter
-- Testa idéer mot edge cases och minoritetsanvändare
-- Dokumentera alla insikter med källor
-
-### Vid leverans
-Leverera alltid:
-- Sammanfattning (3-5 bullet points)
-- Detaljerade insikter med stöd
-- Rekommendationer med prioritering
-- Eventuella personas eller journeys som markdown
-
-## Riktlinjer
-- "People don't know what they want until you show it to them" — men de vet vad som frustrerar dem
-- Kvantitativ data visar VAD som händer, kvalitativ visar VARFÖR
-- En persona utan beteendemönster är bara en karaktärsbeskrivning
-- Validera alltid med minst 2 oberoende källor
+lead-analyst       — Synthesizes, draws conclusions
+data-collector     — Gathers data, scraping, APIs
+domain-expert      — Deep domain knowledge
+fact-checker       — Verifies claims
+presenter          — Packages results
 ```
 
 ## Tips
 
-- **Start small**: Börja med 3-5 agenter, utöka vid behov
-- **Tydliga gränser**: Varje agent ska ha ETT tydligt ansvarsområde
-- **Minimal toolset**: Ge inte mer access än nödvändigt
-- **Testbar output**: Agenter som producerar verifierbar output fungerar bäst
-- **Iterera**: Uppdatera agenternas prompts baserat på resultat
+- **Start small**: Begin with 3-5 agents, expand as needed
+- **Clear boundaries**: Each agent should have ONE clear area of responsibility
+- **Minimal toolset**: Don't give more access than necessary
+- **Testable output**: Agents producing verifiable output work best
+- **Iterate**: Update agent prompts based on results

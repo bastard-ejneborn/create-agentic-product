@@ -1,6 +1,6 @@
 ---
 name: gemini-imagegen
-description: Generate AI images using Google Gemini via OpenRouter. Use when the user wants to create images, generate pictures, make AI art, edit images, or transform photos. Supports both text-to-image and image-to-image generation.
+description: Use when the user wants to create images, generate pictures, make AI art, edit photos, or transform images using Google Gemini via OpenRouter.
 ---
 
 # Gemini Image Generation

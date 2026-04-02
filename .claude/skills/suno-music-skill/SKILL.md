@@ -1,6 +1,6 @@
 ---
 name: suno-music
-description: Create songs for Suno AI music generation. Use when the user wants to create a song, write lyrics, or make music. Outputs a 300-character style description and tagged lyrics formatted for Suno.
+description: Use when the user wants to create a song, write lyrics, or make music for Suno AI.
 ---
 
 # Suno Music Creator
