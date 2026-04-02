@@ -284,6 +284,10 @@ Since ChatGPT can't write files directly, you'll need to manually save outputs:
 | Retrospectives | `docs/projects/retros/YYYY-MM-DD-retro.md` |
 | Campaigns | `docs/marketing/campaigns/YYYY-MM-DD-campaign.md` |
 | Brand guidelines | `docs/marketing/brand-guidelines.md` |
+| Local activity logs | `docs/marketing/local/{location}/activity-log.md` |
+| Local area maps | `docs/marketing/local/{location}/area-map.md` |
+| Local partnerships | `docs/marketing/local/{location}/partnerships.md` |
+| Local marketing plan | `docs/marketing/local/local-marketing-plan.md` |
 
 **Tip**: Keep the folder structure even without git. It makes everything findable and you can always add git later.
 
@@ -563,6 +567,8 @@ Plan a product launch campaign for our new analytics platform
 | Campaigns | `docs/marketing/campaigns/` |
 | Competitor watch | `docs/marketing/competitor-watch.md` |
 | Personas | `docs/marketing/personas/` |
+| Local marketing logs | `docs/marketing/local/{location}/` |
+| Local marketing plan | `docs/marketing/local/local-marketing-plan.md` |
 
 ---
 
