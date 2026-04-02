@@ -258,6 +258,8 @@ Three advisory agents tailored to your role, powered by three shared skills:
 | Skill | What It Does |
 |-------|-------------|
 | **company-strategy** | Captures your company's strategic vision, priorities, and constraints |
+| **budget-tracker** | Tracks IT/digital/tech budgets — allocated, spent, remaining, by category |
+| **project-portfolio** | Tracks ongoing projects — status, owners, dependencies, capacity |
 | **decision-framework** | Helps you make and document structured decisions |
 | **stakeholder-briefing** | Generates board updates, business cases, team updates, incident reports |
 
@@ -377,6 +379,8 @@ create-agentic-product/
 │   └── skills/           # Reusable skills (strategy, decisions, etc.)
 ├── docs/
 │   ├── strategy/         # Company strategy (living document)
+│   ├── finance/          # Budget tracking and financial overview
+│   ├── projects/         # Project portfolio and status
 │   ├── decisions/        # Decision log (one file per decision)
 │   └── briefings/        # Generated stakeholder communications
 ├── assets/               # Generated images, audio, video
@@ -408,6 +412,8 @@ create-agentic-product/
 | `company-strategy` | Define and maintain company strategic vision |
 | `decision-framework` | Structured decision-making with decision log |
 | `stakeholder-briefing` | Executive communications (5 templates) |
+| `budget-tracker` | IT/digital/tech budget tracking and analysis |
+| `project-portfolio` | Project portfolio management and capacity overview |
 | `agent-builder` | Create new custom agents |
 | `gemini-imagegen` | Image generation via Google Gemini |
 | `elevenlabs-skill` | Voice style descriptions for ElevenLabs |

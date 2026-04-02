@@ -109,6 +109,8 @@ Se `.claude/skills/agent-builder/SKILL.md` för att skapa nya agenter.
 | `company-strategy` | Fånga och strukturera företagets strategi, vision, OKR:er och prioriteringar |
 | `decision-framework` | Strukturerad beslutsprocess med adaptiv formalitet och beslutslogg |
 | `stakeholder-briefing` | Exekutiv kommunikation — styrelseuppdateringar, business cases, incidentrapporter |
+| `budget-tracker` | IT/digital/tech-budget — kategoriserad spend, committed vs discretionary, prognoser |
+| `project-portfolio` | Projektportfölj — aktiva projekt, status, kapacitet, beroenden |
 
 ## Teknik & Plattform
 
