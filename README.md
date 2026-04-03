@@ -659,6 +659,11 @@ create-agentic-product/
 |-------|-------------|
 | `marketing-strategist` | Campaign planning, brand development, content strategy, positioning |
 
+### Guest Support
+| Agent | Description |
+|-------|-------------|
+| `guest-support-agent` | Guest tickets, complaints, refunds, food safety, billing issues |
+
 ### Creative Agents
 | Agent | Description |
 |-------|-------------|
@@ -691,6 +696,7 @@ create-agentic-product/
 | `google-stitch` | AI UI design — landing pages, app screens, dashboards from text prompts |
 | `local-marketing` | Local/guerrilla marketing — store visits, sampling, partnerships, flyer drops, activity tracking |
 | `simphony` | Oracle Simphony POS — sales, guest checks, product mix, labor, payments (read-only) |
+| `guest-support` | Guest/customer support — triage, response drafting, compensation, escalation, ticket tracking |
 | `agent-builder` | Create new custom agents |
 | `gemini-imagegen` | Image generation via Google Gemini |
 | `elevenlabs-skill` | Voice style descriptions for ElevenLabs |

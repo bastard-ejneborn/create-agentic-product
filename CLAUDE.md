@@ -102,6 +102,9 @@ Alla agenter finns i `.claude/agents/`. Varje agent har:
 ### Marknadsföring
 - **marketing-strategist** — Kampanjplanering, varumärkesutveckling, innehållsstrategi, positionering
 
+### Gäststöd
+- **guest-support-agent** — Ärenden från gäster/kunder: klagomål, fakturering, matsäkerhet, återbetalningar
+
 Se `.claude/skills/agent-builder/SKILL.md` för att skapa nya agenter.
 
 ## Skills
@@ -133,6 +136,7 @@ Se `.claude/skills/agent-builder/SKILL.md` för att skapa nya agenter.
 | `google-stitch` | AI UI-design — generera wireframes, landningssidor, appskärmar från text (HTML/Tailwind) |
 | `local-marketing` | Lokal marknadsföring — butiksbesök, sampling, partnerskap, flygblad, aktivitetslogg per restaurang |
 | `simphony` | Oracle Simphony — försäljning, gästnotor, produktmix, personal, betalningar per restaurang (read-only) |
+| `guest-support` | Gäststöd — triagering, svar, kompensation, eskalering, ärendelogg för QSR-restauranger |
 
 ## Teknik & Plattform
 
