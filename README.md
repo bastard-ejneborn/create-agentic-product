@@ -290,7 +290,8 @@ Since ChatGPT can't write files directly, you'll need to manually save outputs:
 | Retrospectives | `docs/projects/retros/YYYY-MM-DD-retro.md` |
 | Campaigns | `docs/marketing/campaigns/YYYY-MM-DD-campaign.md` |
 | Brand guidelines | `docs/marketing/brand-guidelines.md` |
-| Guest support policies | `docs/support/policies.md` |
+| Department policies | `docs/policies/{department}-policies.md` |
+| Policy index | `docs/policies/index.md` |
 | Guest support tickets | `docs/support/tickets/YYYY-MM-DD-{id}.md` |
 | Guest support summary | `docs/support/ticket-summary.md` |
 | Local activity logs | `docs/marketing/local/{location}/activity-log.md` |
@@ -621,7 +622,7 @@ Plan a product launch campaign for our new analytics platform
 
 | Output | Location |
 |--------|----------|
-| Company policies | `docs/support/policies.md` |
+| Guest support policies | `docs/policies/guest-support-policies.md` |
 | Individual tickets | `docs/support/tickets/YYYY-MM-DD-{id}.md` |
 | Ticket summary | `docs/support/ticket-summary.md` |
 
@@ -694,6 +695,7 @@ create-agentic-product/
 │   ├── vendors/          # Vendor register and contracts
 │   ├── team/             # Team structure and capabilities
 │   ├── decisions/        # Decision log (one file per decision)
+│   ├── policies/         # Department policies (IT, Ops, Marketing, HR, Finance, Guest Support)
 │   ├── briefings/        # Stakeholder communications and meeting preps
 │   ├── marketing/        # Campaigns, brand guidelines, personas
 │   └── tech/             # Technology radar
@@ -760,6 +762,7 @@ create-agentic-product/
 | `local-marketing` | Local/guerrilla marketing — store visits, sampling, partnerships, flyer drops, activity tracking |
 | `simphony` | Oracle Simphony POS — sales, guest checks, product mix, labor, payments (read-only) |
 | `guest-support` | Guest/customer support — triage, response drafting, compensation, escalation, ticket tracking |
+| `company-policies` | Department policies — IT, Operations, Marketing, HR, Finance, Guest Support |
 | `agent-builder` | Create new custom agents |
 | `gemini-imagegen` | Image generation via Google Gemini |
 | `elevenlabs-skill` | Voice style descriptions for ElevenLabs |

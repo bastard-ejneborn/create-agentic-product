@@ -10,11 +10,11 @@ Handle guest/customer support tickets and emails for QSR restaurant operations. 
 ## IMPORTANT: Company Policies
 
 **Before using this skill, company-specific policies must be loaded from:**
-`docs/support/policies.md`
+`docs/policies/guest-support-policies.md`
 
 If this file does not exist, the skill uses industry best practices (documented below). Once you upload your policies, they override the defaults.
 
-**To set up**: Paste or describe your company's guest support policies and the agent will create `docs/support/policies.md` with your specific:
+**To set up**: Paste or describe your company's guest support policies and the agent will create `docs/policies/guest-support-policies.md` with your specific:
 - Compensation tiers and approval limits
 - Refund policies and procedures
 - Escalation contacts and paths
@@ -80,7 +80,7 @@ All responses follow the HEARD model:
 
 ## Compensation Guidelines (Defaults)
 
-**These are industry defaults. Override with your company policies in `docs/support/policies.md`.**
+**These are industry defaults. Override with your company policies in `docs/policies/guest-support-policies.md`.**
 
 ### Tier 1 — Minor Inconvenience
 **When**: Missing sauce/condiment, slightly wrong order, short wait
@@ -150,7 +150,7 @@ When drafting a response to a guest ticket/email:
 ### Step 2: Gather Context
 - Check order details if available (Simphony data)
 - Check if this location has similar recent complaints
-- Check company policies in `docs/support/policies.md`
+- Check company policies in `docs/policies/guest-support-policies.md`
 
 ### Step 3: Draft Response
 Follow the HEARD model. Include:
@@ -281,4 +281,4 @@ To configure this skill with your company's specific policies, provide:
 7. **Regulatory specifics**: Any local/national regulations beyond GDPR and food safety basics?
 8. **Channel-specific rules**: Different handling for email vs social vs phone?
 
-The agent will structure your policies into `docs/support/policies.md` and reference them in all future responses.
+The agent will structure your policies into `docs/policies/guest-support-policies.md` and reference them in all future responses.

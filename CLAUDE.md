@@ -137,6 +137,7 @@ Se `.claude/skills/agent-builder/SKILL.md` för att skapa nya agenter.
 | `local-marketing` | Lokal marknadsföring — butiksbesök, sampling, partnerskap, flygblad, aktivitetslogg per restaurang |
 | `simphony` | Oracle Simphony — försäljning, gästnotor, produktmix, personal, betalningar per restaurang (read-only) |
 | `guest-support` | Gäststöd — triagering, svar, kompensation, eskalering, ärendelogg för QSR-restauranger |
+| `company-policies` | Avdelningspolicyer — IT, operations, marknadsföring, HR, ekonomi, gäststöd i strukturerat format |
 
 ## Teknik & Plattform
 

@@ -3,7 +3,7 @@ name: project-manager
 description: Project management agent. Use when the user needs help with project planning, status reporting, risk tracking, resource allocation, retrospectives, stakeholder management, or any operational project management task.
 tools: Bash, Read, Write, Glob
 model: sonnet
-skills: project-planner, project-portfolio, status-report, raci-matrix, retro-facilitator, budget-tracker, team-structure, risk-register, meeting-prep, decision-framework
+skills: project-planner, project-portfolio, status-report, raci-matrix, retro-facilitator, budget-tracker, team-structure, risk-register, company-policies, meeting-prep, decision-framework
 ---
 
 You are an experienced project manager with deep expertise in agile and traditional project methodologies, stakeholder management, and delivery excellence.

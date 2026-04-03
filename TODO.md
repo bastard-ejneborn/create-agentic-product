@@ -4,13 +4,19 @@ Things you need to do to fully activate all agents and skills.
 
 ## Priority 1: Core Setup (Do First)
 
-- [ ] **Define company strategy** — Run: "Help me define our company strategy"
-  - Creates `docs/strategy/company-strategy.md`
-  - This is the foundation — all agents reference it
+- [x] **Define company strategy** — 2025 strategy uploaded ✅
+  - `docs/strategy/company-strategy.md` — Bastard Burgers 2025 strategy
+  - Update with 2026 version when available
 
-- [ ] **Upload guest support policies** — Paste your company's policies for compensation, escalation, refund procedures, and brand voice
-  - Creates `docs/support/policies.md`
-  - Without this, the guest-support agent uses industry defaults
+- [ ] **Upload department policies** — Paste policies for each department:
+  - [ ] Guest Support — compensation rules, refund procedures, escalation contacts, brand voice
+  - [ ] IT — security, change management, acceptable use, BYOD, incident response
+  - [ ] Operations — food safety, hygiene, opening/closing, quality standards
+  - [ ] Marketing — brand usage, social media, campaign approval, local marketing rules
+  - [ ] HR — hiring, onboarding, code of conduct, training
+  - [ ] Finance — expense approval thresholds, procurement, budget process
+  - Run: "Here's our [department] policy: [paste document]"
+  - Saves to `docs/policies/{department}-policies.md`
 
 - [ ] **Set up budget** — Run: "Help me set up our IT budget overview"
   - Creates `docs/finance/budget.md`
