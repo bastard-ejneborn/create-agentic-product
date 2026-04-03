@@ -179,6 +179,7 @@ Create a Custom GPT that knows your role and strategy:
    | CDO | `.claude/agents/cdo-advisor.md` |
    | Project Manager | `.claude/agents/project-manager.md` |
    | Marketing | `.claude/agents/marketing-strategist.md` |
+   | Guest Support | `.claude/agents/guest-support-agent.md` |
 
 3. Add to the instructions:
    ```
@@ -219,6 +220,10 @@ Create a Custom GPT that knows your role and strategy:
    - `.claude/skills/local-marketing/SKILL.md`
    - `.claude/skills/company-strategy/SKILL.md`
    - `.claude/skills/budget-tracker/SKILL.md`
+
+   **For Guest Support**:
+   - `.claude/skills/guest-support/SKILL.md`
+   - `.claude/skills/company-strategy/SKILL.md`
 
    > **Tip**: You don't need to paste all skills at once. Start with 2-3 and add more as needed. ChatGPT has context limits.
 
@@ -285,6 +290,9 @@ Since ChatGPT can't write files directly, you'll need to manually save outputs:
 | Retrospectives | `docs/projects/retros/YYYY-MM-DD-retro.md` |
 | Campaigns | `docs/marketing/campaigns/YYYY-MM-DD-campaign.md` |
 | Brand guidelines | `docs/marketing/brand-guidelines.md` |
+| Guest support policies | `docs/support/policies.md` |
+| Guest support tickets | `docs/support/tickets/YYYY-MM-DD-{id}.md` |
+| Guest support summary | `docs/support/ticket-summary.md` |
 | Local activity logs | `docs/marketing/local/{location}/activity-log.md` |
 | Local area maps | `docs/marketing/local/{location}/area-map.md` |
 | Local partnerships | `docs/marketing/local/{location}/partnerships.md` |
@@ -570,6 +578,61 @@ Plan a product launch campaign for our new analytics platform
 | Personas | `docs/marketing/personas/` |
 | Local marketing logs | `docs/marketing/local/{location}/` |
 | Local marketing plan | `docs/marketing/local/local-marketing-plan.md` |
+
+---
+
+## For Guest Support Teams
+
+### What You Get
+
+| Agent | Skills |
+|-------|--------|
+| **guest-support-agent** | guest-support, simphony, freshservice, company-strategy, risk-register, meeting-prep |
+
+### Getting Started
+
+1. **Upload your policies** (optional but recommended):
+   ```
+   Here are our guest support policies: [paste your compensation rules, 
+   escalation contacts, refund procedures, brand voice guidelines]
+   ```
+   The agent structures them into `docs/support/policies.md`. Without policies, industry best practices are used as defaults.
+
+2. **Handle a ticket**:
+   ```
+   A guest emailed: "I was charged twice for my order at your Kungsholmen 
+   location yesterday. Order #4521, paid with Visa. Please refund."
+   ```
+   The agent triages (billing, MEDIUM), drafts a response using the HEARD model, suggests compensation, and presents the draft for your review.
+
+### Example Tasks
+
+| Task | What to Say |
+|------|-------------|
+| Handle a complaint | "A guest says their order was wrong and the staff was rude" |
+| Double charge | "Guest reports double charge — order #4521 at Södermalm" |
+| Food safety issue | "Guest found a piece of plastic in their burger at Kungsholmen" |
+| Allergen concern | "Guest with nut allergy says they had a reaction after eating at our restaurant" |
+| Review tickets | "Summarize this week's guest support tickets" |
+| Spot trends | "Which locations have the most complaints this month?" |
+| Draft a response | "Draft a reply to this guest email: [paste email]" |
+
+### Where Outputs Go
+
+| Output | Location |
+|--------|----------|
+| Company policies | `docs/support/policies.md` |
+| Individual tickets | `docs/support/tickets/YYYY-MM-DD-{id}.md` |
+| Ticket summary | `docs/support/ticket-summary.md` |
+
+### Severity Levels
+
+| Level | Examples | Response Time |
+|-------|---------|--------------|
+| **CRITICAL** | Allergen reaction, foreign object with injury, illness | Immediate escalation |
+| **HIGH** | Foreign object (no injury), discrimination allegation | Within 1 hour |
+| **MEDIUM** | Double charge, wrong order, food quality, rude staff | Within 4 hours |
+| **LOW** | Menu questions, loyalty points, general inquiries | Within 24 hours |
 
 ---
 
