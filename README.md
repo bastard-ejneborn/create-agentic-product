@@ -724,6 +724,11 @@ create-agentic-product/
 |-------|-------------|
 | `marketing-strategist` | Campaign planning, brand development, content strategy, positioning |
 
+### Operations
+| Agent | Description |
+|-------|-------------|
+| `coo-advisor` | Restaurant operations: KPIs, hierarchy, store visits, weekly/monthly reviews |
+
 ### Guest Support
 | Agent | Description |
 |-------|-------------|
@@ -763,6 +768,7 @@ create-agentic-product/
 | `simphony` | Oracle Simphony POS — sales, guest checks, product mix, labor, payments (read-only) |
 | `guest-support` | Guest/customer support — triage, response drafting, compensation, escalation, ticket tracking |
 | `company-policies` | Department policies — IT, Operations, Marketing, HR, Finance, Guest Support |
+| `operations-dashboard` | Restaurant operations — KPIs by level, hierarchy, store visits, reviews |
 | `agent-builder` | Create new custom agents |
 | `gemini-imagegen` | Image generation via Google Gemini |
 | `elevenlabs-skill` | Voice style descriptions for ElevenLabs |

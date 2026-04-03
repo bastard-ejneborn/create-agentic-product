@@ -102,6 +102,9 @@ Alla agenter finns i `.claude/agents/`. Varje agent har:
 ### Marknadsföring
 - **marketing-strategist** — Kampanjplanering, varumärkesutveckling, innehållsstrategi, positionering
 
+### Operations
+- **coo-advisor** — Restaurangdrift: KPI:er, prestanda per plats/distrikt/region, butiksbesök, operativa granskningar
+
 ### Gäststöd
 - **guest-support-agent** — Ärenden från gäster/kunder: klagomål, fakturering, matsäkerhet, återbetalningar
 
@@ -138,6 +141,7 @@ Se `.claude/skills/agent-builder/SKILL.md` för att skapa nya agenter.
 | `simphony` | Oracle Simphony — försäljning, gästnotor, produktmix, personal, betalningar per restaurang (read-only) |
 | `guest-support` | Gäststöd — triagering, svar, kompensation, eskalering, ärendelogg för QSR-restauranger |
 | `company-policies` | Avdelningspolicyer — IT, operations, marknadsföring, HR, ekonomi, gäststöd i strukturerat format |
+| `operations-dashboard` | Restaurangdrift — KPI:er, hierarki (COO→RM→DM→RM), butiksbesök, operativa granskningar |
 
 ## Teknik & Plattform
 
