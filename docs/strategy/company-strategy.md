@@ -40,6 +40,13 @@ CEO: Simon Wanler
   ├── CPO: Maja Lundqvist
   │     └── HR Business Partner: Therese Alm
   └── CDTO: Johnny Bröms
+        ├── Senior IT Architect: André Ejneborn
+        ├── IT Architect: Simon Brännström
+        ├── Point of Sale Architect: Kim Axelsson
+        ├── Technical Product Owner POS: Petron Fernandes
+        ├── Technical Product Owner POS: Roopneet Bhalla
+        ├── IT Support Team Lead: Christian Ling
+        └── Head of Information Security and Compliance: Robert Beney
 ```
 
 ### Heads of Function
@@ -53,6 +60,13 @@ CEO: Simon Wanler
 |------|--------|-----------|
 | HR Business Partner | Therese Alm | Maja Lundqvist (CPO) |
 | Food & Beverage Manager | Jonas Ylinenjärvi | Johnny Klippmark (COO) |
+| Senior IT Architect | André Ejneborn | Johnny Bröms (CDTO) |
+| IT Support Team Lead | Christian Ling | Johnny Bröms (CDTO) |
+| Point of Sale Architect | Kim Axelsson | Johnny Bröms (CDTO) |
+| Technical Product Owner POS | Petron Fernandes | Johnny Bröms (CDTO) |
+| Head of Information Security and Compliance | Robert Beney | Johnny Bröms (CDTO) |
+| Technical Product Owner POS | Roopneet Bhalla | Johnny Bröms (CDTO) |
+| IT Architect | Simon Brännström | Johnny Bröms (CDTO) |
 
 Additional structures: Establishment council (new restaurants), Brand council (cross-functional).
 IT team: 8 people (large relative to company size, reflecting digital transformation).
