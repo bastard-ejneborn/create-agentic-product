@@ -19,7 +19,7 @@
 | Role | Person |
 |------|--------|
 | CEO | Simon Wanler |
-| Finance & Procurement | Lisa Wanler |
+| CFO | Lisa Wanler |
 | Operations (COO) | Johnny Klippmark |
 | Chief Expansion Officer | Johan Gederberg |
 | HR | Maja Lundqvist |
