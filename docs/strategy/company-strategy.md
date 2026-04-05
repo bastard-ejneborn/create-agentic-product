@@ -30,6 +30,8 @@
 ```
 CEO: Simon Wanler
   ├── CFO: Lisa Wanler
+  │     ├── Head of Finance: Filip Forsling
+  │     └── Head of Procurement: Niklas Heinermark
   ├── COO: Johnny Klippmark
   │     ├── RM North: Johannes Norrblom
   │     ├── RM South: Ricardo Moses
@@ -52,6 +54,8 @@ CEO: Simon Wanler
 ### Heads of Function
 | Role | Person | Reports To |
 |------|--------|-----------|
+| Head of Finance | Filip Forsling | Lisa Wanler (CFO) |
+| Head of Procurement | Niklas Heinermark | Lisa Wanler (CFO) |
 | Head of Project and Development | Caroline Johansson | Johnny Klippmark (COO) |
 | Head of Local Marketing and New Business | Malin Hansegård | Johnny Klippmark (COO) |
 
