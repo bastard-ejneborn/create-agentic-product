@@ -20,7 +20,7 @@
 |------|--------|
 | CEO | Simon Wanler |
 | CFO | Lisa Wanler |
-| Operations (COO) | Johnny Klippmark |
+| Chief Operations Officer | Johnny Klippmark |
 | Chief Expansion Officer | Johan Gederberg |
 | Chief People Officer | Maja Lundqvist |
 | Chief Digital and Tech Officer | Johnny Bröms |
