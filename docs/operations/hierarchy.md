@@ -3,10 +3,26 @@
 > COO: Johnny Klippmark
 > Status: Regions + Districts + Restaurants defined (Restaurant Managers TBD)
 
+## Reporting Structure
+
+```
+Chief Operations Officer: Johnny Klippmark
+  ├── Regional Manager North: Johannes Norrblom
+  │     ├── District Manager — North: Klas Söderström
+  │     ├── District Manager — Mid/East: Robert Gustavsson
+  │     └── District Manager — Mid/West: Brianne Ducharme
+  └── Regional Manager South: Ricardo Moses
+        ├── District Manager — Central 1: Mischa Andersson
+        ├── District Manager — Central 2: Minna Kiira-Nymark
+        └── District Manager — South: Björn Nicklasson
+```
+
+Both Regional Managers (**Johannes Norrblom** and **Ricardo Moses**) report directly to COO **Johnny Klippmark**.
+
 ## Structure
 
 ### Region: North
-> Regional Manager: **Johannes Norrblom**
+> Regional Manager: **Johannes Norrblom** (reports to COO Johnny Klippmark)
 
 #### District: North
 > District Manager: **Klas Söderström**
@@ -77,7 +93,7 @@
 ---
 
 ### Region: South
-> Regional Manager: **Ricardo Moses**
+> Regional Manager: **Ricardo Moses** (reports to COO Johnny Klippmark)
 
 #### District: Central 1
 > District Manager: **Mischa Andersson**
