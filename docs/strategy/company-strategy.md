@@ -25,6 +25,12 @@
 | Chief People Officer | Maja Lundqvist | Simon Wanler |
 | Chief Digital and Tech Officer | Johnny Bröms | Simon Wanler |
 
+### Team Notes
+
+- **CXO (Chief Expansion Officer)**: Johan Gederberg operates as a one-person function — no direct reports.
+- **Head of Project and Development**: Caroline Johansson operates without a dedicated project team — she drives project and development work directly.
+- **Head of Local Marketing and New Business**: Malin Hansegård *is* the Local Marketing and New Business team — operates solo without reports.
+
 ### Reporting Structure
 
 ```
