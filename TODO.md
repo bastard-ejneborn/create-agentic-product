@@ -52,6 +52,7 @@ Things you need to do to fully activate all agents and skills.
   ```
 - [ ] Run: `python .claude/skills/simphony/scripts/simphony_auth.py setup`
 - [ ] Test: Run "Show me the Simphony dashboard for yesterday"
+- [ ] **Map Simphony locRef IDs to restaurants** — pull location list from Simphony (`simphony.py locations`) and cross-reference with `docs/operations/hierarchy.md` so each of the 74 restaurants has its Simphony ID attached (needed for per-location data pulls)
 
 ### Google Stitch (UI Design) — Optional
 - [ ] Get API key from stitch.withgoogle.com → Settings
@@ -65,9 +66,17 @@ Things you need to do to fully activate all agents and skills.
 
 ## Priority 3: Organizational Context
 
-- [ ] **Document team structure** — Run: "Help me document our team structure"
+- [x] **Operations hierarchy** — Completed ✅
+  - `docs/operations/hierarchy.md` — 2 regions, 6 districts, 74 restaurants
+  - Restaurant Managers intentionally not tracked (change too often)
+
+- [x] **Leadership team structure** — Documented in `docs/strategy/company-strategy.md` ✅
+  - Executive team, Heads of Function, Team Members, reporting tree
+  - 36 named people across all functions
+
+- [ ] **Document full team structure** — Optional, broader than leadership — Run: "Help me document our full team structure"
   - Creates `docs/team/team-structure.md`
-  - Enables capacity and feasibility assessments
+  - Enables capacity and feasibility assessments across all teams
 
 - [ ] **Set up risk register** — Run: "Help me identify our top organizational risks"
   - Creates `docs/risk/risk-register.md`
