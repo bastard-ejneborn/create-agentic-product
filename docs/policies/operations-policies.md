@@ -1,10 +1,16 @@
 # Operations Policies — Bastard Burgers
 > Last updated: 2026-04-05
-> Owner: Jonas Ylinenjärvi (F&B Manager)
-> Review cycle: Annual (or when products change)
+> Owners: Jonas Ylinenjärvi (F&B Manager) — shelf life | Driftledning & HR — role descriptions
+> Review cycle: Annual (or when roles/products change)
 
 ## Table of Contents
 - [Secondary Shelf Life (Sekundära hållbarhetstider)](#secondary-shelf-life-sekundära-hållbarhetstider)
+- [Role Descriptions (Arbetsbeskrivningar)](#role-descriptions-arbetsbeskrivningar)
+  - [Restaurangchef (Restaurant Manager)](#restaurangchef-restaurant-manager)
+  - [Assisterande Restaurangchef (Assistant Restaurant Manager)](#assisterande-restaurangchef-assistant-restaurant-manager)
+  - [Skiftledare (Shift Leader)](#skiftledare-shift-leader)
+  - [Restaurangmedarbetare (Restaurant Employee)](#restaurangmedarbetare-restaurant-employee)
+  - [Shared Values & Behaviors](#shared-values--behaviors)
 
 ---
 
@@ -142,9 +148,275 @@ No exceptions to shelf life or service timer rules without explicit written appr
 
 ---
 
+## Role Descriptions (Arbetsbeskrivningar)
+
+Job descriptions for all operational roles in Bastard Burgers restaurants. These describe responsibilities, reporting lines, and expectations for each role. Shared values and behaviors apply to everyone (see end of section).
+
+> Owner: Driftledning & HR
+> Last revised: 2024-03/04
+
+### Reporting Hierarchy (Restaurant Level)
+
+```
+Distriktschef (District Manager)
+  └── Restaurangchef (Restaurant Manager — RC)
+        └── Assisterande Restaurangchef (Assistant Restaurant Manager — ARC/ASS)
+              └── Skiftledare (Shift Leader — SL)
+                    └── Restaurangmedarbetare (Restaurant Employee)
+```
+
+---
+
+### Restaurangchef (Restaurant Manager)
+
+**Position**: Restaurangchef | **Reports to**: Distriktschef (District Manager)
+**Revised**: 2024-03 | **Approved by**: Driftledning & HR
+
+#### General Description
+Restaurangchefen is the most senior person responsible for the unit — total responsibility for measuring, evaluating, developing, and reporting results. Includes recruitment, scheduling, training, procurement, business decisions, and ensuring the unit is run per company guidelines for work environment and values. Operates as employer representative. **Operational work in the restaurant ~80% of work time.**
+
+#### Ledarskap (Leadership)
+- Ensure staff receive their scheduled employee conversations (medarbetarsamtal) and staff meetings
+- Use and follow up Winningtemp results, promote usage and response rate
+- Coach, train, and provide continuous feedback
+- Recruit employees per the company recruitment process
+- Be a good role model, lead by example, be present at the unit
+- Ensure Bastard Burgers' values — **Kultur, Kvalité, Människor** (Culture, Quality, People) — permeate all work
+- Actively work with and promote the intranet Ziik
+
+#### Budget och KPIer (Budget and KPIs)
+- Meet budget targets/KPIs per guidance and consultation with District Manager
+- Responsible for long- and short-term development of unit results (financial and quality)
+- Deliver on goals: employee engagement, customer/online ratings, checklists
+- Schedule per collective agreement and work environment law, balanced with labor cost targets
+- Follow up KPIs on daily/weekly/monthly basis
+- Daily follow-up and control of products (waste, inventory/purchasing, handling)
+- **Approval authority**: Supplier invoices up to **2 000 SEK** (above requires District Manager approval)
+- Plan staff & scheduling, sales/local marketing, renovation/maintenance, development/closure
+- Ensure unit is open per stated opening hours
+
+#### Operations
+- Ultimately responsible for food and service quality meeting Bastard Burgers standards and food safety regulations
+- Responsible for responding to guest feedback and ensuring compensation follows company guidelines
+- Ensure digital systems (e.g., Get Compliant) are used correctly
+
+#### Personalansvar (Personnel Responsibility)
+- Employment and contracts
+- Scheduling per collective agreement, calculation periods, work time rules
+- Assignment of vacation and public holidays
+- Ensure staff work per their role descriptions; follow up with corrective/documented conversations as needed
+- Follow up sick leave and cover sick absences
+
+#### Säkerhet (Safety)
+- Work with ARC and SL on local routines and task delegation for crisis management, threats/violence, and security
+- Responsible for systematic fire safety per delegation
+
+#### Arbetsmiljö och Lagar (Work Environment and Laws)
+- Work preventively against discrimination, harassment, offensive behavior per company policies
+- Work environment responsibility per delegation — systematic work environment management, safety rounds
+- Investigate, risk-assess, remediate, and follow up continuously on work environment
+- Technical maintenance of kitchen and dining area (notify superior for action plan)
+- Report workplace accidents and incidents per guidelines with follow-up
+- Ensure legal compliance: work time law, serving licenses, self-monitoring program
+
+#### Kommunikation
+- Ensure ARC and employees follow current and future manuals, checklists, training
+- Maintain good relations with external contacts (union reps, authorities, landlords, suppliers)
+- Promote good and effective communication
+- Foster collaboration in the staff group and with other managers
+
+#### Reporting Responsibility
+**To District Manager**:
+- Financial results and development (Balance scorecard / action plan outcomes)
+- Quality results
+- Major unit activities
+- Work environment follow-up, risk assessments, action plans, accident/incident reports, safety rounds
+- Red flags, drug-related matters, policy violations
+
+**To staff**:
+- Regular staff meetings
+- Employee conversations per routine
+- Update Bastard Board weekly
+- Publish weekly newsletter in Ziik
+
+**Working hours**: Evenings and weekends may occur. Tasks outside the job description may occur. Travel may occur.
+
+---
+
+### Assisterande Restaurangchef (Assistant Restaurant Manager)
+
+**Position**: Assisterande Restaurangchef (ARC / ASS) | **Reports to**: Restaurangchef
+**Revised**: 2024-03 | **Approved by**: Driftledning & HR
+
+#### General Description
+Responsible for working, evaluating, and actively finding improvements within their area. Reports to Restaurant Manager. Role focuses on operational work. When RC is not present, ARC is in charge. Employer representative. Works in both kitchen and service.
+
+#### Ledarskap
+- Deliver Bastard Burgers KPIs daily (sales, waste, personnel cost) through Ticket Time, average check, quality, etc.
+- Plan onboarding for new hires together with RC and SL
+- Coach, train, and provide continuous feedback
+- Helicopter perspective — lead all parts of the restaurant
+- Be a good role model, lead by example, be present
+
+#### Budget och KPIer
+- Ensure and actively improve guest experience quality
+- Work with planning of staff/scheduling, sales/local marketing, renovation/maintenance, development/closure — together with RC
+- Daily follow-up and control of products (waste, inventory/purchasing, handling)
+- Ensure and improve cleaning/cleanliness routines
+- Responsible for inventory and working with stock to maintain good COGS
+
+#### Operations
+- Handle daily operational problems
+- Develop and ensure structure and routines
+- Actively work on and suggest improvements: quality, waste, food safety, cleaning, sales
+- Ensure digital systems (Get Compliant) are used correctly
+
+#### Personalansvar
+- In RC's absence: responsible for schedule per collective agreement, calculation periods, work time rules
+- Ensure staff work per their role descriptions; report to closest manager
+
+#### Säkerhet
+- Work with RC and SL on crisis management, threats/violence, and security routines
+- Systematic fire safety per delegation
+
+#### Arbetsmiljö och Lagar
+- Legal compliance per work law, work time law, work environment, food safety, collective agreement
+- Systematic work environment work per delegation
+- Preventive work against discrimination, harassment, offensive behavior
+- Technical maintenance of kitchen and dining area (notify closest manager)
+- Ensure restaurant is properly marked and everything is in its place
+- Report workplace accidents and incidents to RC with follow-up
+
+#### Kommunikation
+- Ensure leaders and staff follow manuals, checklists, training
+- Maintain good relations with external contacts (union reps, authorities)
+- Promote good and effective communication
+- Promote use of the intranet Ziik
+- Communication and reporting to closest manager
+
+**Working hours**: Evenings and weekends may occur. Tasks outside the job description may occur. Travel may occur.
+
+---
+
+### Skiftledare (Shift Leader)
+
+**Position**: Skiftledare (SL) | **Reports to**: Restaurangchef and Assisterande Restaurangchef
+**Revised**: 2024-03 | **Approved by**: Driftledning & HR
+
+#### General Description
+Responsible for the restaurant during their shift — helps RC and ARC in daily tasks and ensures the unit runs per company guidelines and values. Also responsible for working, evaluating, and actively finding improvements within their area (reported to RC and ARC). Responsible on assigned shifts even when RC or ARC is present. Employer representative. Works in both kitchen and service.
+
+#### Ledarskap
+- Daily delivery of Bastard Burgers KPIs (sales, waste, personnel cost) during shift — work with Ticket Time, average check, quality
+- Work with, delegate, and distribute daily routines (cleaning, opening, closing)
+- Helicopter perspective during shift
+- Participate in onboarding of new hires per task distribution
+- Coach, train, and give continuous feedback daily
+- Ensure any situations/problems during the shift are resolved per routine and reported/documented to closest manager
+- Ensure **Kultur, Kvalité, Människor** permeate the work
+
+#### Operations
+- Responsible for guest experience quality meeting Bastard Burgers standards
+- Handle daily operational problems
+- Develop and ensure restaurant achieves 100% in Get Compliant
+- Responsible for cleaning routines being executed
+- Responsible for orders per task distribution; control and reporting of inventory status
+- Actively work on and suggest improvements: quality, waste, food safety, cleaning, sales
+
+#### Arbetsmiljö och Lagar
+- Legal compliance per work law, work time law, work environment, food safety, collective agreement
+- Mandatory reporting of policy violations, equal treatment plan issues, and general deviations
+- Mandatory reporting of technical problems and machine maintenance
+- Systematic work environment work per delegation
+- Red flags, drug-related matters, policy violations
+
+#### Säkerhet
+- Work with RC and ARC on local routines for crisis management, threats/violence, security
+- Systematic fire safety per delegation
+
+#### Kommunikation
+- Ensure leaders and staff follow manuals, checklists, training
+- Promote good and effective communication within the unit
+- Participate in restaurant management planning of weekly tasks
+- Actively work with and promote the intranet Ziik
+- Communication and reporting to closest manager
+
+**Working hours**: Evenings and weekends may occur. Tasks outside the job description may occur.
+
+---
+
+### Restaurangmedarbetare (Restaurant Employee)
+
+**Position**: Restaurangmedarbetare | **Reports to**: Restaurangchef
+**Revised**: 2024-04-15 | **Approved by**: Driftledning & HR
+
+#### General Description
+As a restaurant employee, you are the company's face outward and main contact with guests. Main responsibility is caring for guests, preparing and serving burgers per company guidelines with highest quality ingredients. Responsible for assigned workstation(s) during shifts being functional, clean, and meeting Bastard Burgers standards. Work in both kitchen and service. Expected to know all stations: kitchen, storage, register, service, guest area.
+
+#### Main Duties — Kök (Kitchen)
+- Prepare burgers per guidelines and concept
+- Ensure ingredient quality is maintained
+- Follow Environment & Health (Miljö & hälsa) guidelines carefully
+- Keep kitchen clean and tidy — continuous cleaning throughout the day
+
+#### Main Duties — Service
+- **Guest satisfaction & service**: Take and serve orders per Bastard Burgers service rules and concept (O.S.T. and L.A.S.T. — see Ziik → Handböcker → Operations)
+- Run the bar (dips, soft drinks, alcohol, milkshake accessories)
+- Ensure restaurant is clean and fresh per routines: prepare for opening, keep trash stations clean, continuous toilet cleaning, clean dining area at closing
+
+#### Expectations
+- Well-informed about Bastard Burgers' goals and policies on service, speed, cleanliness, food quality
+- Follow company dress code and workplace policy (Ziik → Handböcker → Operations → Koncept)
+- Participate in systematic work environment work — promote good environment, report accidents/incidents with closest manager
+- Follow policies on equal treatment and workplace rules (signed at employment, stored in Ziik → Handböcker → HR Toolbox)
+- Work in various shifts (day, evening, weekend) may occur
+- Ensure good communication, participate in Ziik for weekly newsletters
+- Report any policy violations to closest manager
+
+---
+
+### Shared Values & Behaviors
+
+All roles at Bastard Burgers are expected to embody these behaviors:
+
+#### Better Together
+- Stand up for equal value of all people regardless of gender, ethnicity, age, or disability
+- Understand the strength of working together, support others, ask for help when needed
+
+#### Own It
+- Be dedicated to your tasks and always put the guest first
+- Be personally responsible for a good team atmosphere
+
+#### Get the Right Shit Done
+- Act on tasks you are responsible for; reflect and prioritize what's most important right now
+- Understand and appreciate changes
+
+#### Influential to Others
+- Be curious and open to learning new things
+- If you have more knowledge than a colleague, share it
+
+#### Communicate a Lot
+- Be transparent and honest with colleagues
+- Listen to and respect colleagues; share information that helps everyone
+
+### Core Values (Värdeord)
+- **Kultur** (Culture)
+- **Kvalité** (Quality)
+- **Människor** (People)
+
+### Key Systems Referenced
+- **Ziik** — intranet (manuals, HR Toolbox, weekly newsletters, operational documents)
+- **Get Compliant** — digital compliance system (target: 100% at each restaurant)
+- **Winningtemp** — employee engagement platform
+- **Bastard Board** — weekly update dashboard
+
+---
+
 ## Version Log
 
 | Date | Change | Responsible |
 |------|--------|-------------|
-| 2026-01-01 | Initial version | Jonas Ylinenjärvi |
+| 2026-01-01 | Initial shelf life version | Jonas Ylinenjärvi |
+| 2024-03 | Role descriptions: Restaurant Manager, Assistant RM, Shift Leader | Driftledning & HR |
+| 2024-04-15 | Role description: Restaurant Employee | Driftledning & HR |
 | 2026-04-05 | Imported into company policies framework | Company Policies skill |
