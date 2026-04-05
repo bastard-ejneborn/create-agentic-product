@@ -30,6 +30,8 @@
 - **CXO (Chief Expansion Officer)**: Johan Gederberg operates as a one-person function — no direct reports.
 - **Head of Project and Development**: Caroline Johansson operates without a dedicated project team — she drives project and development work directly.
 - **Head of Local Marketing and New Business**: Malin Hansegård *is* the Local Marketing and New Business team — operates solo without reports.
+- **COO direct reports are complete**: Johnny Klippmark's direct reports are 5 — RM North (Johannes), RM South (Ricardo), Caroline Johansson, Malin Hansegård, and Jonas Ylinenjärvi. No additional reports.
+- **Restaurant Managers not tracked**: Restaurant Managers change frequently, so individual names are intentionally not maintained in the org structure. Operations hierarchy tracks districts and restaurants only.
 
 ### Reporting Structure
 
