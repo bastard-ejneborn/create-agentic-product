@@ -32,7 +32,10 @@ CEO: Simon Wanler
   ├── CFO: Lisa Wanler
   ├── COO: Johnny Klippmark
   │     ├── RM North: Johannes Norrblom
-  │     └── RM South: Ricardo Moses
+  │     ├── RM South: Ricardo Moses
+  │     ├── Head of Project and Development: Caroline Johansson
+  │     ├── Head of Local Marketing and New Business: Malin Hansegård
+  │     └── Jonas Ylinenjärvi (role TBD)
   ├── CXO: Johan Gederberg
   ├── CPO: Maja Lundqvist
   │     └── HR Business Partner: Therese Alm
@@ -42,13 +45,14 @@ CEO: Simon Wanler
 ### Heads of Function
 | Role | Person | Reports To |
 |------|--------|-----------|
-| Head of Project and Development | Caroline Johansson | TBD |
-| Head of Local Marketing and New Business | Malin Hansegård | TBD |
+| Head of Project and Development | Caroline Johansson | Johnny Klippmark (COO) |
+| Head of Local Marketing and New Business | Malin Hansegård | Johnny Klippmark (COO) |
 
 ### Team Members
 | Role | Person | Reports To |
 |------|--------|-----------|
 | HR Business Partner | Therese Alm | Maja Lundqvist (CPO) |
+| TBD | Jonas Ylinenjärvi | Johnny Klippmark (COO) |
 
 Additional structures: Establishment council (new restaurants), Brand council (cross-functional).
 IT team: 8 people (large relative to company size, reflecting digital transformation).
