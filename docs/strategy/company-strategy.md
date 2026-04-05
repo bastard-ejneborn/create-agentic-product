@@ -22,7 +22,7 @@
 | CFO | Lisa Wanler |
 | Operations (COO) | Johnny Klippmark |
 | Chief Expansion Officer | Johan Gederberg |
-| HR | Maja Lundqvist |
+| Chief People Officer | Maja Lundqvist |
 | Chief Digital and Tech Officer | Johnny Bröms |
 
 ### Heads of Function
