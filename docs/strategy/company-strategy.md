@@ -31,6 +31,8 @@
 CEO: Simon Wanler
   ├── CFO: Lisa Wanler
   │     ├── Head of Finance: Filip Forsling
+  │     │     ├── Business Controller: Erik Löfgren
+  │     │     └── Accounting Manager: Maria Tornéus
   │     └── Head of Procurement: Niklas Heinermark
   ├── COO: Johnny Klippmark
   │     ├── RM North: Johannes Norrblom
@@ -64,6 +66,8 @@ CEO: Simon Wanler
 |------|--------|-----------|
 | HR Business Partner | Therese Alm | Maja Lundqvist (CPO) |
 | Food & Beverage Manager | Jonas Ylinenjärvi | Johnny Klippmark (COO) |
+| Business Controller | Erik Löfgren | Filip Forsling (Head of Finance) |
+| Accounting Manager | Maria Tornéus | Filip Forsling (Head of Finance) |
 | Senior IT Architect | André Ejneborn | Johnny Bröms (CDTO) |
 | IT Support Team Lead | Christian Ling | Johnny Bröms (CDTO) |
 | Point of Sale Architect | Kim Axelsson | Johnny Bröms (CDTO) |
