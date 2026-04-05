@@ -56,27 +56,6 @@
 
 ---
 
-#### District: Central 2
-> District Manager: **Minna Kiira-Nymark**
-
-| Restaurant | Manager | Status |
-|-----------|---------|--------|
-| Norrlandsgatan | TBD | Open |
-| Hötorget | TBD | Open |
-| Mikonkatu (Helsinki) | TBD | Open |
-| Landvetter Airport | TBD | Open |
-| Helsinki Airport | TBD | Open |
-| Kamppi (Helsinki) | TBD | Open |
-
-**Total**: 6 restaurants
-
-**Note**: This district spans Stockholm central + Finland + airports — international/central locations.
-
----
-
-### Region: South
-> Regional Manager: **Ricardo Moses**
-
 #### District: Mid/West
 > District Manager: **Robert Gustavsson**
 
@@ -94,6 +73,27 @@
 | Etage | TBD | Open |
 
 **Total**: 10 restaurants
+
+---
+
+### Region: South
+> Regional Manager: **Ricardo Moses**
+
+#### District: Central 2
+> District Manager: **Minna Kiira-Nymark**
+
+| Restaurant | Manager | Status |
+|-----------|---------|--------|
+| Norrlandsgatan | TBD | Open |
+| Hötorget | TBD | Open |
+| Mikonkatu (Helsinki) | TBD | Open |
+| Landvetter Airport | TBD | Open |
+| Helsinki Airport | TBD | Open |
+| Kamppi (Helsinki) | TBD | Open |
+
+**Total**: 6 restaurants
+
+**Note**: This district spans Stockholm central + Finland + airports — international/central locations.
 
 ---
 
@@ -140,21 +140,20 @@
 ### By Region
 | Region | RM | Districts | Restaurants |
 |--------|----|-----------|-------------|
-| North | Johannes Norrblom | 3 (North, Mid/East, Central 2) | 34 |
-| South | Ricardo Moses | 2 (Mid/West, South) | 29 |
+| North | Johannes Norrblom | 3 (North, Mid/East, Mid/West) | 38 |
+| South | Ricardo Moses | 2 (Central 2, South) | 25 |
 
 ### By District
-| District | DM | Restaurants |
-|----------|-----|-------------|
-| North | Klas Söderström | 11 |
-| Mid/East | Mischa Andersson | 17 |
-| Central 2 | Minna Kiira-Nymark | 6 |
-| Mid/West | Robert Gustavsson | 10 |
-| South | Björn Nicklasson | 19 |
+| District | DM | Region | Restaurants |
+|----------|-----|--------|-------------|
+| North | Klas Söderström | North | 11 |
+| Mid/East | Mischa Andersson | North | 17 |
+| Mid/West | Robert Gustavsson | North | 10 |
+| Central 2 | Minna Kiira-Nymark | South | 6 |
+| South | Björn Nicklasson | South | 19 |
 
 ## Next Steps
 
-- [ ] **Verify region-to-district mapping** — I assumed North covers District North, Mid/East, and Central 2. Correct me if wrong.
 - [ ] Add Restaurant Manager names per location
 - [ ] Cross-reference restaurant names with Simphony `locRef` IDs (needed for data pulling)
 - [ ] Confirm status of each restaurant (Open / Renovating / Closing / Soon opening)
@@ -162,7 +161,7 @@
 
 ## Notes
 
-- **63 restaurants total** — matches Bastard Burgers as a multi-location chain
-- **International**: District Central 2 includes Helsinki (Mikonkatu, Kamppi, Helsinki Airport) — Finland expansion
-- **Stockholm dense**: Mid/East and Central 2 both cover Stockholm area — 23 restaurants in greater Stockholm
-- **South dense**: District South has the largest restaurant count (19) covering southern Sweden
+- **63 restaurants total**
+- **Region North (38 restaurants)**: Three districts covering northern Sweden, Stockholm area, and mid/west (Gothenburg/Kalmar area)
+- **Region South (25 restaurants)**: Two districts — Central 2 (international/airport/central) and District South (southern Sweden)
+- **International**: Helsinki restaurants (Mikonkatu, Kamppi, Helsinki Airport) are under District Central 2 in Region South
