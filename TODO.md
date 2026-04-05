@@ -11,7 +11,7 @@ Things you need to do to fully activate all agents and skills.
 - [ ] **Upload department policies** — Paste policies for each department:
   - [ ] Guest Support — compensation rules, refund procedures, escalation contacts, brand voice
   - [ ] IT — security, change management, acceptable use, BYOD, incident response
-  - [ ] Operations — food safety, hygiene, opening/closing, quality standards
+  - [~] **Operations** — 🟡 Partial: Shelf life uploaded ✅. Still needed: food safety protocols, hygiene, opening/closing, quality standards, allergen handling, incident response, handling routines
   - [ ] Marketing — brand usage, social media, campaign approval, local marketing rules
   - [ ] HR — hiring, onboarding, code of conduct, training
   - [ ] Finance — expense approval thresholds, procurement, budget process
