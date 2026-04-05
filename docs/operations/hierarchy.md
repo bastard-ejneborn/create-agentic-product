@@ -13,7 +13,7 @@ Chief Operations Officer: Johnny Klippmark
   │     └── District Manager — Mid/West: Brianne Ducharme
   └── Regional Manager South: Ricardo Moses
         ├── District Manager — Central 1: Mischa Andersson
-        ├── District Manager — Central 2: Minna Kiira-Nymark
+        ├── District Manager — Central 2/Finland: Minna Kiira-Nymark
         └── District Manager — South: Björn Nicklasson
 ```
 
@@ -118,7 +118,7 @@ Both Regional Managers (**Johannes Norrblom** and **Ricardo Moses**) report dire
 
 ---
 
-#### District: Central 2
+#### District: Central 2/Finland
 > District Manager: **Minna Kiira-Nymark**
 
 | Restaurant | Status |
@@ -181,7 +181,7 @@ Both Regional Managers (**Johannes Norrblom** and **Ricardo Moses**) report dire
 | Region | RM | Districts | Restaurants |
 |--------|----|-----------|-------------|
 | North | Johannes Norrblom | 3 (North, Mid/East, Mid/West) | 38 |
-| South | Ricardo Moses | 3 (Central 1, Central 2, South) | 36 |
+| South | Ricardo Moses | 3 (Central 1, Central 2/Finland, South) | 36 |
 
 ### By District
 | District | DM | Region | Restaurants |
@@ -190,7 +190,7 @@ Both Regional Managers (**Johannes Norrblom** and **Ricardo Moses**) report dire
 | Mid/East | Robert Gustavsson | North | 17 |
 | Mid/West | Brianne Ducharme | North | 10 |
 | Central 1 | Mischa Andersson | South | 11 |
-| Central 2 | Minna Kiira-Nymark | South | 6 |
+| Central 2/Finland | Minna Kiira-Nymark | South | 6 |
 | South | Björn Nicklasson | South | 19 |
 
 ## Next Steps
@@ -203,8 +203,8 @@ Both Regional Managers (**Johannes Norrblom** and **Ricardo Moses**) report dire
 
 - **74 restaurants total**
 - **Region North (38 restaurants)**: Three districts covering northern Sweden, Stockholm east, and mid/west
-- **Region South (36 restaurants)**: Three districts — Stockholm inner city (Central 1), international/airport/central (Central 2), and southern Sweden
+- **Region South (36 restaurants)**: Three districts — Stockholm inner city (Central 1), international/airport/central (Central 2/Finland), and southern Sweden
 - **Regions are nearly balanced**: 38 vs 36 restaurants
 - **Stockholm density**: 28 restaurants in Stockholm area (Central 1: 11 in South, Mid/East: 17 in North — split across regions)
-- **International**: Helsinki restaurants (Mikonkatu, Kamppi, Helsinki Airport) are under District Central 2 in Region South
+- **International**: Helsinki restaurants (Mikonkatu, Kamppi, Helsinki Airport) are under District Central 2/Finland in Region South
 - **Restaurant Managers**: Not tracked — they change too often to maintain in org structure

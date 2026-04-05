@@ -17,13 +17,13 @@ Health: Green = on track | Yellow = at risk | Red = blocked/failing
 > Project Lead: Johan Gederberg (CXO)
 > Started: TBD | Target opening: Spring 2026
 
-**Description**: Opening of new Bastard Burgers location in Kamppi, Helsinki, Finland. Part of the ongoing Finland expansion — will be the 4th Finnish location alongside Mikonkatu, Helsinki Airport, and the existing Kamppi references. District: Central 2 (Region South).
+**Description**: Opening of new Bastard Burgers location in Kamppi, Helsinki, Finland. Part of the ongoing Finland expansion — will be the 4th Finnish location alongside Mikonkatu, Helsinki Airport, and the existing Kamppi references. District: Central 2/Finland (Region South).
 
 **Strategic alignment**: Supports ongoing international expansion and portfolio growth per 2025 strategy (Dig Where We Stand — portfolio management).
 
 **Location details**:
 - City: Helsinki, Finland
-- District: Central 2
+- District: Central 2/Finland
 - District Manager: Minna Kiira-Nymark
 - Regional Manager: Ricardo Moses (South)
 
@@ -41,7 +41,7 @@ Health: Green = on track | Yellow = at risk | Red = blocked/failing
 | People/HR | Maja Lundqvist (CPO) / Therese Alm | Staffing, hiring, onboarding |
 | Marketing | Malin Hansegård | Local marketing, launch campaign |
 | Regional Ops | Ricardo Moses (RM South) | Regional oversight |
-| District Ops | Minna Kiira-Nymark (DM Central 2) | District-level launch execution |
+| District Ops | Minna Kiira-Nymark (DM Central 2/Finland) | District-level launch execution |
 
 **Key milestones** *(to be defined)*:
 | Milestone | Target Date | Status |
