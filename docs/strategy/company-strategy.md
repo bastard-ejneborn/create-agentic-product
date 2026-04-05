@@ -15,18 +15,25 @@
 
 ## Leadership
 
+### Executive Team
 | Role | Person |
 |------|--------|
 | CEO | Simon Wanler |
 | Finance & Procurement | Lisa Wanler |
-| Operations | Johnny Klippmark |
+| Operations (COO) | Johnny Klippmark |
 | F&B & Marketing | Anton Eriksson |
 | HR | Maja Lundqvist |
 | IT | Johnny Bröms |
 
+### Heads of Function
+| Role | Person |
+|------|--------|
+| Head of Project and Development | Caroline Johansson |
+| Head of Local Marketing and New Business | Malin Hansegård |
+
 Additional structures: Establishment council (new restaurants), Brand council (cross-functional).
 IT team: 8 people (large relative to company size, reflecting digital transformation).
-Operations: 4 regional/operational managers plus support functions.
+Operations: 2 Regional Managers (Johannes Norrblom - North, Ricardo Moses - South), 6 District Managers, 74 restaurants.
 
 ## Vision & Mission
 
