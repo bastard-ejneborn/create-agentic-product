@@ -5,6 +5,7 @@
 
 ## Table of Contents
 - [Secondary Shelf Life (Sekundära hållbarhetstider)](#secondary-shelf-life-sekundära-hållbarhetstider)
+- [Bastard Bacon (40% pre-fried) — Product Spec](#bastard-bacon-40-pre-fried--product-spec)
 - [Role Descriptions (Arbetsbeskrivningar)](#role-descriptions-arbetsbeskrivningar)
   - [Restaurangchef (Restaurant Manager)](#restaurangchef-restaurant-manager)
   - [Assisterande Restaurangchef (Assistant Restaurant Manager)](#assisterande-restaurangchef-assistant-restaurant-manager)
@@ -72,8 +73,8 @@ All 74 Bastard Burgers restaurants. Applies to all staff handling food products 
 
 | Product | Temperature | Packaging | Thawing | Marking (Shelf) | Timer (Service) | Notes |
 |---------|------------|-----------|---------|-----------------|-----------------|-------|
-| Bacon, fried | Min +65°C | Fried to 72°C, stored in designated container | — | — | 2 hours | |
-| Bacon | Max +8°C | Opened original packaging | — | — | 5 days | |
+| **Bastard Bacon (40% pre-fried)** | Max +8°C | Opened original packaging | — | 14 days | — | See dedicated section below |
+| **Bastard Bacon (opened container)** | Max +8°C | 1/6 container with lid, in draw drawer | — | — | 5-7 days | 0.5 kg per container |
 | Bacon, chopped | Max +8°C | Opened original packaging | — | — | 5 days | |
 | Grillost svensk (Swedish grill cheese) | Max +8°C | Container with lid | — | — | 2 days | |
 | Hamburger buns | Room temp | Original packaging | 3 hours | — | 2 days | |
@@ -103,6 +104,51 @@ All 74 Bastard Burgers restaurants. Applies to all staff handling food products 
 | Chicken nuggets, thawed | Max +6°C | Container with lid | 24 hours | — | 24 hours | |
 | Västerbottensost bites, frozen | Min -18°C | Opened original packaging | — | 14 days | — | |
 | Västerbottensost bites, thawed | Max +6°C | Container with lid | 24 hours | — | 3 days | |
+
+### Bastard Bacon (40% pre-fried) — Product Spec
+
+> Added: 2026-04-05 | Owner: Jonas Ylinenjärvi (F&B Manager)
+> Status: **New product replacing traditional bacon handling**
+
+#### Product Description
+Swedish premium bacon, 40% pre-fried, developed together with producer to improve quality, food safety, and operational efficiency.
+
+#### Key Specifications
+| Attribute | Value |
+|-----------|-------|
+| Origin | Sweden |
+| Type | Bacon KV (Kylvara — chilled product) |
+| Pre-fried level | 40% |
+| Thickness | 2.5 mm (whole slices, not divided) |
+| Weight per slice | ~14 grams |
+| Packaging | 2 x 1.5 kg per box |
+| Primary shelf life | **70 days** (unopened packaging) |
+| Article number | 127132 |
+| Article description | BACON FÖRSTEKT 1,5KG DAF |
+| Supplier | Martin & Servera |
+
+#### Handling Instructions
+1. **Cooking**: Fry bacon on medium-high heat for **1-2 minutes per side**
+2. **On opening** (the 1.5 kg bag):
+   - Split contents into **3 x 1/6 containers** with **0.5 kg each**
+   - Wrap/plastic-seal containers
+   - Store in refrigerator (max +8°C)
+3. **Secondary shelf life (in containers)**:
+   - **14 days** in fridge (max +8°C), untouched after opening original packaging
+   - **5-7 days** in draw drawer (max +8°C) after opening the secondary container
+
+#### Why This Product?
+- **Quality**: Better final product for the guest
+- **Food safety**: Reduced error margin in handling process; no cook/cool/reheat cycle; no hot-hold management; quick on-demand cooking
+- **Operations**: Eased kitchen workflow, faster service
+- **Waste reduction**: 40% less fat handling in kitchens
+- **Climate impact**: Reduced transport weight from Martin & Servera; less warehouse handling
+- **Safety**: No need to pre-fry, cool down, then reheat — single-step preparation
+
+#### Impact
+This product replaces the previous bacon handling routine. The traditional "Bacon fried" (Min +65°C, 2 hours timer, fried-to-72°C process) entry is no longer applicable since the new bacon is pre-fried by the producer and requires only quick finishing.
+
+---
 
 ### Key Temperature Reference
 
@@ -549,3 +595,4 @@ All roles at Bastard Burgers are expected to embody these behaviors:
 | 2024-03 | Role descriptions: Restaurant Manager, Assistant RM (Norway) | Operations Management & HR |
 | 2024-04-15 | Role description: Restaurant Co-worker (Norway) | Operations Management & HR |
 | 2026-04-05 | Imported into company policies framework | Company Policies skill |
+| 2026-04-05 | Added Bastard Bacon (40% pre-fried) product spec — replaces traditional bacon handling | Jonas Ylinenjärvi |
