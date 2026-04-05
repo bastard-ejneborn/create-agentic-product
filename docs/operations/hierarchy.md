@@ -150,9 +150,9 @@ Both Regional Managers (**Johannes Norrblom** and **Ricardo Moses**) report dire
 | Södra Larmgatan | Open |
 | Mölndal | Open |
 | Emporia | Open |
-| Solli | Open |
+| Solli (Oslo, Norway 🇳🇴) | Open |
 | Mobilia | Open |
-| Torggata | Open |
+| Torggata (Oslo, Norway 🇳🇴) | Open |
 | Frölunda | Open |
 | Nova Lund | Open |
 | Växjö | Open |
@@ -206,5 +206,6 @@ Both Regional Managers (**Johannes Norrblom** and **Ricardo Moses**) report dire
 - **Region South (36 restaurants)**: Three districts — Stockholm inner city (Central 1), international/airport/central (Central 2/Finland), and southern Sweden
 - **Regions are nearly balanced**: 38 vs 36 restaurants
 - **Stockholm density**: 28 restaurants in Stockholm area (Central 1: 11 in South, Mid/East: 17 in North — split across regions)
-- **International**: Helsinki restaurants (Mikonkatu, Kamppi, Helsinki Airport) are under District Central 2/Finland in Region South
+- **International Finland 🇫🇮**: 4 Helsinki-area restaurants (Mikonkatu, Kamppi, Helsinki Airport) under District Central 2/Finland in Region South
+- **International Norway 🇳🇴**: 2 Oslo restaurants (Solli, Torggata) under District South in Region South, managed by DM Björn Nicklasson
 - **Restaurant Managers**: Not tracked — they change too often to maintain in org structure

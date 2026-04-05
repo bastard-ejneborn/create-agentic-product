@@ -150,12 +150,11 @@ Items flagged during document uploads and setup — need verification, correctio
   - Does each Norwegian restaurant need both roles filled separately?
   - Owner: COO + HR (Norway)
 
-- [ ] **📋 Norway operations not in hierarchy** — Norway job descriptions exist but Norway restaurants are not in `docs/operations/hierarchy.md`. Current structure only has Sweden + Finland (Helsinki in Central 2/Finland). Clarify:
-  - Are there active Norway restaurants not yet documented?
-  - Which district/region do they belong to?
-  - Who is the District Manager for Norway?
-  - Should Norway be its own region or part of existing regions?
-  - File: `docs/operations/hierarchy.md`
+- [x] **Norway operations in hierarchy** — RESOLVED ✅
+  - Solli and Torggata (Oslo, Norway) are in District South, Region South
+  - District Manager: Björn Nicklasson
+  - Marked with 🇳🇴 flag in `docs/operations/hierarchy.md`
+  - Total international: 4 Finland (Central 2/Finland) + 2 Norway (District South)
 
 - [ ] **📋 Norway documents inconsistent "Bolag" labeling** — Only the Daglig Leder document says "Storage: Bastard Burgers Norway". The other 4 Norway documents (RM, ARM, SL, Co-worker) just say "Bolag: Bastard Burgers" without Norway specification. Should all Norway documents be clearly labeled as Norway-specific?
   - File: Norway PDFs (source documents)
