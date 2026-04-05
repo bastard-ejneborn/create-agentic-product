@@ -11,7 +11,20 @@ Things you need to do to fully activate all agents and skills.
 - [ ] **Upload department policies** — Paste policies for each department:
   - [ ] Guest Support — compensation rules, refund procedures, escalation contacts, brand voice
   - [ ] IT — security, change management, acceptable use, BYOD, incident response
-  - [~] **Operations** — 🟡 Partial: Shelf life uploaded ✅. Still needed: food safety protocols, hygiene, opening/closing, quality standards, allergen handling, incident response, handling routines
+  - [~] **Operations** — 🟡 Partial: Shelf life ✅, Role descriptions (Sweden: RC/ARC/SL/Employee) ✅, Role descriptions (Finland: RM/ARM/SL) ✅. Still needed:
+    - [ ] Food safety protocols (HACCP)
+    - [ ] Hygiene and cleaning protocols
+    - [ ] Opening/closing procedures
+    - [ ] Quality standards
+    - [ ] Allergen handling protocol
+    - [ ] Food safety incident response
+    - [ ] Food handling routine (referenced in shelf life meat section)
+    - [ ] O.S.T. and L.A.S.T. service rules (referenced in restaurant employee role)
+    - [ ] Get Compliant usage guidelines (referenced in role descriptions)
+    - [ ] Crisis management routines (referenced in RC/ARC/SL roles)
+    - [ ] Fire safety systematic work (referenced in RC/ARC/SL roles)
+    - [ ] Temperature monitoring procedures
+    - [ ] Delivery receiving standards
   - [ ] Marketing — brand usage, social media, campaign approval, local marketing rules
   - [ ] HR — hiring, onboarding, code of conduct, training
   - [ ] Finance — expense approval thresholds, procurement, budget process
@@ -105,6 +118,43 @@ For each restaurant location:
 
 - [ ] **Local partnerships** — Document existing local partnerships
   - Creates `docs/marketing/local/{location}/partnerships.md`
+
+## Issues & Gaps to Resolve
+
+Items flagged during document uploads and setup — need verification, correction, or follow-up.
+
+### Documents
+
+- [ ] **⚠️ Finland RM invoice authorization currency** — Finland Restaurant Manager job description lists supplier invoice authorization limit as "SEK 2,000". This is almost certainly a currency carryover from the Swedish template. For Finland operations it should be **EUR**. Verify with COO Johnny Klippmark and Finance, then update the Finland document.
+  - File: `docs/policies/operations-policies.md` (Finland Variants section)
+
+- [ ] **📋 Finland Restaurant Employee role description missing** — Three Finland job descriptions provided (RM, ARM, SL) but no Restaurant Employee version. Clarify:
+  - Does Finland use the Swedish document as-is?
+  - Is there a separate English version that wasn't shared?
+  - Should one be created based on the Swedish template?
+  - Owner: COO + HR (Finland)
+
+- [ ] **📋 Sweden/Finland cadence alignment** — Finland RM document specifies "staff meetings every two months" and "performance appraisals 2 times per year". Swedish RM document just says "per routine". Consider aligning cadences across markets for consistency.
+  - Files: Both Sweden and Finland sections in `docs/policies/operations-policies.md`
+
+### Technical
+
+- [ ] **POS permission note for Petron and Roopneet** — Both listed as "Technical Product Owner POS" — verify if they have different focus areas (e.g., Sweden vs Finland, hardware vs software) or are genuinely duplicate titles
+  - File: `docs/strategy/company-strategy.md` (IT Team)
+
+### Organizational
+
+- [ ] **Kamppi project scope clarification** — Kamppi is listed as an existing restaurant in `docs/operations/hierarchy.md` (District Central 2/Finland) but was also set up as a new project opening Spring 2026. Clarify whether:
+  - This is a new location replacing a previous one
+  - It's a renovation/reopening
+  - The original listing was aspirational
+  - Files: `docs/operations/hierarchy.md` + `docs/projects/portfolio.md`
+
+### Cross-References Needed
+
+- [ ] **HR overlap with Operations role descriptions** — Role descriptions in operations-policies.md also belong in HR. When HR policies are uploaded:
+  - Decide whether to duplicate, move, or cross-reference
+  - Shared Values & Behaviors likely belong in HR culture section
 
 ## Future — Parked Integrations
 
