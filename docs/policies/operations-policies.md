@@ -10,6 +10,7 @@
   - [Assisterande Restaurangchef (Assistant Restaurant Manager)](#assisterande-restaurangchef-assistant-restaurant-manager)
   - [Skiftledare (Shift Leader)](#skiftledare-shift-leader)
   - [Restaurangmedarbetare (Restaurant Employee)](#restaurangmedarbetare-restaurant-employee)
+  - [Finland Variants](#finland-variants)
   - [Shared Values & Behaviors](#shared-values--behaviors)
 
 ---
@@ -375,6 +376,44 @@ As a restaurant employee, you are the company's face outward and main contact wi
 
 ---
 
+### Finland Variants
+
+Bastard Burgers Suomi / Finland operations use English-language job descriptions for the same three operational leadership roles. **The job content is essentially identical to the Swedish versions above**, with the following differences noted per role:
+
+#### General differences (Sweden vs. Finland)
+
+| | Sweden | Finland |
+|---|--------|---------|
+| Company name | Bastard Burgers | Bastard Burgers Suomi / Finland |
+| Document language | Swedish | English |
+| Established by | Driftledning & HR | COO & HR |
+| Revision date | 2024-03 / 2024-04-15 | 2024-01 |
+| Restaurant Employee document | Yes (Restaurangmedarbetare) | Not provided — may exist separately |
+
+#### Restaurant Manager — Finland Specifics
+- **Reports to**: District Manager (same as Sweden)
+- **Specific cadences noted in Finland document**:
+  - Staff meetings: **every two months**
+  - Performance appraisals: **2 times per year**
+  - (Sweden version less specific — uses "per routine")
+- **Authorization for supplier invoices**: Listed as **SEK 2,000** in the Finland document ⚠️
+  - **FLAG**: This should likely be EUR for Finland operations. The figure appears to have been carried over from the Swedish template without currency conversion. Recommend verifying with COO/Finance whether the Finland RM limit should be in EUR, and updating the document accordingly.
+- All other responsibilities (Leadership, Budget & KPIs, Operations, Personnel, Safety, Work Environment, Communication) identical to Swedish version.
+
+#### Assistant Restaurant Manager — Finland Specifics
+- **Reports to**: Restaurant Manager (same as Sweden)
+- Content identical to Swedish version. No Finland-specific variations beyond language.
+
+#### Shift Leader — Finland Specifics
+- **Reports to**: Restaurant Manager and Assistant Restaurant Manager (same as Sweden)
+- Content identical to Swedish version. No Finland-specific variations beyond language.
+
+#### Gaps / To Be Provided
+- **Restaurant Employee (Restaurangmedarbetare equivalent)** — Finland version not provided. Should clarify:
+  - Does Finland use the Swedish document?
+  - Is there a separate English version that wasn't shared?
+  - Should we create one based on the Swedish template?
+
 ### Shared Values & Behaviors
 
 All roles at Bastard Burgers are expected to embody these behaviors:
@@ -418,5 +457,6 @@ All roles at Bastard Burgers are expected to embody these behaviors:
 |------|--------|-------------|
 | 2026-01-01 | Initial shelf life version | Jonas Ylinenjärvi |
 | 2024-03 | Role descriptions: Restaurant Manager, Assistant RM, Shift Leader | Driftledning & HR |
-| 2024-04-15 | Role description: Restaurant Employee | Driftledning & HR |
+| 2024-04-15 | Role description: Restaurant Employee (Sweden) | Driftledning & HR |
+| 2024-01 | Role descriptions: Restaurant Manager, Assistant RM, Shift Leader (Finland) | COO & HR |
 | 2026-04-05 | Imported into company policies framework | Company Policies skill |

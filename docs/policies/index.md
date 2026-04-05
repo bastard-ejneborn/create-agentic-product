@@ -5,7 +5,7 @@
 
 | Department | File | Last Updated | Owner | Policies Covered |
 |-----------|------|-------------|-------|-----------------|
-| Operations | [operations-policies.md](operations-policies.md) | 2026-04-05 | Jonas Ylinenjärvi + Driftledning & HR | Secondary Shelf Life, Role Descriptions (RC, ARC, SL, Restaurant Employee), Shared Values |
+| Operations | [operations-policies.md](operations-policies.md) | 2026-04-05 | Jonas Ylinenjärvi + Driftledning & HR + COO & HR (Finland) | Secondary Shelf Life, Role Descriptions (Sweden: RC, ARC, SL, Restaurant Employee + Finland variants: RM, ARM, SL), Shared Values |
 | IT | — | — | Johnny Bröms (CDTO) | *Not yet uploaded* |
 | Marketing | — | — | Malin Hansegård / Caroline Johansson | *Not yet uploaded* |
 | HR | — | — | Maja Lundqvist (CPO) | *Not yet uploaded* |
