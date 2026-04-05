@@ -128,7 +128,7 @@ Both Regional Managers (**Johannes Norrblom** and **Ricardo Moses**) report dire
 | Mikonkatu (Helsinki) | Open |
 | Landvetter Airport | Open |
 | Helsinki Airport | Open |
-| Kamppi (Helsinki) | Open |
+| Kamppi (Helsinki) | Opening Spring 2026 |
 
 **Total**: 6 restaurants
 
