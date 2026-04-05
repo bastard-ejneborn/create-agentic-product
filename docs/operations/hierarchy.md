@@ -29,31 +29,8 @@
 
 ---
 
-#### District: Central 1
-> District Manager: **Mischa Andersson**
-
-| Restaurant | Manager | Status |
-|-----------|---------|--------|
-| Vasastan | TBD | Open |
-| Solna | TBD | Open |
-| Väsby | TBD | Open |
-| Täby | TBD | Open |
-| Sollentuna | TBD | Open |
-| Västermalm | TBD | Open |
-| Birkastan | TBD | Open |
-| Birger Jarlsgatan | TBD | Open |
-| Kungsholmen | TBD | Open |
-| Hagastaden | TBD | Open |
-| Barkarbystaden | TBD | Open |
-
-**Total**: 11 restaurants
-
-**Note**: Stockholm inner city + northern suburbs. Same DM (Mischa Andersson) manages both Central 1 and Mid/East districts.
-
----
-
 #### District: Mid/East
-> District Manager: **Mischa Andersson**
+> District Manager: **Robert Gustavsson**
 
 | Restaurant | Manager | Status |
 |-----------|---------|--------|
@@ -80,7 +57,7 @@
 ---
 
 #### District: Mid/West
-> District Manager: **Robert Gustavsson**
+> District Manager: **Brianne Ducharme**
 
 | Restaurant | Manager | Status |
 |-----------|---------|--------|
@@ -101,6 +78,29 @@
 
 ### Region: South
 > Regional Manager: **Ricardo Moses**
+
+#### District: Central 1
+> District Manager: **Mischa Andersson**
+
+| Restaurant | Manager | Status |
+|-----------|---------|--------|
+| Vasastan | TBD | Open |
+| Solna | TBD | Open |
+| Väsby | TBD | Open |
+| Täby | TBD | Open |
+| Sollentuna | TBD | Open |
+| Västermalm | TBD | Open |
+| Birkastan | TBD | Open |
+| Birger Jarlsgatan | TBD | Open |
+| Kungsholmen | TBD | Open |
+| Hagastaden | TBD | Open |
+| Barkarbystaden | TBD | Open |
+
+**Total**: 11 restaurants
+
+**Note**: Stockholm inner city + northern suburbs.
+
+---
 
 #### District: Central 2
 > District Manager: **Minna Kiira-Nymark**
@@ -156,23 +156,23 @@
 | Regions | 2 |
 | Regional Managers | 2 |
 | Districts | 6 |
-| District Managers | 5 (Mischa manages two districts) |
+| District Managers | 6 |
 | **Restaurants** | **74** |
 | Restaurant Managers | TBD |
 
 ### By Region
 | Region | RM | Districts | Restaurants |
 |--------|----|-----------|-------------|
-| North | Johannes Norrblom | 4 (North, Central 1, Mid/East, Mid/West) | 49 |
-| South | Ricardo Moses | 2 (Central 2, South) | 25 |
+| North | Johannes Norrblom | 3 (North, Mid/East, Mid/West) | 38 |
+| South | Ricardo Moses | 3 (Central 1, Central 2, South) | 36 |
 
 ### By District
 | District | DM | Region | Restaurants |
 |----------|-----|--------|-------------|
 | North | Klas Söderström | North | 11 |
-| Central 1 | Mischa Andersson | North | 11 |
-| Mid/East | Mischa Andersson | North | 17 |
-| Mid/West | Robert Gustavsson | North | 10 |
+| Mid/East | Robert Gustavsson | North | 17 |
+| Mid/West | Brianne Ducharme | North | 10 |
+| Central 1 | Mischa Andersson | South | 11 |
 | Central 2 | Minna Kiira-Nymark | South | 6 |
 | South | Björn Nicklasson | South | 19 |
 
@@ -186,8 +186,8 @@
 ## Notes
 
 - **74 restaurants total**
-- **Region North (49 restaurants)**: Four districts covering northern Sweden, Stockholm inner city & suburbs, Stockholm east, and mid/west (Gothenburg/Kalmar area)
-- **Region South (25 restaurants)**: Two districts — Central 2 (international/airport/central) and District South (southern Sweden)
-- **Stockholm density**: 28 restaurants in Stockholm area (Central 1: 11, Mid/East: 17)
-- **Dual-district DM**: Mischa Andersson manages both Central 1 and Mid/East — 28 restaurants under one DM
+- **Region North (38 restaurants)**: Three districts covering northern Sweden, Stockholm east, and mid/west
+- **Region South (36 restaurants)**: Three districts — Stockholm inner city (Central 1), international/airport/central (Central 2), and southern Sweden
+- **Regions are nearly balanced**: 38 vs 36 restaurants after moving Central 1 to South
+- **Stockholm density**: 28 restaurants in Stockholm area (Central 1: 11 in South, Mid/East: 17 in North — split across regions)
 - **International**: Helsinki restaurants (Mikonkatu, Kamppi, Helsinki Airport) are under District Central 2 in Region South
