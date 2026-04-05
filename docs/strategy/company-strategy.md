@@ -23,7 +23,7 @@
 | Operations (COO) | Johnny Klippmark |
 | Chief Expansion Officer | Johan Gederberg |
 | HR | Maja Lundqvist |
-| IT | Johnny Bröms |
+| Chief Digital and Tech Officer | Johnny Bröms |
 
 ### Heads of Function
 | Role | Person |
