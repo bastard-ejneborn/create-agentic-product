@@ -16,14 +16,27 @@
 ## Leadership
 
 ### Executive Team
-| Role | Person |
-|------|--------|
-| CEO | Simon Wanler |
-| CFO | Lisa Wanler |
-| Chief Operations Officer | Johnny Klippmark |
-| Chief Expansion Officer | Johan Gederberg |
-| Chief People Officer | Maja Lundqvist |
-| Chief Digital and Tech Officer | Johnny Bröms |
+| Role | Person | Reports To |
+|------|--------|-----------|
+| CEO | Simon Wanler | Board |
+| CFO | Lisa Wanler | Simon Wanler |
+| Chief Operations Officer | Johnny Klippmark | Simon Wanler |
+| Chief Expansion Officer | Johan Gederberg | Simon Wanler |
+| Chief People Officer | Maja Lundqvist | Simon Wanler |
+| Chief Digital and Tech Officer | Johnny Bröms | Simon Wanler |
+
+### Reporting Structure
+
+```
+CEO: Simon Wanler
+  ├── CFO: Lisa Wanler
+  ├── COO: Johnny Klippmark
+  │     ├── RM North: Johannes Norrblom
+  │     └── RM South: Ricardo Moses
+  ├── CXO: Johan Gederberg
+  ├── CPO: Maja Lundqvist
+  └── CDTO: Johnny Bröms
+```
 
 ### Heads of Function
 | Role | Person |
