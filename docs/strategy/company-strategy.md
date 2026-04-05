@@ -35,14 +35,20 @@ CEO: Simon Wanler
   │     └── RM South: Ricardo Moses
   ├── CXO: Johan Gederberg
   ├── CPO: Maja Lundqvist
+  │     └── HR Business Partner: Therese Alm
   └── CDTO: Johnny Bröms
 ```
 
 ### Heads of Function
-| Role | Person |
-|------|--------|
-| Head of Project and Development | Caroline Johansson |
-| Head of Local Marketing and New Business | Malin Hansegård |
+| Role | Person | Reports To |
+|------|--------|-----------|
+| Head of Project and Development | Caroline Johansson | TBD |
+| Head of Local Marketing and New Business | Malin Hansegård | TBD |
+
+### Team Members
+| Role | Person | Reports To |
+|------|--------|-----------|
+| HR Business Partner | Therese Alm | Maja Lundqvist (CPO) |
 
 Additional structures: Establishment council (new restaurants), Brand council (cross-functional).
 IT team: 8 people (large relative to company size, reflecting digital transformation).
