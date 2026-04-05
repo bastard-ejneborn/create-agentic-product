@@ -128,14 +128,37 @@ Items flagged during document uploads and setup — need verification, correctio
 - [ ] **⚠️ Finland RM invoice authorization currency** — Finland Restaurant Manager job description lists supplier invoice authorization limit as "SEK 2,000". This is almost certainly a currency carryover from the Swedish template. For Finland operations it should be **EUR**. Verify with COO Johnny Klippmark and Finance, then update the Finland document.
   - File: `docs/policies/operations-policies.md` (Finland Variants section)
 
+- [ ] **⚠️ Norway RM invoice authorization currency** — Norway Restaurant Manager job description also lists "SEK 2,000" — should be **NOK** for Norway operations. Same carryover issue as Finland.
+  - File: `docs/policies/operations-policies.md` (Norway Variants section)
+
+- [ ] **⚠️ Norway RM document untranslated Swedish word** — Norway Restaurant Manager document contains "Kvalitetsresultat" (Swedish) in an otherwise English document. Translation glitch that should be fixed to "Quality results".
+  - File: Norway Restaurant Manager PDF (source), will need re-import after fix
+
 - [ ] **📋 Finland Restaurant Employee role description missing** — Three Finland job descriptions provided (RM, ARM, SL) but no Restaurant Employee version. Clarify:
   - Does Finland use the Swedish document as-is?
   - Is there a separate English version that wasn't shared?
   - Should one be created based on the Swedish template?
   - Owner: COO + HR (Finland)
 
-- [ ] **📋 Sweden/Finland cadence alignment** — Finland RM document specifies "staff meetings every two months" and "performance appraisals 2 times per year". Swedish RM document just says "per routine". Consider aligning cadences across markets for consistency.
-  - Files: Both Sweden and Finland sections in `docs/policies/operations-policies.md`
+- [ ] **📋 Sweden/Finland/Norway cadence alignment** — Finland and Norway RM documents specify "staff meetings every two months" and "performance appraisals 2 times per year". Swedish RM document just says "per routine". Sweden RM doc also says "per routine" for cadences. Consider aligning cadences across all markets for consistency.
+  - Files: All three variants in `docs/policies/operations-policies.md`
+
+- [ ] **📋 Daglig Leder vs Restaurant Manager clarification** — Norway has both roles defined with overlapping responsibilities. Clarify:
+  - Is Daglig Leder a separate role from Restaurant Manager, or the same person with additional legal responsibilities?
+  - Daglig Leder has 75% operational work vs RM's 80% — is this intentional?
+  - Which title do Norwegian restaurant leaders actually hold?
+  - Does each Norwegian restaurant need both roles filled separately?
+  - Owner: COO + HR (Norway)
+
+- [ ] **📋 Norway operations not in hierarchy** — Norway job descriptions exist but Norway restaurants are not in `docs/operations/hierarchy.md`. Current structure only has Sweden + Finland (Helsinki in Central 2/Finland). Clarify:
+  - Are there active Norway restaurants not yet documented?
+  - Which district/region do they belong to?
+  - Who is the District Manager for Norway?
+  - Should Norway be its own region or part of existing regions?
+  - File: `docs/operations/hierarchy.md`
+
+- [ ] **📋 Norway documents inconsistent "Bolag" labeling** — Only the Daglig Leder document says "Storage: Bastard Burgers Norway". The other 4 Norway documents (RM, ARM, SL, Co-worker) just say "Bolag: Bastard Burgers" without Norway specification. Should all Norway documents be clearly labeled as Norway-specific?
+  - File: Norway PDFs (source documents)
 
 ### Technical
 

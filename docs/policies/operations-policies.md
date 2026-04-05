@@ -11,6 +11,7 @@
   - [Skiftledare (Shift Leader)](#skiftledare-shift-leader)
   - [Restaurangmedarbetare (Restaurant Employee)](#restaurangmedarbetare-restaurant-employee)
   - [Finland Variants](#finland-variants)
+  - [Norway Variants](#norway-variants)
   - [Shared Values & Behaviors](#shared-values--behaviors)
 
 ---
@@ -414,6 +415,91 @@ Bastard Burgers Suomi / Finland operations use English-language job descriptions
   - Is there a separate English version that wasn't shared?
   - Should we create one based on the Swedish template?
 
+### Norway Variants
+
+Bastard Burgers Norway uses English-language job descriptions and includes a **Norway-specific legal role** (Daglig Leder) that doesn't exist in the Sweden or Finland structures. Five role descriptions in total.
+
+#### General differences (Sweden vs. Norway)
+
+| | Sweden | Norway |
+|---|--------|---------|
+| Company name on docs | Bastard Burgers | Bastard Burgers (not "Norway" except Daglig Leder which says "Bastard Burgers Norway") |
+| Document language | Swedish | English |
+| Established by | Driftledning & HR | Operations Management & HR |
+| Revision dates | 2024-03 / 2024-04-15 | 2023-12 (Daglig Leder, Shift Leader), 2024-03 (RM, ARM), 2024-04-15 (Co-worker) |
+| Legal role | N/A | **Daglig Leder** (Norway-specific) |
+
+#### Daglig Leder — Norway-Specific Legal Role
+
+**Position**: Daglig Leder | **Reports to**: District Manager
+**Storage**: Bastard Burgers Norway | **Established by**: Operations Management & HR
+**Last revised**: 2023-12-19
+
+**What is Daglig Leder?** Under Norwegian law, every aksjeselskap (AS / limited company) must have a registered Daglig Leder (Managing Director / Daily Manager). In the Bastard Burgers Norway context, this is the person legally responsible for the restaurant operation. It is distinct from but overlaps with the Restaurant Manager role.
+
+#### Key Differences from Restaurant Manager
+
+| Aspect | Restaurant Manager | Daglig Leder |
+|--------|-------------------|--------------|
+| Operational work % | 80% | **75%** (more admin/legal) |
+| Legal registration | No | Yes (required by Norwegian law) |
+| NAV administration | No | Yes — full sick leave process, rehabilitation, contact with NAV |
+| Storebrand Bedriftsportal | No | Yes — employee reporting |
+| Hygiene Regulations compliance | Shared | Explicit responsibility |
+| License management | No | Yes — ensure correct licenses always in place |
+| Email responsiveness | No explicit mention | Explicit — active on email with manager and departments |
+
+#### Daglig Leder Responsibilities (Norway-Specific Additions)
+
+Beyond standard Restaurant Manager responsibilities, Daglig Leder has these Norway-specific duties:
+
+**Work Environment & NAV**
+- Full sick leave process: notification, follow-up, documentation, rehabilitation
+- Administration of sick leave in NAV (Norwegian Labour and Welfare Administration)
+- Contact with NAV and other Norwegian authorities
+- Register hours, absences, and personal data within set time frames
+
+**Licensing**
+- Ensure correct licenses are in place at all times
+- Plan for sufficient licenses in the staff group
+- Alcohol Serving Act compliance
+
+**HSE (HMS in Norwegian)**
+- Systematic work environment management (HMS work)
+- Safety rounds per company guidelines
+- Continuous investigation, risk assessment, remediation, follow-up
+- Proper documentation in place
+
+**Environmental & Health**
+- Compliance with Hygiene Regulations
+- Report employees in Storebrand Bedriftsportal (Norwegian benefits system)
+
+**Cadences (specific)**
+- Staff meetings: **every two months** (same as Finland)
+- Performance appraisals: **2 times per year** (same as Finland)
+- Update Bastard Board weekly
+- Publish weekly newsletters in Ziik
+
+#### Restaurant Manager — Norway Specifics
+- Content identical to Swedish Restaurangchef version
+- **FLAG**: Still lists supplier invoice authorization as "SEK 2,000" ⚠️ — should be **NOK** for Norway operations
+- **FLAG**: Document contains "Kvalitetsresultat" (Swedish leftover) in an otherwise English document — untranslated
+
+#### Assistant Restaurant Manager — Norway Specifics
+- Content identical to Sweden/Finland versions
+- No Norway-specific variations beyond language
+
+#### Shift Leader — Norway Specifics
+- **Reports to**: Restaurant Manager/**Daglig leder** and Assistant Restaurant Manager
+- This is the only Norway document that explicitly references Daglig Leder in reporting structure
+- Revision date: 2023-12 (older than other Norway docs)
+- Content otherwise identical
+
+#### Restaurant Co-worker — Norway Specifics
+- Title uses "Co-workers" (plural) in the position field
+- Reports to Restaurant Manager (not Daglig Leder)
+- Content identical to Swedish Restaurangmedarbetare
+
 ### Shared Values & Behaviors
 
 All roles at Bastard Burgers are expected to embody these behaviors:
@@ -459,4 +545,7 @@ All roles at Bastard Burgers are expected to embody these behaviors:
 | 2024-03 | Role descriptions: Restaurant Manager, Assistant RM, Shift Leader | Driftledning & HR |
 | 2024-04-15 | Role description: Restaurant Employee (Sweden) | Driftledning & HR |
 | 2024-01 | Role descriptions: Restaurant Manager, Assistant RM, Shift Leader (Finland) | COO & HR |
+| 2023-12 | Role descriptions: Daglig Leder, Shift Leader (Norway) | Operations Management & HR |
+| 2024-03 | Role descriptions: Restaurant Manager, Assistant RM (Norway) | Operations Management & HR |
+| 2024-04-15 | Role description: Restaurant Co-worker (Norway) | Operations Management & HR |
 | 2026-04-05 | Imported into company policies framework | Company Policies skill |
