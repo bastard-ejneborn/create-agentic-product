@@ -33,6 +33,14 @@ CEO: Simon Wanler
   │     ├── Head of Finance: Filip Forsling
   │     │     ├── Business Controller: Erik Löfgren
   │     │     └── Accounting Manager: Maria Tornéus
+  │     │           ├── Senior Accountant: Emelie Norfelt
+  │     │           ├── Senior Accountant: Felicia Tenglund
+  │     │           ├── Senior Accountant: Malin Lewander
+  │     │           ├── Senior Accountant: Marie Dahlberg
+  │     │           ├── Accountant: Hanna Lindström
+  │     │           ├── Junior Accountant: Nora Blom
+  │     │           ├── Junior Accountant: Victor Dahlberg
+  │     │           └── Payroll Administrator: Elin Danielsson
   │     └── Head of Procurement: Niklas Heinermark
   ├── COO: Johnny Klippmark
   │     ├── RM North: Johannes Norrblom
@@ -68,6 +76,14 @@ CEO: Simon Wanler
 | Food & Beverage Manager | Jonas Ylinenjärvi | Johnny Klippmark (COO) |
 | Business Controller | Erik Löfgren | Filip Forsling (Head of Finance) |
 | Accounting Manager | Maria Tornéus | Filip Forsling (Head of Finance) |
+| Payroll Administrator | Elin Danielsson | Maria Tornéus (Accounting Manager) |
+| Senior Accountant | Emelie Norfelt | Maria Tornéus (Accounting Manager) |
+| Senior Accountant | Felicia Tenglund | Maria Tornéus (Accounting Manager) |
+| Accountant | Hanna Lindström | Maria Tornéus (Accounting Manager) |
+| Senior Accountant | Malin Lewander | Maria Tornéus (Accounting Manager) |
+| Senior Accountant | Marie Dahlberg | Maria Tornéus (Accounting Manager) |
+| Junior Accountant | Nora Blom | Maria Tornéus (Accounting Manager) |
+| Junior Accountant | Victor Dahlberg | Maria Tornéus (Accounting Manager) |
 | Senior IT Architect | André Ejneborn | Johnny Bröms (CDTO) |
 | IT Support Team Lead | Christian Ling | Johnny Bröms (CDTO) |
 | Point of Sale Architect | Kim Axelsson | Johnny Bröms (CDTO) |
