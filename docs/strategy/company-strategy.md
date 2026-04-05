@@ -21,7 +21,7 @@
 | CEO | Simon Wanler |
 | Finance & Procurement | Lisa Wanler |
 | Operations (COO) | Johnny Klippmark |
-| F&B & Marketing | Anton Eriksson |
+| Chief Expansion Officer | Johan Gederberg |
 | HR | Maja Lundqvist |
 | IT | Johnny Bröms |
 
