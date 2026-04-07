@@ -96,6 +96,9 @@ Alla agenter finns i `.claude/agents/`. Varje agent har:
 - **cdo-advisor** — Digital strategi, datahantering, kundupplevelse, KPI:er, förändringsledning
 - **cto-advisor** — Teknikstrategi, arkitektur, teknisk skuld, build vs buy, plattformstillförlitlighet
 
+### IT-arkitektur
+- **it-architect** — Systemarkitektur, integrationer, ADR:er, infrastruktur, teknikstack för multi-site QSR
+
 ### Projektledning
 - **project-manager** — Projektplanering, statusrapportering, riskhantering, RACI, retrospektiv
 
@@ -142,6 +145,7 @@ Se `.claude/skills/agent-builder/SKILL.md` för att skapa nya agenter.
 | `guest-support` | Gäststöd — triagering, svar, kompensation, eskalering, ärendelogg för QSR-restauranger |
 | `company-policies` | Avdelningspolicyer — IT, operations, marknadsföring, HR, ekonomi, gäststöd i strukturerat format |
 | `operations-dashboard` | Restaurangdrift — KPI:er, hierarki (COO→RM→DM→RM), butiksbesök, operativa granskningar |
+| `system-architecture` | Systemarkitektur — systemlandskap, integrationer, ADR:er, teknikstack, infrastruktur |
 
 ## Teknik & Plattform
 

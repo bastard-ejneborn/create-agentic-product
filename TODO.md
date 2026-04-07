@@ -102,6 +102,23 @@ Things you need to do to fully activate all agents and skills.
   - Creates `docs/marketing/brand-guidelines.md`
   - Referenced by all marketing and creative work
 
+- [ ] **Document systems landscape** — Run: "Help me document our systems landscape"
+  - Creates `docs/tech/systems-landscape.md`
+  - Walk through all systems: Simphony, FreshService, Ziik, Get Compliant, Winningtemp, Fortnox, app, kiosks, loyalty, payment, networking
+  - This is the foundational architecture document — do this first
+
+- [ ] **Map integrations** — Run: "Help me map our system integrations"
+  - Creates `docs/tech/integration-map.md`
+  - How systems connect, APIs, data flows, authentication, failure modes
+
+- [ ] **Document tech stack** — Run: "Help me document our technology stack"
+  - Creates `docs/tech/tech-stack.md`
+  - Versions, hosting, licensing, ownership for all technologies
+
+- [ ] **Document infrastructure** — Run: "Help me document our infrastructure"
+  - Creates `docs/tech/infrastructure.md`
+  - Per-restaurant setup, central systems, network, DR/BCP
+
 - [ ] **Set up tech radar** (CTO) — Run: "Help me build our technology radar"
   - Creates `docs/tech/tech-radar.md`
 

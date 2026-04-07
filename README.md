@@ -714,6 +714,11 @@ create-agentic-product/
 | `cdo-advisor` | Digital strategy, data governance, customer experience, KPIs |
 | `cto-advisor` | Tech strategy, architecture, technical debt, build vs. buy |
 
+### IT Architecture
+| Agent | Description |
+|-------|-------------|
+| `it-architect` | System architecture, integrations, IT ADRs, infrastructure, tech stack documentation |
+
 ### Project Management
 | Agent | Description |
 |-------|-------------|
@@ -769,6 +774,7 @@ create-agentic-product/
 | `guest-support` | Guest/customer support — triage, response drafting, compensation, escalation, ticket tracking |
 | `company-policies` | Department policies — IT, Operations, Marketing, HR, Finance, Guest Support |
 | `operations-dashboard` | Restaurant operations — KPIs by level, hierarchy, store visits, reviews |
+| `system-architecture` | IT architecture — systems landscape, integrations, ADRs, tech stack, infrastructure |
 | `agent-builder` | Create new custom agents |
 | `gemini-imagegen` | Image generation via Google Gemini |
 | `elevenlabs-skill` | Voice style descriptions for ElevenLabs |
