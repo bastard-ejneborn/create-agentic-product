@@ -176,6 +176,26 @@ Items flagged during document uploads and setup — need verification, correctio
 - [ ] **📋 Norway documents inconsistent "Bolag" labeling** — Only the Daglig Leder document says "Storage: Bastard Burgers Norway". The other 4 Norway documents (RM, ARM, SL, Co-worker) just say "Bolag: Bastard Burgers" without Norway specification. Should all Norway documents be clearly labeled as Norway-specific?
   - File: Norway PDFs (source documents)
 
+### Confluence Documentation Gaps (Intune)
+
+- [ ] **⚠️ Intune enrollment config still says "Pilot"** — Intune is in full production but Confluence page "Windows enrollment configuration" still references `Intune-Pilot-Users`, `Intune-Pilot-Devices`, `Intune Pilot` scope tags everywhere. Update naming to reflect production status, or at minimum add a note that "Pilot" naming is legacy.
+  - Page: https://bastardburgers.atlassian.net/wiki/spaces/DT/pages/65809
+
+- [ ] **📋 Archive "Adding Win 11 Home to Intune" page** — No longer relevant since all devices are Win 11 Pro. Archive or mark as deprecated to avoid confusion.
+  - Page: https://bastardburgers.atlassian.net/wiki/spaces/DT/pages/62029854
+
+- [ ] **📋 "Windows Configuration profiles" page is empty** — Only contains screenshots (images), no text documentation of actual configuration profiles. Either document the profiles or remove the page.
+  - Page: https://bastardburgers.atlassian.net/wiki/spaces/DT/pages/65827
+
+- [ ] **📋 "MacOS Intune Endpoint Configuration" page is empty** — Only contains a single link to Microsoft Defender docs. Needs actual MacBook Intune configuration documented (profiles, apps, policies).
+  - Page: https://bastardburgers.atlassian.net/wiki/spaces/DT/pages/59342849
+
+- [ ] **📋 "Autopilot device preparation (v2)" page is thin** — Only 4 brief steps, no detail. The classic Autopilot page is much better documented. Either flesh out v2 docs or link to the v1 page's comparison table.
+  - Page: https://bastardburgers.atlassian.net/wiki/spaces/DT/pages/62062593
+
+- [ ] **📋 "Intune Knowledge Base" is only external links** — No internal KB content, just bookmarks to Microsoft docs and community scripts. Consider either adding internal troubleshooting content or renaming to "External References".
+  - Page: https://bastardburgers.atlassian.net/wiki/spaces/DT/pages/917507
+
 ### Security
 
 - [ ] **⚠️ Plain-text password in Confluence** — The "Domain names" page in Confluence DT space contains a Punktum DK login credential (user ID + password) in plain text. This should be moved to a secrets manager or removed. Flag to Robert Beney (Head of Information Security and Compliance).
