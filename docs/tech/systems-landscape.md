@@ -1,6 +1,6 @@
 # Systems Landscape — Bastard Burgers
 > Last updated: 2026-04-08
-> Total systems: 35 | Owner: André Ejneborn, Senior IT Architect
+> Total systems: 37 | Owner: André Ejneborn, Senior IT Architect
 
 ## Summary
 
@@ -29,7 +29,8 @@
 | Cloud Platform | Microsoft Azure | Azure |
 | Cloud Compute | Linode (Akamai) | Linode |
 | Expense Management | Pleo, Juni | — |
-| Restaurant Music | Music Player PCs + service (TBD) | — |
+| Restaurant Music | Barix RetailPlayer / Royal Streaming | — |
+| Restaurant Devices | iPads (Caspeco/GetCompliant), PCs (larger locations) | — |
 | HR & Internal Communication | Ziik | Ziik |
 | Food Safety & Compliance | Get Compliant | Get Compliant |
 | Workforce Management | Caspeco | Caspeco |
@@ -879,16 +880,48 @@ FreshService (tickets/solutions) → n8n (orchestration) → OpenAI (LLM) → Su
 
 ---
 
-### Music Player (Restaurant)
-> Category: Restaurant Equipment | Criticality: **Low**
-> Vendor: TBD (verify music service)
+### Barix RetailPlayer / Royal Streaming
+> Category: Restaurant Music | Criticality: **Low**
+> Vendor: Royal Streaming (playlist management) + Barix (hardware)
 > Owner: TBD
-> Hosting: **On-premise** (dedicated PC per restaurant)
+> Hosting: **On-premise** (dedicated Barix RetailPlayer per restaurant)
+> Locations: **All 74 restaurants** (some still on iPad, migration ongoing)
+
+**Purpose**: Background music at each restaurant. Royal Streaming manages playlists and device management. Barix RetailPlayer is the dedicated hardware device.
+
+**Note**: Some restaurants still use iPads as music players — ongoing migration to Barix RetailPlayer.
+
+**Confluence ref**: [IT in restaurants](https://bastardburgers.atlassian.net/wiki/spaces/DT/pages/11600008)
+
+---
+
+### Restaurant iPad
+> Category: Restaurant Equipment | Criticality: **Medium**
+> Vendor: Apple | Contract ref: TBD
+> Owner: TBD
+> Hosting: **On-premise** (one per restaurant)
 > Locations: **All 74 restaurants**
 
-**Purpose**: Dedicated PC at each restaurant responsible for playing background music.
+**Purpose**: Multi-purpose tablet at each restaurant:
+- **Primary**: Clock-in / clock-out device for **Caspeco** (time management)
+- **Secondary**: Runs **Get Compliant** (food safety checklists)
+- **Backup**: Can act as backup music player (Royal Streaming) if Barix RetailPlayer fails
 
-**Note**: What music service/platform runs on these PCs? (Spotify, Soundtrack Your Brand, custom?)
+**Dependencies**:
+- Depends on: Wi-Fi, Caspeco (time management), Get Compliant (food safety)
+
+---
+
+### Restaurant PC (Larger Locations)
+> Category: Restaurant Equipment | Criticality: **Low**
+> Vendor: TBD
+> Owner: TBD
+> Hosting: **On-premise**
+> Locations: **Some larger restaurants** (those with a proper office space)
+
+**Purpose**: Desktop PC with 27" screen, camera, and sound for video conferencing (Teams) and education/training. Only at larger restaurants that have a dedicated office.
+
+**Note**: Not all 74 restaurants have this — only locations with proper office space.
 
 **Confluence ref**: [IT in restaurants](https://bastardburgers.atlassian.net/wiki/spaces/DT/pages/11600008)
 
@@ -900,6 +933,8 @@ FreshService (tickets/solutions) → n8n (orchestration) → OpenAI (LLM) → Su
 |---------|------|---------|--------|
 | **Atea** | External IT support (L1/L2), restaurant deployments, terminal configuration | Emil Vikström, Stephen Ryan | FreshService (via Entra SSO), Major Incident team |
 | **Global Connect** | Network provider, all 74 restaurants (replaced Xite) | Filip Serdarevic | Network infrastructure |
+
+| **Royal Streaming** | Restaurant music — playlist management + Barix RetailPlayer device management | Via Barix devices | Playlists and device management for all 74 restaurants |
 
 **Note**: Xite was the previous networking partner, now replaced by Global Connect. Some Confluence documentation may still reference Xite — those references are historical.
 

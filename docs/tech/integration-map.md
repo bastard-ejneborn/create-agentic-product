@@ -39,6 +39,8 @@
 
 **Purpose**: Orders placed through the Bastard Burgers app, self-service kiosks, and web ordering are injected into Simphony for kitchen preparation and fulfillment.
 
+**⚠️ Critical local dependency**: Express kiosks are integrated with the local POS workstation. **If the POS workstation is down, the Express kiosk for that restaurant also cannot take orders.** This is not just a Simphony cloud dependency — it's a physical, per-restaurant hardware dependency.
+
 **Data flow**: Order details (items, modifiers, quantities, customer info) → Simphony check/order
 
 **Authentication**: TBD (verify — API key, OAuth, or certificate)
