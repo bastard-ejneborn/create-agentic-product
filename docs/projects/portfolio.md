@@ -53,6 +53,11 @@ Health: Green = on track | Yellow = at risk | Red = blocked/failing
 | Soft opening | TBD | — |
 | Grand opening | Spring 2026 | Planned |
 
+**Open tasks**:
+| Task | Owner | Status | Notes |
+|------|-------|--------|-------|
+| Evaluate streaming solution for bookable room TV | André Ejneborn | Pending | Guests need to cast/stream content from their own devices to a TV in the bookable room. Evaluate options (Chromecast, AirPlay, Miracast, Barco ClickShare, etc.) considering security (guest devices on network), ease of use, and cost. |
+
 **Dependencies**:
 - TBD — to be documented as project progresses
 
