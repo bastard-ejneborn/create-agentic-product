@@ -125,7 +125,7 @@
 - [ ] Set volume to appropriate level
 - [ ] **Test: Music playing through restaurant speakers**
 
-### Restaurant PC (if Kamppi has office space)
+### Restaurant PC (backoffice)
 - [ ] Unbox PC + 27" monitor + camera + speakers
 - [ ] Connect to network
 - [ ] Boot and run Windows Autopilot
@@ -205,11 +205,13 @@ Fill in after installation:
 | Grassfish Screens (w/ built-in player) | 14 | | |
 | Express Kiosks | 6 | | |
 | POS Workstations | ~2 (TBC) | | |
+| Planet Payment Terminals | ~2 (same as POS count) | | |
+| KDS Units | 3 | | |
 | Restaurant Laptop | 1 | | |
 | Restaurant iPad | 1 | | |
 | Multi-Function Printer | 1 | | |
 | Barix RetailPlayer | 1 | | |
-| Restaurant PC | TBD | | |
+| Restaurant PC (backoffice) | 1 | | |
 | Network (Global Connect) | 1 | | |
 
 ### Issues Log
