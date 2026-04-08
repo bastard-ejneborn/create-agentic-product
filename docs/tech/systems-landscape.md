@@ -1,6 +1,6 @@
 # Systems Landscape — Bastard Burgers
-> Last updated: 2026-04-07
-> Total systems: 10 | Owner: André Ejneborn, Senior IT Architect
+> Last updated: 2026-04-08
+> Total systems: 11 | Owner: André Ejneborn, Senior IT Architect
 
 ## Summary
 
@@ -8,6 +8,7 @@
 |----------|---------|--------------|
 | POS & Restaurant Operations | Oracle Simphony, Planet Payment Terminals | Oracle Simphony |
 | Digital Ordering | Future Ordering (app, kiosk, web) | Future Ordering |
+| Loyalty | Como | Como |
 | Delivery | Deliverect | Deliverect |
 | ITSM & IT Support | FreshService (Pro + Asset) | FreshService |
 | HR & Internal Communication | Ziik | Ziik |
@@ -131,6 +132,36 @@
 **Dependencies**:
 - Depends on: Simphony POS, local network (ethernet), Planet processing infrastructure
 - Depended on by: All payment processing at all restaurants
+
+---
+
+### Como
+> Category: Loyalty | Criticality: **High**
+> Vendor: Como | Contract ref: TBD
+> Owner: TBD (verify — Simon Brännström? Marketing?)
+> Hosting: **SaaS**
+> Locations: **All 74 restaurants** (via app + POS)
+
+**Purpose**: Loyalty program platform powering Bastard Burgers' customer loyalty — member management, points accrual, rewards, offers, and engagement campaigns.
+
+**Key capabilities**:
+- Member registration and management
+- Points accrual and redemption
+- Offers, rewards, and campaigns
+- Customer segmentation
+- Analytics and reporting
+
+**Integrations**:
+- Como ↔ Future Ordering (loyalty in app/kiosk/web — points, offers, redemption)
+- Como ↔ Simphony (POS-level loyalty — verify if direct or via FO only)
+
+**Data held**: Customer profiles, loyalty points, transaction history, offer redemptions, engagement data. **Customer personal data — GDPR relevant**.
+
+**Dependencies**:
+- Depends on: Future Ordering (for digital loyalty), potentially Simphony (for POS loyalty)
+- Depended on by: App loyalty features, customer retention strategy
+
+**Strategic context**: Loyalty program was flagged as underperforming in Year 1 (red status). 2025 priority: drive loyalty growth (members and visit frequency).
 
 ---
 
