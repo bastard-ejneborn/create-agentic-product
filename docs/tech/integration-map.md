@@ -1,6 +1,6 @@
 # Integration Map — Bastard Burgers
 > Last updated: 2026-04-08
-> Total integrations: 12 active | 1 planned | Owner: André Ejneborn, Senior IT Architect
+> Total integrations: 13 active | 1 planned | Owner: André Ejneborn, Senior IT Architect
 
 ## Overview
 
@@ -15,7 +15,8 @@
 | 7 | Future Ordering | Planet/Payment | Digital payments | API | One-way | Active | Simon Brännström |
 | 8 | Caspeco | Ziik | User account creation | API/Automation | One-way | Active | TBD |
 | 9 | Entra ID | NinjaOne | SSO (SAML) | SAML 2.0 | Bidirectional | Active | André Ejneborn |
-| 10 | Entra ID | Google Workspace | SSO (SAML) | SAML 2.0 | Bidirectional | Active (verify) | TBD |
+| 10 | Entra ID | Google Workspace/Cloud Identity | SSO + Provisioning | SAML 2.0 + SCIM | Bidirectional | Active | TBD |
+| 10b | Google Cloud Identity | FO Navigator | User authentication | Google Sign-In | One-way | Active | Simon Brännström |
 | 11 | Entra ID | Exchange Online | Identity + Email | Native M365 | Bidirectional | Active | TBD |
 | 12 | Entra ID | Intune | Device management | Native M365 | Bidirectional | Active | TBD |
 | 13 | Simphony | Fortnox | Finance data | TBD | One-way | Planned | TBD |

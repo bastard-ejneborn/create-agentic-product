@@ -451,50 +451,81 @@
 ---
 
 ### Microsoft Intune
-> Category: Device Management | Criticality: **Medium**
+> Category: Device Management | Criticality: **High**
 > Vendor: Microsoft | Contract ref: TBD (part of M365 licensing)
 > Owner: TBD (verify — André Ejneborn? Christian Ling?)
 > Hosting: **Cloud (Microsoft 365)**
-> Locations: **HQ + managed devices**
+> Locations: **All restaurants (laptops) + HQ Luleå (computers)**
 
-**Purpose**: Mobile Device Management (MDM) and endpoint management for Windows devices. Complements NinjaOne (which manages restaurant-specific hardware like kiosks, POS, KDS).
+**Purpose**: Endpoint management for company-managed laptops and computers. Manages restaurant laptops and HQ workstations. Complements NinjaOne (which manages restaurant-specific POS hardware — kiosks, POS workstations, KDS).
 
 **Key capabilities**:
 - Device enrollment and management
 - Policy deployment
 - Application management
 - Compliance policies
-- BitLocker management (limited on Win 11 Home)
+- BitLocker management
+- OS update management
+
+**Managed device types**:
+- **Windows 11 Pro** laptops/computers (restaurants + HQ)
+- **MacBooks** (HQ Luleå)
+
+**Device management split with NinjaOne**:
+| Device Type | Managed By |
+|-------------|-----------|
+| Restaurant laptops | **Intune** |
+| HQ computers (Luleå) | **Intune** |
+| MacBooks (HQ) | **Intune** |
+| POS Workstations | **NinjaOne** |
+| Express Kiosks | **NinjaOne** |
+| KDS Units | **NinjaOne** |
 
 **Integrations**:
 - Microsoft Entra ID → Intune (native M365)
 
-**Data held**: Device inventory, compliance status, policy assignments.
-
-**Note**: Windows 11 Home devices register as "Azure AD Registered" (personal), not "Azure AD Joined". This limits some management capabilities.
+**Data held**: Device inventory, compliance status, policy assignments, BitLocker keys.
 
 **Confluence ref**: [Adding Win 11 Home to Intune](https://bastardburgers.atlassian.net/wiki/spaces/DT/pages/62029854)
 
 ---
 
-### Google Workspace (Legacy)
-> Category: Collaboration (legacy) | Criticality: **Low** (migrated from)
+### Google Workspace / Cloud Identity
+> Category: Identity & AI Platform | Criticality: **Medium**
 > Vendor: Google | Contract ref: TBD
-> Owner: TBD
+> Owner: TBD (verify — André Ejneborn?)
 > Hosting: **Cloud (Google)**
-> Locations: **Migrated — M365 is now primary**
+> Locations: **HQ (3 licensed users) + All restaurants (Cloud Identity free accounts)**
 
-**Purpose**: Former email and collaboration platform. Restaurant mailboxes have been migrated to Microsoft 365 / Exchange Online. Google Workspace SSO still configured via Entra ID — verify if any services still depend on it.
+**Purpose**: Two distinct use cases:
 
-**Key capabilities** (historical):
-- Email (migrated to Exchange Online)
-- Drive (migrated to SharePoint/OneDrive — verify)
+**1. Google Workspace (Full licenses — 3 users)**
+- Licensed users: André Ejneborn, Simon Brännström, Simon Wanler
+- Primary use: **Google Gemini AI features**
+- Full Workspace capabilities for these 3 users
+
+**2. Google Cloud Identity (Free tier — restaurant users)**
+- Free Cloud ID accounts for restaurant staff
+- Primary use: **Access to Future Ordering's FO Navigator platform**
+- FO Navigator requires a Google account for login
+- No-cost license (Google Cloud Identity Free)
+
+**Key capabilities**:
+- AI features via Gemini (3 licensed users)
+- Google account provisioning for FO Navigator access (all restaurant users)
 
 **Integrations**:
-- Entra ID → Google Workspace (SAML SSO — still active?)
-- Entra ID → Google Workspace Provisioning (user sync — still active?)
+- Entra ID → Google Workspace/Cloud Identity (SAML SSO)
+- Entra ID → Google Workspace (user provisioning/sync)
+- Google accounts → FO Navigator (authentication requirement from Future Ordering)
 
-**Status**: **Migration complete**. Verify if Google Workspace subscription is still active or can be decommissioned.
+**Data held**: User accounts, limited — no email or Drive for Cloud Identity users.
+
+**Dependencies**:
+- Depends on: Microsoft Entra ID (for SSO and provisioning)
+- Depended on by: Future Ordering FO Navigator (requires Google accounts for restaurant user login)
+
+**Note**: Email has been fully migrated to M365/Exchange Online. Google Workspace is NOT used for email or document collaboration (except by the 3 licensed users). The primary driver for keeping Google is FO Navigator's Google login requirement.
 
 **Confluence ref**: [Google Workspace SSO](https://bastardburgers.atlassian.net/wiki/spaces/DT/pages/134643727), [Google Workspace Provisioning](https://bastardburgers.atlassian.net/wiki/spaces/DT/pages/134512645)
 
