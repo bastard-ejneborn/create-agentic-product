@@ -450,6 +450,8 @@
 
 **Note**: Shift Leaders and Restaurant Employees do NOT get Microsoft accounts. They access systems via other means (Caspeco for time mgmt, Ziik for communication, Get Compliant for food safety — all with separate logins).
 
+**Future vision**: Extend Entra ID with SCIM provisioning and SSO to all restaurant employee systems (Caspeco, Ziik, Get Compliant) so that all staff — not just RM/ARM — have a unified identity. **Currently not planned or budgeted** — noted as a future architectural direction.
+
 **Key capabilities**:
 - User identity management
 - Single Sign-On (SAML/OIDC) to connected applications
