@@ -1,6 +1,6 @@
 # Systems Landscape — Bastard Burgers
 > Last updated: 2026-04-08
-> Total systems: 12 | Owner: André Ejneborn, Senior IT Architect
+> Total systems: 13 | Owner: André Ejneborn, Senior IT Architect
 
 ## Summary
 
@@ -11,6 +11,7 @@
 | Loyalty | Como | Como |
 | Delivery | Deliverect | Deliverect |
 | ITSM & IT Support | FreshService (Pro + Asset) | FreshService |
+| Endpoint Management | NinjaOne RMM | NinjaOne |
 | HR & Internal Communication | Ziik | Ziik |
 | Food Safety & Compliance | Get Compliant | Get Compliant |
 | Workforce Management | Caspeco | Caspeco |
@@ -196,6 +197,42 @@
 
 ---
 
+### NinjaOne RMM
+> Category: Endpoint Management | Criticality: **High**
+> Vendor: NinjaOne | Contract ref: TBD
+> Owner: TBD (verify — André Ejneborn? Christian Ling? IT Support?)
+> Hosting: **SaaS**
+> Locations: **All 74 restaurants** (manages on-site hardware)
+
+**Purpose**: Remote Monitoring and Management (RMM) platform for managing restaurant hardware endpoints — Express kiosks, POS workstations, and Kitchen Display System (KDS) units across all locations.
+
+**Key capabilities**:
+- Device inventory (kiosks, POS workstations, KDS units)
+- OS and software patching
+- Remote access and troubleshooting
+- Endpoint monitoring and alerting
+- Software deployment
+- Hardware health monitoring
+
+**Managed device types**:
+- **Express kiosks** — self-service ordering terminals
+- **POS Workstations** — Simphony POS hardware at each restaurant
+- **KDS units** — Kitchen Display Systems showing orders to kitchen staff
+
+**Integrations**:
+- None documented (standalone — manages hardware directly via agent installed on endpoints)
+- Potential: NinjaOne → FreshService? (verify — auto-create tickets on hardware alerts?)
+
+**Data held**: Device inventory, hardware specs, patch status, software versions, remote access logs. **Infrastructure management data**.
+
+**Dependencies**:
+- Depends on: Internet (for cloud management), NinjaOne agent installed on each endpoint
+- Depended on by: IT Support (for remote troubleshooting), patching/security compliance
+
+**Note**: This answers the open question about KDS — Bastard Burgers does use Kitchen Display Systems, managed alongside kiosks and POS workstations through NinjaOne.
+
+---
+
 ### Ziik
 > Category: HR & Internal Communication | Criticality: **Medium**
 > Vendor: Ziik | Contract ref: TBD
@@ -367,8 +404,8 @@
 - [x] **FreshService ownership** — Johnny Bröms (CDTO) ✅
 - [x] **Ziik ownership** — HR (Maja Lundqvist, CPO) ✅
 - [ ] **Loyalty platform** — is this part of Future Ordering or a separate system?
-- [ ] **Kitchen Display System (KDS)** — does BB use one? Separate system or Simphony module?
-- [ ] **Scheduling system** — is scheduling done in Simphony, a separate tool, or manually?
+- [x] **Kitchen Display System (KDS)** — Yes, KDS units in use. Managed via NinjaOne RMM. ✅
+- [x] **Scheduling system** — Caspeco handles operations scheduling. ✅
 - [ ] **Recruitment system** — any ATS (Applicant Tracking System) in use?
 - [ ] **Email/collaboration** — Google Workspace? Microsoft 365? What do HQ staff use?
 - [ ] **Monitoring/alerting** — any system health monitoring across restaurants?

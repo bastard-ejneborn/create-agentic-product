@@ -248,10 +248,12 @@
                  └──────────────┘
 
 Standalone Systems (no integrations documented):
-┌────────────┐  ┌───────────────┐  ┌──────────────┐
-│ FreshService│  │ Get Compliant │  │  Winningtemp │
-│   (ITSM)   │  │ (Food Safety) │  │ (Engagement) │
-└────────────┘  └───────────────┘  └──────────────┘
+┌────────────┐  ┌───────────────┐  ┌──────────────┐  ┌──────────────┐
+│ FreshService│  │ Get Compliant │  │  Winningtemp │  │  NinjaOne    │
+│   (ITSM)   │  │ (Food Safety) │  │ (Engagement) │  │  RMM (endpt) │
+└────────────┘  └───────────────┘  └──────────────┘  └──────────────┘
+                                                      Manages: Kiosks,
+                                                      POS, KDS units
 ```
 
 ## Integration Patterns Used
@@ -282,3 +284,4 @@ Standalone Systems (no integrations documented):
 - [ ] **Any system sending data to Winningtemp?** — e.g., employee lists from an HR system?
 - [ ] **Any system sending data to Get Compliant?** — e.g., restaurant/location master data?
 - [ ] **FreshService → any monitoring integration?** — auto-created tickets from system alerts?
+- [ ] **NinjaOne → FreshService integration?** — do hardware alerts in NinjaOne auto-create FreshService tickets?
