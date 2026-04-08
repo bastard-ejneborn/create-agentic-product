@@ -1040,6 +1040,17 @@ FreshService (tickets/solutions) → n8n (orchestration) → OpenAI (LLM) → Su
 
 ---
 
+### Restaurant Multi-Function Printer
+> Category: Restaurant Equipment | Criticality: **Low**
+> Vendor: TBD (verify — brand/model)
+> Owner: TBD
+> Hosting: **On-premise**
+> Locations: **All 74 restaurants**
+
+**Purpose**: Multi-function printer at each restaurant providing copy and scan functionality for daily operations (printing schedules, reports, documents, scanning delivery notes, etc.).
+
+---
+
 ### Restaurant PC (Larger Locations)
 > Category: Restaurant Equipment | Criticality: **Low**
 > Vendor: TBD
