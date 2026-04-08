@@ -1,6 +1,6 @@
 # Systems Landscape — Bastard Burgers
 > Last updated: 2026-04-08
-> Total systems: 26 | Owner: André Ejneborn, Senior IT Architect
+> Total systems: 28 | Owner: André Ejneborn, Senior IT Architect
 
 ## Summary
 
@@ -20,6 +20,7 @@
 | IT Documentation | Atlassian Confluence | Confluence |
 | IT Project/Issue Tracking | Atlassian Jira | Jira |
 | AI / Helpdesk Automation | n8n Cloud, Supabase, OpenAI | n8n (orchestration) |
+| AI / Productivity | Anthropic Claude AI, Perplexity | Claude AI |
 | Identity (Google) | Google Workspace / Cloud Identity | — |
 | Network | Global Connect | Global Connect |
 | Restaurant Music | Music Player PCs + service (TBD) | — |
@@ -568,7 +569,7 @@
 ### Microsoft Teams
 > Category: Collaboration & Chat | Criticality: **High**
 > Vendor: Microsoft | Contract ref: TBD (part of M365 licensing)
-> Owner: TBD
+> Owner: André Ejneborn (Senior IT Architect)
 > Hosting: **Cloud (Microsoft 365)**
 > Locations: **All staff**
 
@@ -591,7 +592,7 @@
 ### Dropbox Business
 > Category: File Sharing | Criticality: **Medium**
 > Vendor: Dropbox | Contract ref: TBD
-> Owner: TBD (Marketing?)
+> Owner: André Ejneborn (Senior IT Architect)
 > Hosting: **SaaS**
 > Locations: **Marketing team**
 
@@ -608,6 +609,7 @@
 > Category: IT Documentation | Criticality: **Medium**
 > Vendor: Atlassian | Contract ref: TBD
 > Owner: André Ejneborn (Senior IT Architect)
+> Instance: bastardburgers.atlassian.net
 > Hosting: **Cloud (Atlassian)**
 > Locations: **IT team + Support**
 
@@ -626,7 +628,7 @@
 ### Atlassian Jira
 > Category: IT Project/Issue Tracking | Criticality: **Medium**
 > Vendor: Atlassian | Contract ref: TBD
-> Owner: TBD
+> Owner: André Ejneborn (Senior IT Architect)
 > Hosting: **Cloud (Atlassian)**
 > Locations: **IT team**
 
@@ -640,7 +642,7 @@
 ### n8n Cloud
 > Category: AI / Helpdesk Automation | Criticality: **High**
 > Vendor: n8n | Contract ref: TBD
-> Owner: André Ejneborn (verify)
+> Owner: André Ejneborn (Senior IT Architect)
 > Hosting: **Cloud (n8n)**
 > Locations: **Central (orchestrates Helpdesk AI)**
 
@@ -665,7 +667,7 @@ FreshService (tickets/solutions) → n8n (orchestration) → OpenAI (LLM) → Su
 ### Supabase
 > Category: AI / Knowledge Store | Criticality: **High**
 > Vendor: Supabase | Contract ref: TBD
-> Owner: André Ejneborn (verify)
+> Owner: André Ejneborn (Senior IT Architect)
 > Hosting: **Cloud (Supabase)**
 > Locations: **Central**
 
@@ -687,7 +689,7 @@ FreshService (tickets/solutions) → n8n (orchestration) → OpenAI (LLM) → Su
 ### OpenAI API
 > Category: AI / LLM | Criticality: **High**
 > Vendor: OpenAI | Contract ref: TBD
-> Owner: André Ejneborn (verify)
+> Owner: André Ejneborn (Senior IT Architect)
 > Hosting: **Cloud (OpenAI)**
 > Locations: **Central**
 
@@ -696,6 +698,33 @@ FreshService (tickets/solutions) → n8n (orchestration) → OpenAI (LLM) → Su
 **Models used**:
 - `gpt-4o-mini` — ticket analysis (classification, extraction, PII scrubbing)
 - `text-embedding-3-small` — 1536-dim embeddings for semantic search
+
+---
+
+### Anthropic Claude AI
+> Category: AI / Productivity | Criticality: **Medium**
+> Vendor: Anthropic | Contract ref: TBD
+> Owner: André Ejneborn (Senior IT Architect)
+> Hosting: **Cloud (Anthropic)**
+> Users: André Ejneborn
+
+**Purpose**: AI assistant for architecture documentation, coding, strategic analysis, and productivity. Powers this project (create-agentic-product) with Claude Code.
+
+**Key capabilities**:
+- Claude Code (CLI agent for software engineering)
+- Architecture documentation and analysis
+- Research and decision support
+
+---
+
+### Perplexity
+> Category: AI / Productivity | Criticality: **Low**
+> Vendor: Perplexity AI | Contract ref: TBD
+> Owner: André Ejneborn (Senior IT Architect)
+> Hosting: **Cloud (Perplexity)**
+> Users: André Ejneborn, Simon Wanler
+
+**Purpose**: AI-powered search and research tool for quick factual lookups, market research, and technology evaluation.
 
 ---
 
@@ -719,8 +748,9 @@ FreshService (tickets/solutions) → n8n (orchestration) → OpenAI (LLM) → Su
 | Partner | Role | Contact | Access |
 |---------|------|---------|--------|
 | **Atea** | External IT support (L1/L2), restaurant deployments, terminal configuration | Emil Vikström, Stephen Ryan | FreshService (via Entra SSO), Major Incident team |
-| **Global Connect** | Network provider, all 74 restaurants | Filip Serdarevic | Network infrastructure |
-| **Xite** | Switch/network documentation for restaurant deployments | Lukas Lundqvist | Network config docs |
+| **Global Connect** | Network provider, all 74 restaurants (replaced Xite) | Filip Serdarevic | Network infrastructure |
+
+**Note**: Xite was the previous networking partner, now replaced by Global Connect. Some Confluence documentation may still reference Xite — those references are historical.
 
 ---
 
