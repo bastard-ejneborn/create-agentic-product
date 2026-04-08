@@ -1,6 +1,6 @@
 # Systems Landscape — Bastard Burgers
 > Last updated: 2026-04-08
-> Total systems: 41 | Owner: André Ejneborn, Senior IT Architect
+> Total systems: 42 | Owner: André Ejneborn, Senior IT Architect
 
 ## Summary
 
@@ -31,6 +31,7 @@
 | Cloud Compute | Linode (Akamai) | Linode |
 | Expense Management | Pleo, Juni | — |
 | Restaurant Music | Barix RetailPlayer / Royal Streaming | — |
+| Digital Signage | Grassfish | Grassfish |
 | Restaurant Devices | iPads (Caspeco/GetCompliant), PCs (larger locations) | — |
 | HR & Internal Communication | Ziik | Ziik |
 | Food Safety & Compliance | Get Compliant | Get Compliant |
@@ -1023,6 +1024,25 @@ FreshService (tickets/solutions) → n8n (orchestration) → OpenAI (LLM) → Su
 
 ---
 
+### Grassfish Digital Signage
+> Category: Digital Signage | Criticality: **Medium**
+> Vendor: Grassfish | Contract ref: TBD
+> Owner: TBD (verify — Marketing? IT? Operations?)
+> Hosting: **SaaS (CMS) + On-premise (player units + screens)**
+> Locations: **Restaurants** (Kamppi: 14 screens — verify rollout to other locations)
+
+**Purpose**: Commercial digital signage system displaying menu offerings, promotions, and advertising content within restaurants. Managed centrally via Grassfish CMS for content scheduling and remote updates.
+
+**Key capabilities**:
+- Commercial screen display (menus, offers, campaigns, ads)
+- Cloud CMS for content management and scheduling
+- Remote content updates per location
+- Player units connected to screens at each restaurant
+
+**Note**: Kamppi will have 14 Grassfish screens. Verify if other restaurants already have Grassfish or if this is a new rollout starting with Kamppi.
+
+---
+
 ### Restaurant iPad
 > Category: Restaurant Equipment | Criticality: **Medium**
 > Vendor: Apple | Contract ref: TBD
@@ -1075,6 +1095,7 @@ FreshService (tickets/solutions) → n8n (orchestration) → OpenAI (LLM) → Su
 
 | **Royal Streaming** | Restaurant music — playlist management + Barix RetailPlayer device management | Via Barix devices | Playlists and device management for all 74 restaurants |
 | **Cloudspin** | Software licensing distributor — Adobe, Microsoft 365, SnagIT | Self-service web portal | License add/remove + invoicing |
+| **Grassfish** | Digital signage — commercial screens, player units, CMS for content management | Grassfish CMS | Screens, players, content management per restaurant |
 | **Future Ordering** | Digital ordering platform provider — Express kiosk software, web ordering, mobile app | FO Navigator (admin), Simphony TX Services API | Software, solution, and support for all digital ordering channels |
 
 **Note**: Xite was the previous networking partner, now replaced by Global Connect. Some Confluence documentation may still reference Xite — those references are historical.

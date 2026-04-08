@@ -135,6 +135,33 @@
 
 ---
 
+## Grassfish Digital Signage (14 screens)
+
+### Pre-Requisites
+- [ ] Grassfish screens (14) shipped and on-site
+- [ ] Grassfish player units shipped and on-site
+- [ ] Network ports available for all 14 screens (verify with Robert's IP plan)
+- [ ] Content/playlists prepared in Grassfish CMS for Kamppi
+- [ ] Mounting positions confirmed with construction/design team
+
+### Installation
+- [ ] Mount all 14 screens at designated positions
+- [ ] Connect each screen to Grassfish player unit
+- [ ] Connect each player to network (ethernet)
+- [ ] Power on and verify each screen displays correctly
+- [ ] Register all 14 screens in Grassfish CMS
+- [ ] Assign Kamppi location/playlist in Grassfish CMS
+- [ ] **Test: Verify content/commercials displaying on all 14 screens**
+- [ ] **Test: Verify remote content update works from CMS**
+- [ ] Document screen positions and network assignments
+
+### Post-Installation
+- [ ] All 14 screens showing correct content
+- [ ] Grassfish CMS shows all 14 Kamppi screens as online
+- [ ] Brightness and orientation verified per screen
+
+---
+
 ## Bookable Room — Streaming Solution
 - [ ] Assess the room physically (TV location, network ports, power)
 - [ ] Check Wi-Fi coverage in the room
@@ -180,6 +207,8 @@ Fill in after installation:
 | Payment Terminals (Planet) | | | |
 | POS Workstations | | | |
 | KDS Units | | | |
+| Grassfish Screens | 14 | | |
+| Grassfish Players | 14 | | |
 | Restaurant Laptop | 1 | | |
 | Restaurant iPad | 1 | | |
 | Multi-Function Printer | 1 | | |
