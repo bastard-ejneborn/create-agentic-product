@@ -6,7 +6,7 @@
 | Department | File | Last Updated | Owner | Policies Covered |
 |-----------|------|-------------|-------|-----------------|
 | Operations | [operations-policies.md](operations-policies.md) | 2026-04-05 | Jonas Ylinenjärvi + Driftledning & HR + COO & HR (Finland) + Operations Management & HR (Norway) | Secondary Shelf Life, Role Descriptions (Sweden: RC/ARC/SL/Employee + Finland variants: RM/ARM/SL + Norway variants: Daglig Leder/RM/ARM/SL/Co-worker), Shared Values |
-| IT | — | — | Johnny Bröms (CDTO) | *Not yet uploaded* |
+| IT | [it-policies.md](it-policies.md) | 2026-04-08 | Johnny Bröms (CDTO) | AI Policy, AI Initiatives Framework |
 | Marketing | — | — | Malin Hansegård / Caroline Johansson | *Not yet uploaded* |
 | HR | — | — | Maja Lundqvist (CPO) | *Not yet uploaded* |
 | Finance | — | — | Lisa Wanler (CFO) | *Not yet uploaded* |
@@ -23,7 +23,7 @@
 | Department | Coverage |
 |-----------|----------|
 | Operations | 🟡 Partial — Shelf life + Role descriptions. Still needed: food safety protocols (HACCP), hygiene, opening/closing, quality standards, allergen handling, incident response, Get Compliant procedures |
-| IT | 🔴 None |
+| IT | 🟡 Partial — AI Policy + Initiatives Framework. Still needed: security policy, change management, acceptable use, BYOD, incident response |
 | Marketing | 🔴 None |
 | HR | 🔴 None |
 | Finance | 🔴 None |
