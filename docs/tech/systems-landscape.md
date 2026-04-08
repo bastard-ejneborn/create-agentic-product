@@ -1,6 +1,6 @@
 # Systems Landscape — Bastard Burgers
 > Last updated: 2026-04-08
-> Total systems: 40 | Owner: André Ejneborn, Senior IT Architect
+> Total systems: 41 | Owner: André Ejneborn, Senior IT Architect
 
 ## Summary
 
@@ -17,6 +17,7 @@
 | Collaboration & Chat | Microsoft Teams | Teams |
 | Device Management | Microsoft Intune | Intune |
 | Endpoint Security | Microsoft Defender for Endpoint | Defender |
+| Apple Device Management | Jamf NOW | Jamf NOW |
 | File Sharing (Marketing) | Dropbox Business | Dropbox |
 | IT Documentation | Atlassian Confluence | Confluence |
 | IT Project/Issue Tracking | Atlassian Jira | Jira |
@@ -576,8 +577,13 @@
 - OS update management
 
 **Managed device types**:
-- **Windows 11 Pro** laptops/computers (restaurants + HQ)
+- **Windows 11 Pro** laptops (restaurants + HQ)
 - **MacBooks** (HQ Luleå)
+- **Samsung phones** (HQ Luleå — employees who choose Samsung)
+
+**HQ Luleå employee equipment policy**: Every HQ employee gets:
+- **Laptop** of their choice: MacBook or Windows (managed by Intune)
+- **Mobile phone** of their choice: iPhone (managed by Jamf NOW) or Samsung (managed by Intune)
 
 **Device management split with NinjaOne**:
 | Device Type | Managed By |
@@ -688,6 +694,35 @@
 - Potential: n8n → Teams (error notifications from Helpdesk AI)
 
 **Confluence ref**: [Microsoft Teams](https://bastardburgers.atlassian.net/wiki/spaces/DT/pages/65784), [Teams Inventory](https://bastardburgers.atlassian.net/wiki/spaces/DT/pages/2097159)
+
+---
+
+### Jamf NOW
+> Category: Apple Device Management | Criticality: **Medium**
+> Vendor: Jamf | Contract ref: TBD
+> Owner: TBD (verify — André Ejneborn? Christian Ling?)
+> Hosting: **SaaS**
+> Locations: **All restaurants (iPads) + HQ Luleå (iPhones)**
+
+**Purpose**: Mobile Device Management (MDM) for Apple iOS/iPadOS devices. Manages restaurant iPads and HQ employee iPhones.
+
+**Managed devices**:
+- **Restaurant iPads** — all 74 locations (clock-in/out, Get Compliant, backup music)
+- **HQ iPhones** — Luleå HQ employees who choose iPhone
+
+**Note**: Jamf NOW manages Apple devices specifically. The full device management split is:
+
+| Device Type | Managed By |
+|-------------|-----------|
+| Restaurant iPads | **Jamf NOW** |
+| HQ iPhones | **Jamf NOW** |
+| HQ Samsung phones | **Intune** (verify) |
+| Restaurant laptops (Win 11 Pro) | **Intune** |
+| HQ laptops — Windows | **Intune** |
+| HQ laptops — MacBook | **Intune** |
+| POS Workstations | **NinjaOne** |
+| Express Kiosks | **NinjaOne** |
+| KDS Units | **NinjaOne** |
 
 ---
 
