@@ -935,6 +935,7 @@ FreshService (tickets/solutions) → n8n (orchestration) → OpenAI (LLM) → Su
 | **Global Connect** | Network provider, all 74 restaurants (replaced Xite) | Filip Serdarevic | Network infrastructure |
 
 | **Royal Streaming** | Restaurant music — playlist management + Barix RetailPlayer device management | Via Barix devices | Playlists and device management for all 74 restaurants |
+| **Cloudspin** | Software licensing distributor — Adobe, Microsoft 365, SnagIT | Self-service web portal | License add/remove + invoicing |
 
 **Note**: Xite was the previous networking partner, now replaced by Global Connect. Some Confluence documentation may still reference Xite — those references are historical.
 
