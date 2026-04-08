@@ -176,6 +176,11 @@ Items flagged during document uploads and setup — need verification, correctio
 - [ ] **📋 Norway documents inconsistent "Bolag" labeling** — Only the Daglig Leder document says "Storage: Bastard Burgers Norway". The other 4 Norway documents (RM, ARM, SL, Co-worker) just say "Bolag: Bastard Burgers" without Norway specification. Should all Norway documents be clearly labeled as Norway-specific?
   - File: Norway PDFs (source documents)
 
+### Security
+
+- [ ] **⚠️ Plain-text password in Confluence** — The "Domain names" page in Confluence DT space contains a Punktum DK login credential (user ID + password) in plain text. This should be moved to a secrets manager or removed. Flag to Robert Beney (Head of Information Security and Compliance).
+  - Page: https://bastardburgers.atlassian.net/wiki/spaces/DT/pages/11567120
+
 ### Technical
 
 - [ ] **POS permission note for Petron and Roopneet** — Both listed as "Technical Product Owner POS" — verify if they have different focus areas (e.g., Sweden vs Finland, hardware vs software) or are genuinely duplicate titles
