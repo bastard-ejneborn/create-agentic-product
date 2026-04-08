@@ -1,6 +1,6 @@
 # Systems Landscape — Bastard Burgers
 > Last updated: 2026-04-08
-> Total systems: 13 | Owner: André Ejneborn, Senior IT Architect
+> Total systems: 18 | Owner: André Ejneborn, Senior IT Architect
 
 ## Summary
 
@@ -12,6 +12,11 @@
 | Delivery | Deliverect | Deliverect |
 | ITSM & IT Support | FreshService (Pro + Asset) | FreshService |
 | Endpoint Management | NinjaOne RMM | NinjaOne |
+| Identity & Access | Microsoft Entra ID | Entra ID |
+| Collaboration & Email | Microsoft 365 / Exchange Online | M365 |
+| Device Management | Microsoft Intune | Intune |
+| Collaboration (legacy) | Google Workspace (migrated from, still SSO target) | — |
+| Network | Global Connect | Global Connect |
 | HR & Internal Communication | Ziik | Ziik |
 | Food Safety & Compliance | Get Compliant | Get Compliant |
 | Workforce Management | Caspeco | Caspeco |
@@ -380,6 +385,146 @@
 - Depended on by: Finance team, management reporting, tax/compliance
 
 **Note**: API integration researched but parked due to OAuth2 complexity (multi-company token management). See research doc for full details.
+
+---
+
+### Microsoft Entra ID
+> Category: Identity & Access | Criticality: **Critical**
+> Vendor: Microsoft | Contract ref: TBD (part of M365 licensing)
+> Owner: TBD (verify — André Ejneborn? Robert Beney?)
+> Hosting: **Cloud (Microsoft Azure)**
+> Locations: **All (central identity platform)**
+
+**Purpose**: Central identity provider for the organization. Manages user identities, SSO to connected applications, conditional access policies, and ID governance.
+
+**Key capabilities**:
+- User identity management
+- Single Sign-On (SAML/OIDC) to connected applications
+- Conditional access policies
+- ID Governance (access packages, entitlement management)
+- Dynamic distribution lists for districts (via Exchange Online)
+- User provisioning to downstream apps
+
+**Integrations**:
+- Entra ID → NinjaOne (SAML SSO)
+- Entra ID → Google Workspace (SAML SSO — legacy, post-migration)
+- Entra ID → Exchange Online (native M365)
+- Entra ID → Intune (native M365)
+- Caspeco → Ziik (account provisioning — simple, not via Entra)
+
+**Data held**: User identities, group memberships, access policies, sign-in logs, audit logs. **Highly sensitive identity data**.
+
+**Dependencies**:
+- Depends on: Microsoft Azure cloud
+- Depended on by: NinjaOne SSO, Google Workspace SSO, Exchange Online, Intune, all M365 services
+
+**Confluence ref**: [Microsoft Entra ID](https://bastardburgers.atlassian.net/wiki/spaces/DT/pages/196905), [NinjaOne SSO](https://bastardburgers.atlassian.net/wiki/spaces/DT/pages/135036935), [Google Workspace SSO](https://bastardburgers.atlassian.net/wiki/spaces/DT/pages/134643727), [ID Governance](https://bastardburgers.atlassian.net/wiki/spaces/DT/pages/157843457)
+
+---
+
+### Microsoft 365 / Exchange Online
+> Category: Collaboration & Email | Criticality: **High**
+> Vendor: Microsoft | Contract ref: TBD
+> Owner: TBD (verify — IT?)
+> Hosting: **Cloud (Microsoft 365)**
+> Locations: **All staff (HQ + restaurants)**
+
+**Purpose**: Primary email and collaboration platform. Exchange Online provides email, shared mailboxes per restaurant, and dynamic distribution lists organized by district and role.
+
+**Key capabilities**:
+- Email (user mailboxes, shared mailboxes)
+- Dynamic Distribution Lists per district for RMs and ARMs
+- Calendar and scheduling
+- SharePoint (document collaboration)
+- Teams (if in use — verify)
+
+**Integrations**:
+- Microsoft Entra ID → Exchange Online (native identity)
+- Dynamic Distribution Lists auto-populated based on department, title, and office attributes in Entra ID
+
+**Data held**: Email, calendar, shared documents. **Business communications**.
+
+**Note**: Fully migrated from Google Workspace. Restaurant mailboxes moved to shared mailboxes in Exchange Online.
+
+**Confluence ref**: [Shared Mailboxes](https://bastardburgers.atlassian.net/wiki/spaces/DT/pages/6717455), [Dynamic Distribution Lists](https://bastardburgers.atlassian.net/wiki/spaces/DT/pages/234192897), [Migrate restaurant mailboxes](https://bastardburgers.atlassian.net/wiki/spaces/DT/pages/13303809)
+
+---
+
+### Microsoft Intune
+> Category: Device Management | Criticality: **Medium**
+> Vendor: Microsoft | Contract ref: TBD (part of M365 licensing)
+> Owner: TBD (verify — André Ejneborn? Christian Ling?)
+> Hosting: **Cloud (Microsoft 365)**
+> Locations: **HQ + managed devices**
+
+**Purpose**: Mobile Device Management (MDM) and endpoint management for Windows devices. Complements NinjaOne (which manages restaurant-specific hardware like kiosks, POS, KDS).
+
+**Key capabilities**:
+- Device enrollment and management
+- Policy deployment
+- Application management
+- Compliance policies
+- BitLocker management (limited on Win 11 Home)
+
+**Integrations**:
+- Microsoft Entra ID → Intune (native M365)
+
+**Data held**: Device inventory, compliance status, policy assignments.
+
+**Note**: Windows 11 Home devices register as "Azure AD Registered" (personal), not "Azure AD Joined". This limits some management capabilities.
+
+**Confluence ref**: [Adding Win 11 Home to Intune](https://bastardburgers.atlassian.net/wiki/spaces/DT/pages/62029854)
+
+---
+
+### Google Workspace (Legacy)
+> Category: Collaboration (legacy) | Criticality: **Low** (migrated from)
+> Vendor: Google | Contract ref: TBD
+> Owner: TBD
+> Hosting: **Cloud (Google)**
+> Locations: **Migrated — M365 is now primary**
+
+**Purpose**: Former email and collaboration platform. Restaurant mailboxes have been migrated to Microsoft 365 / Exchange Online. Google Workspace SSO still configured via Entra ID — verify if any services still depend on it.
+
+**Key capabilities** (historical):
+- Email (migrated to Exchange Online)
+- Drive (migrated to SharePoint/OneDrive — verify)
+
+**Integrations**:
+- Entra ID → Google Workspace (SAML SSO — still active?)
+- Entra ID → Google Workspace Provisioning (user sync — still active?)
+
+**Status**: **Migration complete**. Verify if Google Workspace subscription is still active or can be decommissioned.
+
+**Confluence ref**: [Google Workspace SSO](https://bastardburgers.atlassian.net/wiki/spaces/DT/pages/134643727), [Google Workspace Provisioning](https://bastardburgers.atlassian.net/wiki/spaces/DT/pages/134512645)
+
+---
+
+### Global Connect
+> Category: Network | Criticality: **Critical**
+> Vendor: Global Connect | Contract ref: TBD
+> Owner: TBD (verify — André Ejneborn? Johnny Bröms?)
+> Hosting: **On-premise (restaurant networking) + WAN**
+> Locations: **All 74 restaurants**
+
+**Purpose**: Network provider for all restaurant locations. Provides internet connectivity, switching infrastructure, and IP management for each restaurant.
+
+**Key capabilities**:
+- Internet connectivity per restaurant
+- Network switching (managed switches)
+- IP address management (Site IP Lists)
+- Network deployment for new restaurants
+
+**Integrations**:
+- All restaurant systems depend on Global Connect networking (Simphony, kiosks, KDS, Planet terminals, NinjaOne agents)
+
+**Data held**: Network configuration, IP assignments, switch configurations.
+
+**Dependencies**:
+- Depends on: ISP backbone
+- Depended on by: **Every restaurant system** — if the network is down, the restaurant cannot operate POS, kiosks, payments, KDS, or any cloud-connected system
+
+**Confluence ref**: [Deploy of new restaurants, Global Connect](https://bastardburgers.atlassian.net/wiki/spaces/DT/pages/24576001)
 
 ---
 

@@ -1,6 +1,6 @@
 # Integration Map — Bastard Burgers
 > Last updated: 2026-04-08
-> Total integrations: 8 active | 1 planned | Owner: André Ejneborn, Senior IT Architect
+> Total integrations: 12 active | 1 planned | Owner: André Ejneborn, Senior IT Architect
 
 ## Overview
 
@@ -14,7 +14,11 @@
 | 6 | Delivery platforms | Deliverect | Delivery orders | Platform APIs | Bidirectional | Active | Kim Axelsson |
 | 7 | Future Ordering | Planet/Payment | Digital payments | API | One-way | Active | Simon Brännström |
 | 8 | Caspeco | Ziik | User account creation | API/Automation | One-way | Active | TBD |
-| 9 | Simphony | Fortnox | Finance data | TBD | One-way | Planned | TBD |
+| 9 | Entra ID | NinjaOne | SSO (SAML) | SAML 2.0 | Bidirectional | Active | André Ejneborn |
+| 10 | Entra ID | Google Workspace | SSO (SAML) | SAML 2.0 | Bidirectional | Active (verify) | TBD |
+| 11 | Entra ID | Exchange Online | Identity + Email | Native M365 | Bidirectional | Active | TBD |
+| 12 | Entra ID | Intune | Device management | Native M365 | Bidirectional | Active | TBD |
+| 13 | Simphony | Fortnox | Finance data | TBD | One-way | Planned | TBD |
 
 ## Integration Details
 
@@ -247,13 +251,29 @@
                  │  (Intranet)  │
                  └──────────────┘
 
+                 ┌──────────────────────────────────────────────┐
+                 │          Microsoft Entra ID                  │
+                 │        (Central Identity Provider)           │
+                 └──┬──────────┬──────────┬──────────┬─────────┘
+                    │          │          │          │
+                    ▼          ▼          ▼          ▼
+              ┌──────────┐ ┌────────┐ ┌────────┐ ┌──────────┐
+              │ NinjaOne │ │Exchange│ │ Intune │ │ Google   │
+              │ (SSO)    │ │ Online │ │ (MDM)  │ │Workspace │
+              └──────────┘ │(Email) │ └────────┘ │(legacy)  │
+                           └────────┘            └──────────┘
+
 Standalone Systems (no integrations documented):
-┌────────────┐  ┌───────────────┐  ┌──────────────┐  ┌──────────────┐
-│ FreshService│  │ Get Compliant │  │  Winningtemp │  │  NinjaOne    │
-│   (ITSM)   │  │ (Food Safety) │  │ (Engagement) │  │  RMM (endpt) │
-└────────────┘  └───────────────┘  └──────────────┘  └──────────────┘
-                                                      Manages: Kiosks,
-                                                      POS, KDS units
+┌────────────┐  ┌───────────────┐  ┌──────────────┐
+│ FreshService│  │ Get Compliant │  │  Winningtemp │
+│   (ITSM)   │  │ (Food Safety) │  │ (Engagement) │
+└────────────┘  └───────────────┘  └──────────────┘
+
+Infrastructure (underlies everything):
+┌──────────────────────────────────────────────────┐
+│          Global Connect (Network Provider)        │
+│  All 74 restaurants — internet, switching, IPs    │
+└──────────────────────────────────────────────────┘
 ```
 
 ## Integration Patterns Used
@@ -264,6 +284,9 @@ Standalone Systems (no integrations documented):
 | Ethernet/IP (local) | Payment terminal communication | Planet ↔ Simphony |
 | Platform APIs | Delivery platform aggregation | Uber/Foodora/Wolt → Deliverect |
 | API (details TBD) | Loyalty | FO ↔ Como |
+| SAML 2.0 | Single Sign-On | Entra ID → NinjaOne, Entra ID → Google Workspace |
+| Native M365 | Microsoft platform integration | Entra ID ↔ Exchange Online, Entra ID ↔ Intune |
+| API/Automation | User provisioning | Caspeco → Ziik |
 
 ## Planned Integrations
 
