@@ -1,6 +1,6 @@
 # Systems Landscape — Bastard Burgers
 > Last updated: 2026-04-08
-> Total systems: 38 | Owner: André Ejneborn, Senior IT Architect
+> Total systems: 40 | Owner: André Ejneborn, Senior IT Architect
 
 ## Summary
 
@@ -34,7 +34,9 @@
 | HR & Internal Communication | Ziik | Ziik |
 | Food Safety & Compliance | Get Compliant | Get Compliant |
 | Workforce Management | Caspeco | Caspeco |
+| Training | Learnifier | Learnifier |
 | Employee Engagement | Winningtemp | Winningtemp |
+| Operations Platform (PILOT) | MapalOS | — (pilot phase) |
 | Finance & Accounting | Fortnox | Fortnox |
 
 ## Systems Detail
@@ -367,6 +369,57 @@
 **Dependencies**:
 - Depends on: Internet
 - Depended on by: Payroll processing, scheduling, Ziik (for user account creation), restaurant operations (shift schedules)
+
+---
+
+### Learnifier
+> Category: Training | Criticality: **Medium**
+> Vendor: Learnifier | Contract ref: TBD
+> Owner: HR (Maja Lundqvist, CPO)
+> Hosting: **SaaS**
+> Locations: **All restaurants + HQ**
+
+**Purpose**: Training and e-learning platform for all Bastard Burgers staff. Used for onboarding, certifications, operational training, and continuous learning.
+
+**Key capabilities**:
+- Course creation and management
+- Employee training tracking
+- Onboarding programs
+- Certifications and compliance training
+
+**Note**: May potentially be replaced by **MapalOS** if the current pilot succeeds (MapalOS combines training + food safety + internal communication in one platform).
+
+---
+
+### MapalOS (PILOT)
+> Category: Operations Platform | Criticality: **N/A — Pilot phase**
+> Vendor: Mapal | Contract ref: TBD
+> Owner: Operations — **Johannes Norrblom** (Regional Manager North)
+> Hosting: **SaaS**
+> Locations: **Pilot restaurants** (scope TBD)
+> Status: **🟡 Pilot in progress**
+
+**Purpose**: All-in-one restaurant operations platform covering training, food safety, and internal communication. If adopted, would potentially replace three current systems.
+
+**Key capabilities**:
+- Training and e-learning (replaces **Learnifier**)
+- Food safety checklists and compliance (replaces **Get Compliant**)
+- Internal communication and document sharing (replaces **Ziik**)
+
+**Systems potentially replaced**:
+| Current System | Owner | MapalOS Equivalent |
+|---------------|-------|-------------------|
+| Get Compliant | Jonas Ylinenjärvi (F&B) | Food safety module |
+| Learnifier | HR (Maja Lundqvist) | Training module |
+| Ziik | HR (Maja Lundqvist) | Communication module |
+
+**Impact if adopted**: Major platform consolidation — 3 systems → 1. Would affect:
+- All restaurant staff (daily users of these three systems)
+- Identity architecture (current separate logins could potentially be unified)
+- Caspeco → Ziik integration (would need to redirect to MapalOS)
+- Operations policies and role descriptions (all reference Ziik and Get Compliant)
+
+**Decision pending**: Pilot results will determine whether to proceed with full rollout. No timeline or budget committed yet.
 
 ---
 
