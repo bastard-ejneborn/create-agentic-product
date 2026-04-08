@@ -1,6 +1,6 @@
 # Systems Landscape — Bastard Burgers
 > Last updated: 2026-04-08
-> Total systems: 18 | Owner: André Ejneborn, Senior IT Architect
+> Total systems: 26 | Owner: André Ejneborn, Senior IT Architect
 
 ## Summary
 
@@ -14,9 +14,15 @@
 | Endpoint Management | NinjaOne RMM | NinjaOne |
 | Identity & Access | Microsoft Entra ID | Entra ID |
 | Collaboration & Email | Microsoft 365 / Exchange Online | M365 |
+| Collaboration & Chat | Microsoft Teams | Teams |
 | Device Management | Microsoft Intune | Intune |
-| Collaboration (legacy) | Google Workspace (migrated from, still SSO target) | — |
+| File Sharing (Marketing) | Dropbox Business | Dropbox |
+| IT Documentation | Atlassian Confluence | Confluence |
+| IT Project/Issue Tracking | Atlassian Jira | Jira |
+| AI / Helpdesk Automation | n8n Cloud, Supabase, OpenAI | n8n (orchestration) |
+| Identity (Google) | Google Workspace / Cloud Identity | — |
 | Network | Global Connect | Global Connect |
+| Restaurant Music | Music Player PCs + service (TBD) | — |
 | HR & Internal Communication | Ziik | Ziik |
 | Food Safety & Compliance | Get Compliant | Get Compliant |
 | Workforce Management | Caspeco | Caspeco |
@@ -556,6 +562,165 @@
 - Depended on by: **Every restaurant system** — if the network is down, the restaurant cannot operate POS, kiosks, payments, KDS, or any cloud-connected system
 
 **Confluence ref**: [Deploy of new restaurants, Global Connect](https://bastardburgers.atlassian.net/wiki/spaces/DT/pages/24576001)
+
+---
+
+### Microsoft Teams
+> Category: Collaboration & Chat | Criticality: **High**
+> Vendor: Microsoft | Contract ref: TBD (part of M365 licensing)
+> Owner: TBD
+> Hosting: **Cloud (Microsoft 365)**
+> Locations: **All staff**
+
+**Purpose**: Primary chat, meetings, and real-time collaboration platform.
+
+**Key capabilities**:
+- Chat and channels
+- Video meetings
+- File sharing (via SharePoint)
+- Teams/groups per department and function
+
+**Integrations**:
+- Microsoft Entra ID → Teams (native M365)
+- Potential: n8n → Teams (error notifications from Helpdesk AI)
+
+**Confluence ref**: [Microsoft Teams](https://bastardburgers.atlassian.net/wiki/spaces/DT/pages/65784), [Teams Inventory](https://bastardburgers.atlassian.net/wiki/spaces/DT/pages/2097159)
+
+---
+
+### Dropbox Business
+> Category: File Sharing | Criticality: **Medium**
+> Vendor: Dropbox | Contract ref: TBD
+> Owner: TBD (Marketing?)
+> Hosting: **SaaS**
+> Locations: **Marketing team**
+
+**Purpose**: File sharing and storage platform used primarily by the Marketing team for creative assets.
+
+**Integrations**:
+- Entra ID → Dropbox Business (SSO)
+
+**Confluence ref**: [ID Governance Access Packages](https://bastardburgers.atlassian.net/wiki/spaces/DT/pages/157843457) (Marketing access package includes Dropbox SSO)
+
+---
+
+### Atlassian Confluence
+> Category: IT Documentation | Criticality: **Medium**
+> Vendor: Atlassian | Contract ref: TBD
+> Owner: André Ejneborn (Senior IT Architect)
+> Hosting: **Cloud (Atlassian)**
+> Locations: **IT team + Support**
+
+**Purpose**: IT documentation, runbooks, architecture documentation, system documentation, and knowledge base for the Digital & Tech team.
+
+**Key capabilities**:
+- Wiki-style documentation
+- Templates (ITSM runbook, IT project poster, IT change management)
+- Spaces: Digital & Tech (DT), Support (SUP)
+
+**Integrations**:
+- Part of Atlassian suite (shared with Jira)
+
+---
+
+### Atlassian Jira
+> Category: IT Project/Issue Tracking | Criticality: **Medium**
+> Vendor: Atlassian | Contract ref: TBD
+> Owner: TBD
+> Hosting: **Cloud (Atlassian)**
+> Locations: **IT team**
+
+**Purpose**: Issue tracking and project management for IT projects and tasks.
+
+**Integrations**:
+- Part of Atlassian suite (shared with Confluence)
+
+---
+
+### n8n Cloud
+> Category: AI / Helpdesk Automation | Criticality: **High**
+> Vendor: n8n | Contract ref: TBD
+> Owner: André Ejneborn (verify)
+> Hosting: **Cloud (n8n)**
+> Locations: **Central (orchestrates Helpdesk AI)**
+
+**Purpose**: Workflow automation and integration orchestration engine. Powers the Helpdesk AI system — ingests tickets from FreshService, processes them through OpenAI, and stores curated knowledge in Supabase.
+
+**Key capabilities**:
+- Workflow orchestration
+- API integrations (FreshService, OpenAI, Supabase)
+- Batch processing with rate limit handling
+- Error handling and notifications
+
+**Part of Helpdesk AI stack** (in production):
+
+```
+FreshService (tickets/solutions) → n8n (orchestration) → OpenAI (LLM) → Supabase (knowledge store)
+```
+
+**Confluence ref**: [Helpdesk AI architecture](https://bastardburgers.atlassian.net/wiki/spaces/DT/pages/227344385), [Component Catalogue](https://bastardburgers.atlassian.net/wiki/spaces/DT/pages/228163585)
+
+---
+
+### Supabase
+> Category: AI / Knowledge Store | Criticality: **High**
+> Vendor: Supabase | Contract ref: TBD
+> Owner: André Ejneborn (verify)
+> Hosting: **Cloud (Supabase)**
+> Locations: **Central**
+
+**Purpose**: Knowledge hub and vector store for the Helpdesk AI system. Stores curated knowledge from historical tickets and FreshService Solutions articles. Uses pgvector for semantic search (RAG).
+
+**Key capabilities**:
+- PostgreSQL database with pgvector extension
+- Semantic search via embeddings
+- Knowledge base storage (published articles)
+- Review queue (items needing human curation)
+- RLS/policies for access control
+
+**Data structures**:
+- `knowledge_base` — published knowledge with embeddings
+- `review_queue` — flagged items for human review
+
+---
+
+### OpenAI API
+> Category: AI / LLM | Criticality: **High**
+> Vendor: OpenAI | Contract ref: TBD
+> Owner: André Ejneborn (verify)
+> Hosting: **Cloud (OpenAI)**
+> Locations: **Central**
+
+**Purpose**: LLM and embeddings provider for the Helpdesk AI system. Classifies tickets, extracts problem/solution pairs, anonymizes PII, and generates semantic embeddings.
+
+**Models used**:
+- `gpt-4o-mini` — ticket analysis (classification, extraction, PII scrubbing)
+- `text-embedding-3-small` — 1536-dim embeddings for semantic search
+
+---
+
+### Music Player (Restaurant)
+> Category: Restaurant Equipment | Criticality: **Low**
+> Vendor: TBD (verify music service)
+> Owner: TBD
+> Hosting: **On-premise** (dedicated PC per restaurant)
+> Locations: **All 74 restaurants**
+
+**Purpose**: Dedicated PC at each restaurant responsible for playing background music.
+
+**Note**: What music service/platform runs on these PCs? (Spotify, Soundtrack Your Brand, custom?)
+
+**Confluence ref**: [IT in restaurants](https://bastardburgers.atlassian.net/wiki/spaces/DT/pages/11600008)
+
+---
+
+### External Partners
+
+| Partner | Role | Contact | Access |
+|---------|------|---------|--------|
+| **Atea** | External IT support (L1/L2), restaurant deployments, terminal configuration | Emil Vikström, Stephen Ryan | FreshService (via Entra SSO), Major Incident team |
+| **Global Connect** | Network provider, all 74 restaurants | Filip Serdarevic | Network infrastructure |
+| **Xite** | Switch/network documentation for restaurant deployments | Lukas Lundqvist | Network config docs |
 
 ---
 
