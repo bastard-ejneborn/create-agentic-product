@@ -579,11 +579,9 @@
 **Managed device types**:
 - **Windows 11 Pro** laptops (restaurants + HQ)
 - **MacBooks** (HQ Luleå)
-- **Samsung phones** (HQ Luleå — employees who choose Samsung)
-
 **HQ Luleå employee equipment policy**: Every HQ employee gets:
 - **Laptop** of their choice: MacBook or Windows (managed by Intune)
-- **Mobile phone** of their choice: iPhone (managed by Jamf NOW) or Samsung (managed by Intune)
+- **Mobile phone** of their choice: iPhone (managed by Jamf NOW) or Samsung (**currently unmanaged** — too few devices to justify MDM, future plan to add to Intune)
 
 **Device management split with NinjaOne**:
 | Device Type | Managed By |
@@ -716,7 +714,7 @@
 |-------------|-----------|
 | Restaurant iPads | **Jamf NOW** |
 | HQ iPhones | **Jamf NOW** |
-| HQ Samsung phones | **Intune** (verify) |
+| HQ Samsung phones | **Unmanaged** (future: Intune) |
 | Restaurant laptops (Win 11 Pro) | **Intune** |
 | HQ laptops — Windows | **Intune** |
 | HQ laptops — MacBook | **Intune** |
