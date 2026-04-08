@@ -146,8 +146,7 @@
 
 ### Installation
 - [ ] Mount all 14 screens at designated positions
-- [ ] Connect each screen to Grassfish player unit
-- [ ] Connect each player to network (ethernet)
+- [ ] Connect each screen to network (ethernet) — player is built into the screen
 - [ ] Power on and verify each screen displays correctly
 - [ ] Register all 14 screens in Grassfish CMS
 - [ ] Assign Kamppi location/playlist in Grassfish CMS
@@ -203,12 +202,9 @@ Fill in after installation:
 
 | Component | Count | Status | Issues |
 |-----------|-------|--------|--------|
-| Express Kiosks | | | |
-| Payment Terminals (Planet) | | | |
-| POS Workstations | | | |
-| KDS Units | | | |
-| Grassfish Screens | 14 | | |
-| Grassfish Players | 14 | | |
+| Grassfish Screens (w/ built-in player) | 14 | | |
+| Express Kiosks | 6 | | |
+| POS Workstations | ~2 (TBC) | | |
 | Restaurant Laptop | 1 | | |
 | Restaurant iPad | 1 | | |
 | Multi-Function Printer | 1 | | |

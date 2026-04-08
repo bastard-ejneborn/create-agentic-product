@@ -1037,7 +1037,7 @@ FreshService (tickets/solutions) → n8n (orchestration) → OpenAI (LLM) → Su
 - Commercial screen display (menus, offers, campaigns, ads)
 - Cloud CMS for content management and scheduling
 - Remote content updates per location
-- Player units connected to screens at each restaurant
+- **Player built into the screens** (no separate player unit needed)
 
 **Note**: Kamppi will have 14 Grassfish screens. Verify if other restaurants already have Grassfish or if this is a new rollout starting with Kamppi.
 
