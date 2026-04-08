@@ -1,6 +1,6 @@
 # Systems Landscape — Bastard Burgers
 > Last updated: 2026-04-08
-> Total systems: 34 | Owner: André Ejneborn, Senior IT Architect
+> Total systems: 35 | Owner: André Ejneborn, Senior IT Architect
 
 ## Summary
 
@@ -16,6 +16,7 @@
 | Collaboration & Email | Microsoft 365 / Exchange Online | M365 |
 | Collaboration & Chat | Microsoft Teams | Teams |
 | Device Management | Microsoft Intune | Intune |
+| Endpoint Security | Microsoft Defender for Endpoint | Defender |
 | File Sharing (Marketing) | Dropbox Business | Dropbox |
 | IT Documentation | Atlassian Confluence | Confluence |
 | IT Project/Issue Tracking | Atlassian Jira | Jira |
@@ -591,6 +592,43 @@
 - Potential: n8n → Teams (error notifications from Helpdesk AI)
 
 **Confluence ref**: [Microsoft Teams](https://bastardburgers.atlassian.net/wiki/spaces/DT/pages/65784), [Teams Inventory](https://bastardburgers.atlassian.net/wiki/spaces/DT/pages/2097159)
+
+---
+
+### Microsoft Defender for Endpoint
+> Category: Endpoint Security | Criticality: **High**
+> Vendor: Microsoft | Contract ref: TBD (part of M365 licensing)
+> Owner: André Ejneborn (Senior IT Architect) / Robert Beney (InfoSec)
+> Hosting: **Cloud (Microsoft 365)**
+> Locations: **All managed devices (MacBooks + Windows laptops)**
+
+**Purpose**: Endpoint protection and security across all company-managed laptops and computers. Deployed via Intune with Microsoft-recommended default configuration.
+
+**Key capabilities**:
+- Real-time antivirus / anti-malware protection
+- Endpoint Detection and Response (EDR)
+- Threat & vulnerability management
+- Attack surface reduction
+- Security dashboard and alerts (security.microsoft.com)
+
+**Deployed to**:
+- All **Windows 11 Pro** laptops (restaurants + HQ)
+- All **MacBooks** (HQ Luleå)
+- Deployed and managed via **Microsoft Intune**
+- Configuration: **Microsoft recommended defaults**
+
+**Integrations**:
+- Microsoft Intune → Defender (policy deployment)
+- Microsoft Entra ID → Defender (identity-aware protection)
+- Microsoft 365 Defender portal (security.microsoft.com)
+
+**Health check (Mac)**:
+```bash
+mdatp health
+# Verify: healthy = true
+```
+
+**Confluence ref**: [Microsoft Defender](https://bastardburgers.atlassian.net/wiki/spaces/DT/pages/11862018), [MS Defender Knowledge](https://bastardburgers.atlassian.net/wiki/spaces/DT/pages/11960322)
 
 ---
 

@@ -193,6 +193,12 @@ Items flagged during document uploads and setup — need verification, correctio
 - [ ] **📋 "Autopilot device preparation (v2)" page is thin** — Only 4 brief steps, no detail. The classic Autopilot page is much better documented. Either flesh out v2 docs or link to the v1 page's comparison table.
   - Page: https://bastardburgers.atlassian.net/wiki/spaces/DT/pages/62062593
 
+- [ ] **📋 "Microsoft Defender" Confluence page is empty** — Parent page has zero content. Child page "MS Defender Knowledge" only has a single `mdatp health` command. Defender is deployed to all MacBooks and Windows laptops via Intune (production). Needs documentation of: deployment method, configuration profiles, exclusions, alert handling, update channels.
+  - Pages: https://bastardburgers.atlassian.net/wiki/spaces/DT/pages/11862018 + https://bastardburgers.atlassian.net/wiki/spaces/DT/pages/11960322
+
+- [ ] **📋 "MacOS Apps" page is outdated** — Lists Monday.com (no longer in use), Slack (replaced by Teams, only Marketing edge case), Discord (not in use). Should be updated to reflect current app deployments.
+  - Page: https://bastardburgers.atlassian.net/wiki/spaces/DT/pages/11534337
+
 - [ ] **📋 "Intune Knowledge Base" is only external links** — No internal KB content, just bookmarks to Microsoft docs and community scripts. Consider either adding internal troubleshooting content or renaming to "External References".
   - Page: https://bastardburgers.atlassian.net/wiki/spaces/DT/pages/917507
 
