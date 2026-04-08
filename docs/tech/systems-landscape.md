@@ -1,6 +1,6 @@
 # Systems Landscape — Bastard Burgers
 > Last updated: 2026-04-08
-> Total systems: 33 | Owner: André Ejneborn, Senior IT Architect
+> Total systems: 34 | Owner: André Ejneborn, Senior IT Architect
 
 ## Summary
 
@@ -23,6 +23,7 @@
 | AI / Productivity | Anthropic Claude AI, Perplexity | Claude AI |
 | Identity (Google) | Google Workspace / Cloud Identity | — |
 | Network | Global Connect | Global Connect |
+| Backup | Druva Backup | Druva |
 | DNS | Cloudflare | Cloudflare |
 | Cloud Platform | Microsoft Azure | Azure |
 | Cloud Compute | Linode (Akamai) | Linode |
@@ -732,6 +733,25 @@ FreshService (tickets/solutions) → n8n (orchestration) → OpenAI (LLM) → Su
 
 ---
 
+### Druva Backup
+> Category: Backup | Criticality: **High**
+> Vendor: Druva | Contract ref: TBD
+> Owner: TBD (verify — André Ejneborn? Robert Beney?)
+> Hosting: **Cloud (Druva)**
+> Locations: **Central (backs up M365 tenant)**
+
+**Purpose**: Cloud backup solution for Microsoft 365 environment. Protects against data loss, accidental deletion, and ransomware for core M365 services.
+
+**Backed up services**:
+- Microsoft Entra ID (identity data)
+- OneDrive (user files)
+- SharePoint (team sites, documents)
+- Exchange Online (email, calendars)
+
+**Note**: Replaced the previous M365 native backup trial. Druva is the production backup solution.
+
+---
+
 ### Cloudflare
 > Category: DNS | Criticality: **High**
 > Vendor: Cloudflare | Contract ref: TBD
@@ -766,7 +786,7 @@ FreshService (tickets/solutions) → n8n (orchestration) → OpenAI (LLM) → Su
 - Azure Functions (custom APIs)
 - Azure Table Storage (data store)
 - Azure Automation (runbooks for Entra ID operations)
-- M365 Backup (trial/preview)
+- ~~M365 Backup~~ (replaced by Druva Backup)
 - Break Glass account monitoring (Log Monitor Alerts)
 
 **Note**: Azure is the underlying platform for many Entra ID and M365 automations. It's not a standalone application but a platform layer.
