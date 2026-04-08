@@ -440,6 +440,16 @@
 
 **Purpose**: Central identity provider for the organization. Manages user identities, SSO to connected applications, conditional access policies, and ID governance.
 
+**Account & Licensing Structure**:
+| User Group | Entra ID Account | M365 License | Notes |
+|-----------|-----------------|-------------|-------|
+| HQ employees (Luleå) | Yes | **Microsoft 365 E3** | Full M365 experience |
+| Restaurant Managers (RM) | Yes | **Microsoft 365 F3** | Frontline worker license |
+| Assistant Restaurant Managers (ARM) | Yes | **Microsoft 365 F3** | Frontline worker license |
+| Other restaurant staff (SL, employees) | **No** | None | No Entra ID / M365 account |
+
+**Note**: Shift Leaders and Restaurant Employees do NOT get Microsoft accounts. They access systems via other means (Caspeco for time mgmt, Ziik for communication, Get Compliant for food safety — all with separate logins).
+
 **Key capabilities**:
 - User identity management
 - Single Sign-On (SAML/OIDC) to connected applications
@@ -547,11 +557,12 @@
 - Primary use: **Google Gemini AI features**
 - Full Workspace capabilities for these 3 users
 
-**2. Google Cloud Identity (Free tier — restaurant users)**
-- Free Cloud ID accounts for restaurant staff
+**2. Google Cloud Identity (Free tier — RM + ARM)**
+- Free Cloud ID accounts for Restaurant Managers and Assistant Restaurant Managers
 - Primary use: **Access to Future Ordering's FO Navigator platform**
 - FO Navigator requires a Google account for login
 - No-cost license (Google Cloud Identity Free)
+- **Note**: Only RM and ARM get Google accounts (same users who get M365 F3). Other restaurant staff do NOT get Google accounts.
 
 **Key capabilities**:
 - AI features via Gemini (3 licensed users)
