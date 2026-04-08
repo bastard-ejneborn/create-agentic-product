@@ -1,6 +1,6 @@
 # Systems Landscape — Bastard Burgers
 > Last updated: 2026-04-08
-> Total systems: 28 | Owner: André Ejneborn, Senior IT Architect
+> Total systems: 33 | Owner: André Ejneborn, Senior IT Architect
 
 ## Summary
 
@@ -23,6 +23,10 @@
 | AI / Productivity | Anthropic Claude AI, Perplexity | Claude AI |
 | Identity (Google) | Google Workspace / Cloud Identity | — |
 | Network | Global Connect | Global Connect |
+| DNS | Cloudflare | Cloudflare |
+| Cloud Platform | Microsoft Azure | Azure |
+| Cloud Compute | Linode (Akamai) | Linode |
+| Expense Management | Pleo, Juni | — |
 | Restaurant Music | Music Player PCs + service (TBD) | — |
 | HR & Internal Communication | Ziik | Ziik |
 | Food Safety & Compliance | Get Compliant | Get Compliant |
@@ -725,6 +729,95 @@ FreshService (tickets/solutions) → n8n (orchestration) → OpenAI (LLM) → Su
 > Users: André Ejneborn, Simon Wanler
 
 **Purpose**: AI-powered search and research tool for quick factual lookups, market research, and technology evaluation.
+
+---
+
+### Cloudflare
+> Category: DNS | Criticality: **High**
+> Vendor: Cloudflare | Contract ref: TBD
+> Owner: André Ejneborn (Senior IT Architect)
+> Hosting: **Cloud (Cloudflare)**
+> Locations: **Central (DNS for bastardburgers.se)**
+
+**Purpose**: DNS management for the primary domain bastardburgers.se. Other domains managed via Loopia, Markmonitor, GoDaddy, and Punktum DK.
+
+**Note**: Domain registrar landscape:
+- **Cloudflare** — DNS for bastardburgers.se
+- **Loopia** — DNS + registry for most other domains (managed by André Ejneborn)
+- **Markmonitor** — Premium domain protection for .com and international domains
+- **GoDaddy** — .co, .info, .net, .online domains (managed by Simon Wanler)
+- **Punktum DK** — bastardburgers.dk
+
+**Confluence ref**: [Domain names](https://bastardburgers.atlassian.net/wiki/spaces/DT/pages/11567120)
+
+---
+
+### Microsoft Azure
+> Category: Cloud Platform | Criticality: **High**
+> Vendor: Microsoft | Contract ref: TBD
+> Owner: André Ejneborn (Senior IT Architect)
+> Hosting: **Cloud (Microsoft Azure)**
+> Locations: **Central**
+
+**Purpose**: Cloud platform hosting various services — Logic Apps, Azure Functions, Table Storage, Automation Accounts, and Azure AD/Entra ID backend. Also hosts M365 Backup trial.
+
+**Key services in use**:
+- Azure Logic Apps (automation workflows)
+- Azure Functions (custom APIs)
+- Azure Table Storage (data store)
+- Azure Automation (runbooks for Entra ID operations)
+- M365 Backup (trial/preview)
+- Break Glass account monitoring (Log Monitor Alerts)
+
+**Note**: Azure is the underlying platform for many Entra ID and M365 automations. It's not a standalone application but a platform layer.
+
+**Confluence ref**: [Automations within M365](https://bastardburgers.atlassian.net/wiki/spaces/DT/pages/64684033), [Break glass configuration](https://bastardburgers.atlassian.net/wiki/spaces/DT/pages/66486273), [M365 Backup](https://bastardburgers.atlassian.net/wiki/spaces/DT/pages/52166657)
+
+---
+
+### Linode (Akamai)
+> Category: Cloud Compute | Criticality: **Medium**
+> Vendor: Linode / Akamai | Contract ref: TBD
+> Owner: André Ejneborn (Senior IT Architect)
+> Hosting: **Cloud (Linode EU Central)**
+> Locations: **Central**
+
+**Purpose**: Ubuntu server running Docker containers for the DPIA tool. IP-restricted to Luleå office access only.
+
+**Server details**:
+- OS: Ubuntu 22.04
+- Label: docker-eu-central
+- DNS: dpia.bastardburgers.se
+- IP: 143.42.18.149
+- Firewall: Cloud Firewall rules enabled
+- Monitoring: Longview enabled
+- Access: IP-filtered (Luleå office only)
+
+**Confluence ref**: [Linode server documentation](https://bastardburgers.atlassian.net/wiki/spaces/DT/pages/10780697)
+
+---
+
+### Pleo
+> Category: Expense Management | Criticality: **Medium**
+> Vendor: Pleo | Contract ref: TBD
+> Owner: TBD (verify — Finance? André Ejneborn?)
+> Hosting: **SaaS**
+> Locations: **HQ + staff with corporate cards**
+
+**Purpose**: Corporate card and expense management platform. Used for company expenses, purchases, and reimbursements.
+
+**Note**: May be replaced by Juni in the future. Both currently in use.
+
+---
+
+### Juni
+> Category: Expense Management | Criticality: **Medium**
+> Vendor: Juni | Contract ref: TBD
+> Owner: TBD (verify — Finance?)
+> Hosting: **SaaS**
+> Locations: **HQ + staff with corporate cards**
+
+**Purpose**: Corporate card and expense management platform. Planned to replace Pleo in the future — both currently running in parallel.
 
 ---
 
