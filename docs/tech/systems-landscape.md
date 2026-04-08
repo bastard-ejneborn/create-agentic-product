@@ -1,6 +1,6 @@
 # Systems Landscape — Bastard Burgers
 > Last updated: 2026-04-08
-> Total systems: 11 | Owner: André Ejneborn, Senior IT Architect
+> Total systems: 12 | Owner: André Ejneborn, Senior IT Architect
 
 ## Summary
 
@@ -13,6 +13,7 @@
 | ITSM & IT Support | FreshService (Pro + Asset) | FreshService |
 | HR & Internal Communication | Ziik | Ziik |
 | Food Safety & Compliance | Get Compliant | Get Compliant |
+| Workforce Management | Caspeco | Caspeco |
 | Employee Engagement | Winningtemp | Winningtemp |
 | Finance & Accounting | Fortnox | Fortnox |
 
@@ -254,6 +255,33 @@
 
 **References in policies**:
 - All leadership role descriptions (RC, ARC, SL) reference "ensure 100% in Get Compliant"
+
+---
+
+### Caspeco
+> Category: Workforce Management | Criticality: **Critical**
+> Vendor: Caspeco | Contract ref: TBD
+> Owner: TBD (verify — HR? Operations? IT?)
+> Hosting: **SaaS** (verify)
+> Locations: **All restaurants + HQ**
+
+**Purpose**: Workforce management platform handling salaries, scheduling, time management, and employee records across the organization.
+
+**Key capabilities**:
+- Salary/payroll processing
+- Operations scheduling (shift planning)
+- Time management (clock in/out, hours tracking)
+- Employee records and master data
+
+**Integrations**:
+- Caspeco → Ziik (user account creation — not SSO, just account provisioning)
+- Caspeco → Fortnox? (verify — salary data to accounting?)
+
+**Data held**: Employee personal data, salary information, work schedules, time records, employment history. **Highly sensitive HR/payroll data — GDPR critical**.
+
+**Dependencies**:
+- Depends on: Internet
+- Depended on by: Payroll processing, scheduling, Ziik (for user account creation), restaurant operations (shift schedules)
 
 ---
 

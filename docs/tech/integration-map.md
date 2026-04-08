@@ -1,6 +1,6 @@
 # Integration Map — Bastard Burgers
 > Last updated: 2026-04-08
-> Total integrations: 7 active | 1 planned | Owner: André Ejneborn, Senior IT Architect
+> Total integrations: 8 active | 1 planned | Owner: André Ejneborn, Senior IT Architect
 
 ## Overview
 
@@ -13,7 +13,8 @@
 | 5 | Como | Simphony | Loyalty redemption | TBD | TBD | Active | TBD |
 | 6 | Delivery platforms | Deliverect | Delivery orders | Platform APIs | Bidirectional | Active | Kim Axelsson |
 | 7 | Future Ordering | Planet/Payment | Digital payments | API | One-way | Active | Simon Brännström |
-| 8 | Simphony | Fortnox | Finance data | TBD | One-way | Planned | TBD |
+| 8 | Caspeco | Ziik | User account creation | API/Automation | One-way | Active | TBD |
+| 9 | Simphony | Fortnox | Finance data | TBD | One-way | Planned | TBD |
 
 ## Integration Details
 
@@ -162,7 +163,30 @@
 
 ---
 
-### 8. Simphony → Fortnox (PLANNED)
+### 8. Caspeco → Ziik
+> Type: User account provisioning | Pattern: **API/Automation** (details TBD)
+> Direction: One-way (Caspeco → Ziik)
+> Frequency: On employee creation/change
+> Status: **Active**
+> Owner: TBD
+
+**Purpose**: When a new employee is created in Caspeco (workforce management), a user account is automatically created in Ziik (internal communication platform). **Not SSO** — this is account provisioning only. Employees have separate credentials for each system.
+
+**Data flow**: Employee name, email, role/location → Ziik user account
+
+**Authentication**: TBD
+
+**Error handling**: TBD (verify — what happens if Ziik account creation fails? Manual fallback?)
+
+**SLA**: TBD
+
+**Dependencies**: Caspeco must have employee data. Ziik must be accessible.
+
+**Note**: No SSO exists between any systems. This is a one-way account creation integration, not authentication federation.
+
+---
+
+### 9. Simphony → Fortnox (PLANNED)
 > Type: Finance/accounting data | Pattern: TBD
 > Direction: One-way (Simphony → Fortnox)
 > Frequency: TBD (daily batch? real-time?)
@@ -212,11 +236,22 @@
                                                         │   (Finance)      │
                                                         └──────────────────┘
 
+                 ┌──────────────┐
+                 │   Caspeco    │
+                 │ (Workforce)  │
+                 └──────┬───────┘
+                        │ User account creation
+                        ▼
+                 ┌──────────────┐
+                 │     Ziik     │
+                 │  (Intranet)  │
+                 └──────────────┘
+
 Standalone Systems (no integrations documented):
-┌────────────┐  ┌───────────────┐  ┌──────────────┐  ┌──────────────┐
-│ FreshService│  │ Get Compliant │  │  Winningtemp │  │     Ziik     │
-│   (ITSM)   │  │ (Food Safety) │  │ (Engagement) │  │  (Intranet)  │
-└────────────┘  └───────────────┘  └──────────────┘  └──────────────┘
+┌────────────┐  ┌───────────────┐  ┌──────────────┐
+│ FreshService│  │ Get Compliant │  │  Winningtemp │
+│   (ITSM)   │  │ (Food Safety) │  │ (Engagement) │
+└────────────┘  └───────────────┘  └──────────────┘
 ```
 
 ## Integration Patterns Used
