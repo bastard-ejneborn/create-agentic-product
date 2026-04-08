@@ -1,13 +1,13 @@
 # Systems Landscape — Bastard Burgers
 > Last updated: 2026-04-08
-> Total systems: 37 | Owner: André Ejneborn, Senior IT Architect
+> Total systems: 38 | Owner: André Ejneborn, Senior IT Architect
 
 ## Summary
 
 | Category | Systems | Most Critical |
 |----------|---------|--------------|
 | POS & Restaurant Operations | Oracle Simphony, Planet Payment Terminals | Oracle Simphony |
-| Digital Ordering | Future Ordering (app, kiosk, web) | Future Ordering |
+| Digital Ordering | Future Ordering (app, kiosk, web), FO Navigator (admin portal) | Future Ordering |
 | Loyalty | Como | Como |
 | Delivery | Deliverect | Deliverect |
 | ITSM & IT Support | FreshService (Pro + Asset) | FreshService |
@@ -101,6 +101,35 @@
 **Dependencies**:
 - Depends on: Simphony (order destination), internet connectivity
 - Depended on by: Mobile app users, kiosk users, web ordering users
+
+---
+
+### Future Ordering Navigator (FO Navigator)
+> Category: Digital Ordering (Admin) | Criticality: **High**
+> Vendor: Future Ordering | Contract ref: TBD
+> Owner: Simon Brännström (IT Architect)
+> Hosting: **SaaS** (Future Ordering's platform)
+> Locations: **HQ + All restaurants** (POS team + RM/ARM access)
+
+**Purpose**: Admin portal for managing the digital ordering platform. Used by the POS team centrally and by Restaurant Managers / Assistant Restaurant Managers at each location for day-to-day operations.
+
+**Key capabilities**:
+- Stock-in / Stock-out (product availability management per restaurant)
+- Customer account management (remove app/web user accounts)
+- Menu and product configuration
+- Restaurant-level settings and overrides
+
+**Users**:
+- **POS team** (Petron Fernandes, Roopneet Bhalla, Kim Axelsson) — central administration
+- **Restaurant Managers + Assistant Restaurant Managers** — per-location stock management
+
+**Authentication**: Requires a **Google account** to log in (Google Cloud Identity Free accounts provisioned via Entra ID → Google provisioning)
+
+**Integrations**:
+- FO Navigator ↔ Future Ordering platform (native — same vendor)
+- Google Cloud Identity → FO Navigator (Google Sign-In authentication)
+
+**Confluence ref**: [FO - Notifications](https://bastardburgers.atlassian.net/wiki/spaces/DT/pages/10321933)
 
 ---
 
