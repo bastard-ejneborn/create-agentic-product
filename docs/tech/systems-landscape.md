@@ -85,7 +85,7 @@
 ### Deliverect
 > Category: Delivery | Criticality: **High**
 > Vendor: Deliverect | Contract ref: TBD
-> Owner: TBD (verify — POS team or Operations?)
+> Owner: Kim Axelsson (POS Architect)
 > Hosting: **SaaS**
 > Locations: **All locations with delivery** (verify scope)
 
@@ -112,7 +112,7 @@
 ### Planet Payment Terminals
 > Category: POS & Restaurant Operations | Criticality: **Critical**
 > Vendor: Planet | Contract ref: TBD
-> Owner: TBD (verify — POS team or IT Support?)
+> Owner: Johnny Bröms (CDTO)
 > Hosting: **On-premise** (physical terminals in each restaurant)
 > Locations: **All 74 restaurants**
 
@@ -137,7 +137,7 @@
 ### FreshService
 > Category: ITSM & IT Support | Criticality: **High**
 > Vendor: Freshworks | Contract ref: TBD
-> Owner: TBD (verify — André Ejneborn? Christian Ling?)
+> Owner: Johnny Bröms (CDTO)
 > Hosting: **SaaS**
 > Plan: **Pro + Asset Management add-on**
 > Locations: **HQ + all restaurants** (for ticket submission)
@@ -167,7 +167,7 @@
 ### Ziik
 > Category: HR & Internal Communication | Criticality: **Medium**
 > Vendor: Ziik | Contract ref: TBD
-> Owner: TBD (verify — HR? Operations? IT?)
+> Owner: HR (Maja Lundqvist, CPO)
 > Hosting: **SaaS**
 > Locations: **All restaurants + HQ**
 
@@ -303,10 +303,10 @@
 
 ## Gaps & Questions
 
-- [ ] **Deliverect ownership** — who owns the Deliverect relationship internally?
-- [ ] **Planet ownership** — who manages the payment terminal relationship?
-- [ ] **FreshService ownership** — André Ejneborn or Christian Ling?
-- [ ] **Ziik ownership** — HR, Operations, or IT?
+- [x] **Deliverect ownership** — Kim Axelsson (POS Architect) ✅
+- [x] **Planet ownership** — Johnny Bröms (CDTO) ✅
+- [x] **FreshService ownership** — Johnny Bröms (CDTO) ✅
+- [x] **Ziik ownership** — HR (Maja Lundqvist, CPO) ✅
 - [ ] **Loyalty platform** — is this part of Future Ordering or a separate system?
 - [ ] **Kitchen Display System (KDS)** — does BB use one? Separate system or Simphony module?
 - [ ] **Scheduling system** — is scheduling done in Simphony, a separate tool, or manually?
