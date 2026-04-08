@@ -936,6 +936,7 @@ FreshService (tickets/solutions) → n8n (orchestration) → OpenAI (LLM) → Su
 
 | **Royal Streaming** | Restaurant music — playlist management + Barix RetailPlayer device management | Via Barix devices | Playlists and device management for all 74 restaurants |
 | **Cloudspin** | Software licensing distributor — Adobe, Microsoft 365, SnagIT | Self-service web portal | License add/remove + invoicing |
+| **Future Ordering** | Digital ordering platform provider — Express kiosk software, web ordering, mobile app | FO Navigator (admin), Simphony TX Services API | Software, solution, and support for all digital ordering channels |
 
 **Note**: Xite was the previous networking partner, now replaced by Global Connect. Some Confluence documentation may still reference Xite — those references are historical.
 
