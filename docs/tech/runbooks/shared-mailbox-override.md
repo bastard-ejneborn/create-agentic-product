@@ -29,7 +29,12 @@ Add a specific user (who is not part of the restaurant team) to a restaurant's s
 - Open: **`SBX_MailboxOverridesJson`**
 
 ### 4. Edit the JSON
-Add a new entry to the `"overrides"` array:
+
+**To add a user** — add a new entry to the `"overrides"` array:
+
+**To remove an override** — delete the entire JSON block for that user from the array. Save. The next hourly run will revoke the access automatically (since the user no longer appears in the desired state).
+
+**Add entry format**:
 
 ```json
 {
@@ -188,8 +193,97 @@ The `SBX_MailboxOverridesJson` variable adds exceptions to the base rule:
 
 | Variable | Purpose | Format |
 |----------|---------|--------|
-| `SBX_LocationToMailboxJson` | Maps office/restaurant names to shared mailbox SMTP addresses | `{"Restaurants": {"Luleå": "lulea@bastardburgers.se", ...}}` |
+| `SBX_LocationToMailboxJson` | Maps office/restaurant names to shared mailbox SMTP addresses | See full mapping below |
 | `SBX_MailboxOverridesJson` | Manual overrides (add/exclude users) | See override JSON format above |
+
+### Full Office → Mailbox Mapping (SBX_LocationToMailboxJson)
+
+73 restaurants mapped:
+
+| Office (OfficeLocation in Entra) | Shared Mailbox |
+|----------------------------------|---------------|
+| Alvik | alvik@bastardburgers.se |
+| Barkarbystaden | barkarbystaden@bastardburgers.se |
+| Birger Jarlsgatan | birgerjarlsgatan@bastardburgers.se |
+| Birkastan | birkastan@bastardburgers.se |
+| Boden | boden@bastardburgers.se |
+| Borås | boras@bastardburgers.se |
+| Emporia | emporia@bastardburgers.se |
+| Eskilstuna | eskilstuna@bastardburgers.se |
+| Etage | etage@bastardburgers.se |
+| Falun | falun@bastardburgers.se |
+| Farsta | farsta@bastardburgers.se |
+| Frölunda | frolunda@bastardburgers.se |
+| Gallerian | gallerian@bastardburgers.se |
+| Grand Samarkand | grandsamarkand@bastardburgers.se |
+| Gränby | granby@bastardburgers.se |
+| Gullmarsplan | gullmarsplan@bastardburgers.se |
+| Hagastaden | hagastaden@bastardburgers.se |
+| Halmstad | halmstad@bastardburgers.se |
+| Hammarby Sjöstad | hammarbysjostad@bastardburgers.se |
+| Helsingborg | helsingborg@bastardburgers.se |
+| Helsingborg City | helsingborgcity@bastardburgers.se |
+| Helsingborg Väla | vala@bastardburgers.se |
+| Helsinki Airport | helsinkiairport@bastardburgers.se |
+| Hötorget | hotorget@bastardburgers.se |
+| Jönköping | jonkoping@bastardburgers.se |
+| Kalmar | kalmar@bastardburgers.se |
+| Kamppi | kamppi@bastardburgers.**fi** |
+| Karlskrona | karlskrona@bastardburgers.se |
+| Karlstad | karlstad@bastardburgers.se |
+| Karlstad City | karlstadcity@bastardburgers.se |
+| Kungsholmen | kungsholmen@bastardburgers.se |
+| Kungsmässan | kungsmassan@bastardburgers.se |
+| Kungälv | kongahalla@bastardburgers.se |
+| Liljeholmen | liljeholmen@bastardburgers.se |
+| Linköping | linkoping@bastardburgers.se |
+| Luleå | lulea@bastardburgers.se |
+| Luleå Shopping | shopping@bastardburgers.se |
+| Malmö | malmo@bastardburgers.se |
+| Marieberg | marieberg@bastardburgers.se |
+| Medborgarplatsen | medborgarplatsen@bastardburgers.se |
+| Mikonkatu | mikonkatu@bastardburgers.se |
+| Mobilia | mobilia@bastardburgers.se |
+| Mölndal | molndal@bastardburgers.se |
+| Norrköping | norrkoping@bastardburgers.se |
+| Norrlandsgatan | norrlandsgatan@bastardburgers.se |
+| Nova Lund | novalund@bastardburgers.se |
+| Nyköping | nykoping@bastardburgers.se |
+| Piteå | pitea@bastardburgers.se |
+| Sickla | sickla@bastardburgers.se |
+| Skellefteå | skelleftea@bastardburgers.se |
+| Skövde | skovde@bastardburgers.se |
+| Sofia | sofia@bastardburgers.se |
+| Sollentuna | sollentuna@bastardburgers.se |
+| Solli | solli@bastardburgers.se |
+| Solna | solna@bastardburgers.se |
+| St Paul | stpauls@bastardburgers.se |
+| Sundsvall | sundsvall@bastardburgers.se |
+| Södra Larmgatan | goteborgsodra@bastardburgers.se |
+| Torggata | torggata@bastardburgers.se |
+| Torp | torp@bastardburgers.se |
+| Täby | taby@bastardburgers.se |
+| Umeå | umea@bastardburgers.se |
+| Uppsala | uppsala@bastardburgers.se |
+| Varberg | varberg@bastardburgers.se |
+| Vasastan | vasastan@bastardburgers.se |
+| Värmdö | varmdo@bastardburgers.se |
+| Väsby | vasby@bastardburgers.se |
+| Västermalm | vastermalm@bastardburgers.se |
+| Västerås | vasteras@bastardburgers.se |
+| Växjö | vaxjo@bastardburgers.se |
+| Örebro | orebro@bastardburgers.se |
+| Östersund | ostersund@bastardburgers.se |
+| Östra Hamngatan | goteborgostra@bastardburgers.se |
+
+**Notes**:
+- Kamppi uses **bastardburgers.fi** domain (Finland) — all others use bastardburgers.se
+- Kungälv maps to `kongahalla@` (historical name)
+- Luleå Shopping maps to `shopping@` (not `luleashopping@`)
+- Helsingborg Väla maps to `vala@`
+- Södra Larmgatan maps to `goteborgsodra@`
+- Östra Hamngatan maps to `goteborgostra@`
+- Helsinki Airport and Mikonkatu use bastardburgers.se (not .fi) — only Kamppi uses .fi
 
 ---
 
@@ -204,6 +298,6 @@ The `SBX_MailboxOverridesJson` variable adds exceptions to the base rule:
 ## TODO
 - [x] Document which automation runbook reads this variable and how it applies the overrides ✅
 - [x] Document the `validFrom` / `validTo` fields — **they ARE functional** (runbook checks date bounds) ✅
-- [ ] Document how to **remove** a user override (change action to "exclude"? Or delete the JSON entry?)
-- [ ] Document the `SBX_LocationToMailboxJson` variable contents (full office→SMTP mapping)
+- [x] Document how to remove a user override — **delete the JSON entry, save, auto-revoked next run** ✅
+- [x] Document the `SBX_LocationToMailboxJson` variable contents ✅
 - [ ] Add this runbook to Confluence as the authoritative version
