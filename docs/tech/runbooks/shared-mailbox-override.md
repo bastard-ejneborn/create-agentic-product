@@ -135,6 +135,20 @@ Add a new entry to the `"overrides"` array:
 }
 ```
 
+## Automation Details
+
+| Setting | Value |
+|---------|-------|
+| Automation Account | `aa-bb-group-sync-prod` |
+| Runbook name | `UpdateSharedRestaurantMailboxes` |
+| Variable read | `SBX_MailboxOverridesJson` |
+| Schedule | Every hour |
+| Location | Azure Portal → Automation Accounts → `aa-bb-group-sync-prod` → Runbooks → `UpdateSharedRestaurantMailboxes` |
+
+The `UpdateSharedRestaurantMailboxes` runbook reads the `SBX_MailboxOverridesJson` variable and applies the overrides to the corresponding Exchange Online shared mailboxes.
+
+---
+
 ## Important Notes
 
 - The `offices` value must match the **exact restaurant name** as configured in the system
