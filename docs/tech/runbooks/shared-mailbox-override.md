@@ -141,11 +141,55 @@ Add a new entry to the `"overrides"` array:
 |---------|-------|
 | Automation Account | `aa-bb-group-sync-prod` |
 | Runbook name | `UpdateSharedRestaurantMailboxes` |
-| Variable read | `SBX_MailboxOverridesJson` |
+| Variables read | `SBX_LocationToMailboxJson` (office→SMTP mapping), `SBX_MailboxOverridesJson` (overrides) |
 | Schedule | Every hour |
+| Auth | Managed Identity (system-assigned) — Microsoft Graph + Exchange Online |
+| Tenant | `bastardburgerssweden.onmicrosoft.com` |
 | Location | Azure Portal → Automation Accounts → `aa-bb-group-sync-prod` → Runbooks → `UpdateSharedRestaurantMailboxes` |
 
-The `UpdateSharedRestaurantMailboxes` runbook reads the `SBX_MailboxOverridesJson` variable and applies the overrides to the corresponding Exchange Online shared mailboxes.
+### How the Runbook Works
+
+The `UpdateSharedRestaurantMailboxes` runbook performs **attribute-based delegation** to Exchange Online shared mailboxes. It grants **FullAccess + SendAs** permissions based on user attributes in Entra ID.
+
+**Base rule** (automatic — no override needed):
+```
+IF   user.JobTitle ∈ {"Restaurant Manager", "Assistant restaurant manager"}
+AND  user.Department = "Restaurants"
+AND  user.OfficeLocation = <restaurant name>
+THEN grant FullAccess + SendAs on the shared mailbox for that restaurant
+```
+
+This means RM and ARM automatically get access to their restaurant's shared mailbox based on their Entra ID profile — no manual action needed.
+
+**Override rule** (the manual process documented above):
+The `SBX_MailboxOverridesJson` variable adds exceptions to the base rule:
+- `"action": "add"` — grant access to a user who doesn't match the base rule
+- `"action": "exclude"` — revoke access from a user who would normally match
+- `validFrom` / `validTo` — optional date-bounded overrides (functional — the runbook checks these dates)
+
+**Processing flow**:
+1. Connect to Microsoft Graph (Managed Identity) and Exchange Online
+2. Query all users where Department="Restaurants" AND Title∈{RM, ARM} AND OfficeLocation is set
+3. Build a plan: for each restaurant mailbox, list desired users (from base rule)
+4. Apply overrides from `SBX_MailboxOverridesJson` (add/exclude, respecting date bounds)
+5. Compare desired state vs. current permissions on each shared mailbox
+6. Calculate delta: who to add, who to remove
+7. Apply changes (FullAccess + SendAs) — or log only if DryRun mode
+8. Output structured JSON logs per mailbox for audit
+
+**Key behaviors**:
+- **Declarative**: The runbook computes the full desired state and reconciles — it both adds AND removes permissions
+- **Automapping**: Outlook automapping is enabled on FullAccess grants (mailbox auto-appears in Outlook)
+- **System protection**: NT AUTHORITY\SELF and raw SIDs are never touched
+- **DryRun mode**: Can be run with `-DryRun $true` to log what would change without applying
+- **Single office mode**: Can be scoped to one restaurant with `-OnlyOffice "Restaurant Name"`
+
+### Two Automation Variables
+
+| Variable | Purpose | Format |
+|----------|---------|--------|
+| `SBX_LocationToMailboxJson` | Maps office/restaurant names to shared mailbox SMTP addresses | `{"Restaurants": {"Luleå": "lulea@bastardburgers.se", ...}}` |
+| `SBX_MailboxOverridesJson` | Manual overrides (add/exclude users) | See override JSON format above |
 
 ---
 
@@ -158,8 +202,8 @@ The `UpdateSharedRestaurantMailboxes` runbook reads the `SBX_MailboxOverridesJso
 - Reference INC ticket numbers when the override is triggered by a support request
 
 ## TODO
-- [ ] Document how to **remove** a user override
-- [ ] Document the `validFrom` / `validTo` fields — are they functional or reserved for future use?
-- [ ] Document which automation runbook reads this variable and how it applies the overrides
-- [ ] Document the restaurant name matching logic (where does the automation get the list of valid office names?)
+- [x] Document which automation runbook reads this variable and how it applies the overrides ✅
+- [x] Document the `validFrom` / `validTo` fields — **they ARE functional** (runbook checks date bounds) ✅
+- [ ] Document how to **remove** a user override (change action to "exclude"? Or delete the JSON entry?)
+- [ ] Document the `SBX_LocationToMailboxJson` variable contents (full office→SMTP mapping)
 - [ ] Add this runbook to Confluence as the authoritative version
