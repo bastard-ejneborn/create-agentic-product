@@ -202,6 +202,16 @@ Items flagged during document uploads and setup — need verification, correctio
 - [ ] **📋 "Intune Knowledge Base" is only external links** — No internal KB content, just bookmarks to Microsoft docs and community scripts. Consider either adding internal troubleshooting content or renaming to "External References".
   - Page: https://bastardburgers.atlassian.net/wiki/spaces/DT/pages/917507
 
+### Documentation to Complete
+
+- [ ] **📋 Shared Mailbox Override runbook — needs full documentation** — Draft created at `docs/tech/runbooks/shared-mailbox-override.md` covering how to add users to restaurant shared mailboxes via Azure Automation variable. Needs to be expanded with:
+  - How to remove a user override
+  - Whether `validFrom` / `validTo` fields are functional or reserved
+  - Which automation runbook reads the variable and how it applies overrides
+  - Restaurant name matching logic (source of valid office names)
+  - Final version should be published to Confluence as the authoritative doc
+  - Owner: André Ejneborn
+
 ### Security
 
 - [ ] **⚠️ Plain-text password in Confluence** — The "Domain names" page in Confluence DT space contains a Punktum DK login credential (user ID + password) in plain text. This should be moved to a secrets manager or removed. Flag to Robert Beney (Head of Information Security and Compliance).
