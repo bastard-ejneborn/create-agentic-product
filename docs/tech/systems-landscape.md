@@ -1045,19 +1045,19 @@ FreshService (tickets/solutions) → n8n (orchestration) → OpenAI (LLM) → Su
 
 ### ORS — Order Ready Screen
 > Category: Restaurant Equipment | Criticality: **High**
-> Vendor: Future Ordering (service) | Hardware: TBD (verify — dedicated screen or PC-based?)
-> Owner: Simon Brännström (IT Architect)
-> Hosting: **On-premise** (screen) + **SaaS** (FO service)
+> Vendor: Grassfish (managed alongside digital signage screens)
+> Owner: TBD (verify)
+> Hosting: **On-premise** (screen, built-in player) + **SaaS** (Grassfish CMS)
 > Locations: **All 73 company-operated restaurants**
 
-**Purpose**: Displays order status to guests — shows when their order is ready for pickup. Part of the Future Ordering ecosystem.
+**Purpose**: Displays order status to guests — shows when their order is ready for pickup. Managed by Grassfish alongside the commercial digital signage screens.
 
 **Key capabilities**:
 - Real-time order ready notifications for guests
-- Integrates with Simphony order flow (via Future Ordering)
+- Managed through Grassfish CMS
 
 **Dependencies**:
-- Depends on: Future Ordering platform, Simphony (order data), internet, local network
+- Depends on: Grassfish CMS, Simphony (order data), internet, local network
 - Depended on by: Guest experience (pickup flow)
 
 ---
