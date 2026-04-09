@@ -126,7 +126,7 @@ Both Regional Managers (**Johannes Norrblom** and **Ricardo Moses**) report dire
 | Norrlandsgatan | Open |
 | Hötorget | Open |
 | Mikonkatu (Helsinki) | Open |
-| Landvetter Airport | Open |
+| Landvetter Airport | Open (Franchise) |
 | Helsinki Airport | Open |
 | Kamppi (Helsinki) | Opening Spring 2026 |
 
@@ -208,4 +208,5 @@ Both Regional Managers (**Johannes Norrblom** and **Ricardo Moses**) report dire
 - **Stockholm density**: 28 restaurants in Stockholm area (Central 1: 11 in South, Mid/East: 17 in North — split across regions)
 - **International Finland 🇫🇮**: 4 Helsinki-area restaurants (Mikonkatu, Kamppi, Helsinki Airport) under District Central 2/Finland in Region South
 - **International Norway 🇳🇴**: 2 Oslo restaurants (Solli, Torggata) under District South in Region South, managed by DM Björn Nicklasson
+- **Franchise**: Landvetter Airport is a franchise location — not company-operated. No BB shared mailbox, no BB IT systems (Entra ID, Simphony managed by BB, etc. — verify scope)
 - **Restaurant Managers**: Not tracked — they change too often to maintain in org structure
