@@ -1,5 +1,5 @@
 # Company Strategy — Bastard Burgers
-> Last updated: 2026-04-03
+> Last updated: 2026-04-14 (added Annika Elworth, Ellen Mårtensson, Anton Eriksson)
 > Source: Strategi & Kickoff 2025
 > Note: This is the 2025 strategy. 2026 version pending.
 
@@ -30,13 +30,16 @@
 - **CXO (Chief Expansion Officer)**: Johan Gederberg operates as a one-person function — no direct reports.
 - **Head of Project and Development**: Caroline Johansson operates without a dedicated project team — she drives project and development work directly.
 - **Head of Local Marketing and New Business**: Malin Hansegård *is* the Local Marketing and New Business team — operates solo without reports.
-- **COO direct reports are complete**: Johnny Klippmark's direct reports are 5 — RM North (Johannes), RM South (Ricardo), Caroline Johansson, Malin Hansegård, and Jonas Ylinenjärvi. No additional reports.
+- **COO direct reports**: Johnny Klippmark has 6 direct reports — RM North (Johannes), RM South (Ricardo), Caroline Johansson (Head of Project and Development), Malin Hansegård (Head of Local Marketing and New Business), Anton Eriksson (Senior Project Manager), and Jonas Ylinenjärvi (F&B Manager).
+- **Brand & Marketing reports to CEO**: Annika Elworth (Brand & Creative Manager) reports directly to Simon Wanler. Ellen Mårtensson (Guest Relations & Social Media) reports to Annika. This is a separate marketing function from Malin Hansegård's *Local Marketing & New Business* under the COO.
 - **Restaurant Managers not tracked**: Restaurant Managers change frequently, so individual names are intentionally not maintained in the org structure. Operations hierarchy tracks districts and restaurants only.
 
 ### Reporting Structure
 
 ```
 CEO: Simon Wanler
+  ├── Brand & Creative Manager: Annika Elworth
+  │     └── Guest Relations & Social Media: Ellen Mårtensson
   ├── CFO: Lisa Wanler
   │     ├── Head of Finance: Filip Forsling
   │     │     ├── Business Controller: Erik Löfgren
@@ -55,6 +58,7 @@ CEO: Simon Wanler
   │     ├── RM South: Ricardo Moses
   │     ├── Head of Project and Development: Caroline Johansson
   │     ├── Head of Local Marketing and New Business: Malin Hansegård
+  │     ├── Senior Project Manager: Anton Eriksson
   │     └── F&B Manager: Jonas Ylinenjärvi
   ├── CXO: Johan Gederberg
   ├── CPO: Maja Lundqvist
@@ -81,6 +85,9 @@ CEO: Simon Wanler
 | Role | Person | Reports To |
 |------|--------|-----------|
 | HR Business Partner | Therese Alm | Maja Lundqvist (CPO) |
+| Brand & Creative Manager | Annika Elworth | Simon Wanler (CEO) |
+| Guest Relations & Social Media | Ellen Mårtensson | Annika Elworth (Brand & Creative Manager) |
+| Senior Project Manager | Anton Eriksson | Johnny Klippmark (COO) |
 | Food & Beverage Manager | Jonas Ylinenjärvi | Johnny Klippmark (COO) |
 | Business Controller | Erik Löfgren | Filip Forsling (Head of Finance) |
 | Accounting Manager | Maria Tornéus | Filip Forsling (Head of Finance) |
