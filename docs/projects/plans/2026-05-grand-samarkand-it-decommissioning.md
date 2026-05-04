@@ -161,7 +161,7 @@ T-0 = last day of operation. Dates filled in once T-0 is confirmed.
 | `<SL_NAMES>` | Shift Leader(s) | | | |
 | Co-workers (`<n>` total) | | | | |
 
-> Note: HR drives this section; IT disables accounts (Entra, Caspeco, Google Workspace) per HR's offboarding signal. Louai's accounts include Entra ID, Caspeco, Get Compliant, and possibly Google Cloud Identity (FO Navigator access). **Shared mailbox access is automated via Entra ID** (dynamic group based on Title + Office location), so when his Entra attributes change or his account is disabled, shared mailbox access drops automatically — no separate manual step. The restaurant's shared mailbox itself is handled via the M365 row in the disposition matrix (convert to archive).
+> Note: HR drives this section; IT disables accounts (Entra, Caspeco, Google Workspace) per HR's offboarding signal. Louai's accounts include Entra ID, Caspeco, Get Compliant, and possibly Google Cloud Identity (FO Navigator access). **Shared mailbox access is managed by the `UpdateSharedRestaurantMailboxes` Azure Automation runbook** (Automation Account `aa-bb-group-sync-prod`, runs hourly, driven by Title + Office location with override variable `SBX_MailboxOverridesJson`). When Louai's Entra attributes change or his account is disabled, the next hourly run drops his mailbox access — no separate manual step. The restaurant's shared mailbox itself is handled via the M365 row in the disposition matrix (convert to archive). Runbook ref: `docs/tech/runbooks/shared-mailbox-override.md`.
 
 ---
 
