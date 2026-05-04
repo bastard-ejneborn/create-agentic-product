@@ -1,12 +1,13 @@
 # Project Portfolio — Bastard Burgers
 > Last updated: 2026-05-04
-> Total active projects: 1 | At risk: 0 | Blocked: 0
+> Total active projects: 2 | At risk: 0 | Blocked: 0
 
 ## Portfolio Summary
 
 | Project | Owner | Status | Priority Alignment | Timeline | Health |
 |---------|-------|--------|-------------------|----------|--------|
 | New Restaurant — Kamppi | Johan Gederberg (CXO) | Active | Expansion | Soft Open Fri 2026-05-08 | Green |
+| AI Hackathon — Luleå HQ | André Ejneborn (Senior IT Architect) / Sponsor: Johnny Bröms (CDTO) | Planning | Digital & Tech / AI capability | Pitch 2026-05-05; date TBD | Green |
 
 Health: Green = on track | Yellow = at risk | Red = blocked/failing
 
@@ -69,6 +70,46 @@ Health: Green = on track | Yellow = at risk | Red = blocked/failing
 | TBD | |
 
 **Expected outcome**: New restaurant operational in Kamppi, Helsinki, contributing to revenue targets and strengthening Finnish market presence.
+
+---
+
+### AI Hackathon — Luleå HQ
+> Status: **Planning** | Health: **Green**
+> Project Lead: André Ejneborn (Senior IT Architect)
+> Sponsor: Johnny Bröms (CDTO)
+> Pitch meeting: **2026-05-05 13:30** | Event date: TBD | 4-week regroup: TBD
+
+**Description**: Half-day internal hackathon for Luleå HQ employees, designed to teach AI usage in daily work through cross-functional teams competing on shared tasks (warm-up + 3 voted rounds), all using the company's ChatGPT Business accounts. Run in Swedish.
+
+**Strategic alignment**: This Hackathon is the **on-ramp for the new AI capability format** that replaces the dissolved AI Operations Team. Goal: bottom-up AI initiatives emerging from any function, vs the previous top-down "AI-Council" model.
+
+**Goal per participant**: leave with one concrete AI use case they have actually tried, plus a written commitment to change one workflow within 4 weeks.
+
+**Format**:
+- Scope: Luleå HQ only
+- Tooling: ChatGPT Business
+- Language: Swedish
+- Voting: Mentimeter, can't vote for own team, cumulative scoreboard
+- Follow-up: 4-week regroup where each participant returns with one workflow they actually changed
+
+**Plan**: see `docs/projects/plans/2026-05-ai-hackathon-lulea-hq.md`
+
+**Open decisions** (to resolve in pitch meeting):
+| Decision | Owner |
+|---|---|
+| Event date / time | Johnny Bröms |
+| Sensitive-data guardrails | André + Johnny |
+| Facilitator support (who, how many) | Johnny |
+| Beginner/advanced mix mitigation | André |
+
+**Risks**:
+| Risk | Mitigation |
+|------|-----------|
+| Sensitive data pasted into ChatGPT | Pre-defined fictional task patterns; reinforced ground rule |
+| Advanced users dominate teams | Rotate "driver" role per round |
+| Commitments collected but never followed up | 4-week regroup booked at the wrap-up |
+
+**Expected outcome**: Measured at the 4-week regroup — % of participants reporting an actual workflow change. Sets the foundation for the new AI capability format that replaces the dissolved AI Operations Team.
 
 ---
 
