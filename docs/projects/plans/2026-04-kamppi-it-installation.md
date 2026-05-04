@@ -25,6 +25,7 @@
 | Barix RetailPlayer | Installed by Effektgruppen (Thu Apr 23) |
 | POS Workstations | 2 installed (final count) |
 | KDS Units | 3 installed (Thu Apr 23) |
+| Kitchen Printers | 2 installed in the kitchen |
 | Bookable-room streaming evaluation | **Outstanding** — TV streaming test in event room not yet done |
 | Open at end of Week 17 | (1) Grassfish screens (14) — patching + install scheduled this week (W19, May 4–8); (2) Network patching for Grassfish; (3) Grassfish networking docs; (4) Event-room TV streaming test |
 
@@ -240,6 +241,7 @@
 | POS Workstations | 2 | Installed; tested Fri Apr 24 | Networking issues during testing — see Issue #1 |
 | Planet Payment Terminals | 2 | Installed and paired with POS | — |
 | KDS Units | 3 | Installed (Thu Apr 23) | — |
+| Kitchen Printers | 2 | Installed in the kitchen | — |
 | Restaurant Laptop | 1 | Handed over to RM/ARM | — |
 | Restaurant iPad (kitchen) | 1 | Handed over | — |
 | Multi-Function Printer | 1 | Installed (backoffice) | — |

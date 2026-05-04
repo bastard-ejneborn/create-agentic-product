@@ -1,8 +1,11 @@
 # Systems Landscape — Bastard Burgers
-> Last updated: 2026-04-08
-> Total systems: 42 | Owner: André Ejneborn, Senior IT Architect
+> Last updated: 2026-05-04 (Kamppi soft open Fri 2026-05-08; restaurant counts 74→75, company-operated 73→74; added Kitchen Printer entry)
+> Total systems: 43 | Owner: André Ejneborn, Senior IT Architect
 
 ## Summary
+
+> **Footprint**: 75 restaurants (74 company-operated + 1 franchise — Landvetter Airport).
+> **Most recent opening**: Kamppi (Helsinki, Finland) — soft open Fri 2026-05-08. IT install completed week 17 (Apr 20–24, 2026): 6 Express kiosks, 2 POS workstations, 2 Planet payment terminals, 3 KDS units, 2 kitchen printers, Office Desktop PC + monitor + multi-function printer, restaurant laptop, kitchen iPad, Barix RetailPlayer (via Effektgruppen). Grassfish screens (14) + bookable-room TV streaming pending Week 19. See `docs/projects/plans/2026-04-kamppi-it-installation.md` for the full retrospective.
 
 | Category | Systems | Most Critical |
 |----------|---------|--------------|
@@ -48,7 +51,7 @@
 > Vendor: Oracle | Contract ref: TBD (see vendor-manager when set up)
 > Owner: Johnny Bröms (CDTO) | Managed by: Petron Fernandes, Roopneet Bhalla
 > Hosting: **Cloud (Oracle shared environment)**
-> Locations: **All 74 restaurants**
+> Locations: **All 75 restaurants**
 
 **Purpose**: Core POS system — handles all restaurant transactions, order management, menu configuration, and reporting across the entire chain.
 
@@ -83,7 +86,7 @@
 > Vendor: Future Ordering (third-party) | Contract ref: TBD
 > Owner: Simon Brännström (IT Architect)
 > Hosting: **SaaS** (Future Ordering's platform)
-> Locations: **All 74 restaurants** (app, kiosk, web ordering)
+> Locations: **All 75 restaurants** (app, kiosk, web ordering)
 
 **Purpose**: Digital ordering platform powering the Bastard Burgers mobile app, self-service kiosks, and web ordering. Orders flow through FO into Simphony.
 
@@ -169,7 +172,7 @@
 > Vendor: Planet | Contract ref: TBD
 > Owner: Johnny Bröms (CDTO)
 > Hosting: **On-premise** (physical terminals in each restaurant)
-> Locations: **All 74 restaurants**
+> Locations: **All 75 restaurants**
 
 **Purpose**: Payment processing terminals at each POS station. Handles card payments, contactless, and mobile pay.
 
@@ -194,7 +197,7 @@
 > Vendor: Como | Contract ref: TBD
 > Owner: TBD (verify — Simon Brännström? Marketing?)
 > Hosting: **SaaS**
-> Locations: **All 74 restaurants** (via app + POS)
+> Locations: **All 75 restaurants** (via app + POS)
 
 **Purpose**: Loyalty program platform powering Bastard Burgers' customer loyalty — member management, points accrual, rewards, offers, and engagement campaigns.
 
@@ -231,7 +234,7 @@
 
 **Key capabilities**:
 - Incident management (IT tickets)
-- Asset management (hardware tracking across 74 locations)
+- Asset management (hardware tracking across 75 locations)
 - Change management
 - Problem management
 - SLA tracking and reporting
@@ -254,7 +257,7 @@
 > Vendor: NinjaOne | Contract ref: TBD
 > Owner: TBD (verify — André Ejneborn? Christian Ling? IT Support?)
 > Hosting: **SaaS**
-> Locations: **All 74 restaurants** (manages on-site hardware)
+> Locations: **All 75 restaurants** (manages on-site hardware)
 
 **Purpose**: Remote Monitoring and Management (RMM) platform for managing restaurant hardware endpoints — Express kiosks, POS workstations, and Kitchen Display System (KDS) units across all locations.
 
@@ -322,7 +325,7 @@
 > Vendor: Get Compliant | Contract ref: TBD
 > Owner: Jonas Ylinenjärvi (F&B Manager)
 > Hosting: **SaaS**
-> Locations: **All 74 restaurants**
+> Locations: **All 75 restaurants**
 
 **Purpose**: Digital food safety and compliance platform. Used for daily checklists, temperature monitoring, hygiene audits, and regulatory compliance at all restaurants.
 
@@ -650,7 +653,7 @@
 > Vendor: Global Connect | Contract ref: TBD
 > Owner: TBD (verify — André Ejneborn? Johnny Bröms?)
 > Hosting: **On-premise (restaurant networking) + WAN**
-> Locations: **All 74 restaurants**
+> Locations: **All 75 restaurants**
 
 **Purpose**: Network provider for all restaurant locations. Provides internet connectivity, switching infrastructure, and IP management for each restaurant.
 
@@ -706,7 +709,7 @@
 **Purpose**: Mobile Device Management (MDM) for Apple iOS/iPadOS devices. Manages restaurant iPads and HQ employee iPhones.
 
 **Managed devices**:
-- **Restaurant iPads** — all 74 locations (clock-in/out, Get Compliant, backup music)
+- **Restaurant iPads** — all 75 locations (clock-in/out, Get Compliant, backup music)
 - **HQ iPhones** — Luleå HQ employees who choose iPhone
 
 **Note**: Jamf NOW manages Apple devices specifically. The full device management split is:
@@ -1011,14 +1014,14 @@ FreshService (tickets/solutions) → n8n (orchestration) → OpenAI (LLM) → Su
 
 ### Barix RetailPlayer / Royal Streaming
 > Category: Restaurant Music | Criticality: **Low**
-> Vendor: Royal Streaming (playlist management) + Barix (hardware)
+> Vendor: Royal Streaming (playlist management) + Barix (hardware) + **Effektgruppen** (speakers/amplifiers + on-site install for new openings)
 > Owner: TBD
 > Hosting: **On-premise** (dedicated Barix RetailPlayer per restaurant)
-> Locations: **All 74 restaurants** (some still on iPad, migration ongoing)
+> Locations: **All 75 restaurants** (some still on iPad/Sonos legacy, migration ongoing)
 
-**Purpose**: Background music at each restaurant. Royal Streaming manages playlists and device management. Barix RetailPlayer is the dedicated hardware device.
+**Purpose**: Background music at each restaurant. Royal Streaming manages playlists and device management. Barix RetailPlayer is the dedicated hardware device. Effektgruppen handles speaker/amplifier hardware and on-site sound install at new openings.
 
-**Note**: Some restaurants still use iPads as music players — ongoing migration to Barix RetailPlayer.
+**Note**: Music hardware varies by restaurant — older locations still on Sonos or iPad as music player; new openings (e.g., Kamppi 2026-05-08) use the **Effektgruppen + Barix** pattern. Always verify which hardware a given restaurant has before troubleshooting.
 
 **Confluence ref**: [IT in restaurants](https://bastardburgers.atlassian.net/wiki/spaces/DT/pages/11600008)
 
@@ -1029,7 +1032,7 @@ FreshService (tickets/solutions) → n8n (orchestration) → OpenAI (LLM) → Su
 > Vendor: Grassfish | Contract ref: TBD
 > Owner: TBD (verify — Marketing? IT? Operations?)
 > Hosting: **SaaS (CMS) + On-premise (player units + screens)**
-> Locations: **Restaurants** (Kamppi: 14 screens — verify rollout to other locations)
+> Locations: **Restaurants** (Kamppi: 14 screens — install pending Week 19, May 4–8 2026; verify rollout to other locations)
 
 **Purpose**: Commercial digital signage system displaying menu offerings, promotions, and advertising content within restaurants. Managed centrally via Grassfish CMS for content scheduling and remote updates.
 
@@ -1039,7 +1042,7 @@ FreshService (tickets/solutions) → n8n (orchestration) → OpenAI (LLM) → Su
 - Remote content updates per location
 - **Player built into the screens** (no separate player unit needed)
 
-**Note**: Kamppi will have 14 Grassfish screens. Verify if other restaurants already have Grassfish or if this is a new rollout starting with Kamppi.
+**Note**: Kamppi has 14 Grassfish screens — install pending Week 19 (May 4–8 2026), depends on network patching + Grassfish-side networking docs. Verify if other restaurants already have Grassfish or if this is a new rollout starting with Kamppi.
 
 ---
 
@@ -1048,7 +1051,7 @@ FreshService (tickets/solutions) → n8n (orchestration) → OpenAI (LLM) → Su
 > Vendor: Grassfish (managed alongside digital signage screens)
 > Owner: TBD (verify)
 > Hosting: **On-premise** (screen, built-in player) + **SaaS** (Grassfish CMS)
-> Locations: **All 73 company-operated restaurants**
+> Locations: **All 74 company-operated restaurants**
 
 **Purpose**: Displays order status to guests — shows when their order is ready for pickup. Managed by Grassfish alongside the commercial digital signage screens.
 
@@ -1067,7 +1070,7 @@ FreshService (tickets/solutions) → n8n (orchestration) → OpenAI (LLM) → Su
 > Vendor: Apple | Contract ref: TBD
 > Owner: TBD
 > Hosting: **On-premise** (one per restaurant)
-> Locations: **All 74 restaurants**
+> Locations: **All 75 restaurants**
 
 **Purpose**: Multi-purpose tablet at each restaurant:
 - **Primary**: Clock-in / clock-out device for **Caspeco** (time management)
@@ -1084,7 +1087,7 @@ FreshService (tickets/solutions) → n8n (orchestration) → OpenAI (LLM) → Su
 > Vendor: TBD (verify — brand/model)
 > Owner: TBD
 > Hosting: **On-premise**
-> Locations: **All 74 restaurants**
+> Locations: **All 75 restaurants**
 
 **Purpose**: Multi-function printer at each restaurant providing copy and scan functionality for daily operations (printing schedules, reports, documents, scanning delivery notes, etc.).
 
@@ -1099,9 +1102,22 @@ FreshService (tickets/solutions) → n8n (orchestration) → OpenAI (LLM) → Su
 
 **Purpose**: Desktop PC with 27" screen, camera, and sound for video conferencing (Teams) and education/training. Only at larger restaurants that have a dedicated office.
 
-**Note**: Not all 74 restaurants have this — only locations with proper office space.
+**Note**: Not all 75 restaurants have this — only locations with proper office space.
 
 **Confluence ref**: [IT in restaurants](https://bastardburgers.atlassian.net/wiki/spaces/DT/pages/11600008)
+
+---
+
+### Kitchen Printer
+> Category: Restaurant Equipment | Criticality: **High** (kitchen ticket printing)
+> Vendor: TBD (verify brand/model)
+> Owner: TBD
+> Hosting: **On-premise** (network-attached, driven by Simphony POS)
+> Locations: **All 75 restaurants** — 1 unit at most locations; 2 units at larger restaurants (e.g., Kamppi, Mikonkatu)
+
+**Purpose**: Prints kitchen tickets for orders coming in from POS / Express kiosks. Works alongside (and in some kitchens redundantly with) the KDS units, providing a physical paper backup of orders.
+
+**Dependencies**: Oracle Simphony (order routing), Global Connect (network).
 
 ---
 
@@ -1110,9 +1126,9 @@ FreshService (tickets/solutions) → n8n (orchestration) → OpenAI (LLM) → Su
 | Partner | Role | Contact | Access |
 |---------|------|---------|--------|
 | **Atea** | External IT support (L1/L2), restaurant deployments, terminal configuration | Emil Vikström, Stephen Ryan | FreshService (via Entra SSO), Major Incident team |
-| **Global Connect** | Network provider, all 74 restaurants (replaced Xite) | Filip Serdarevic | Network infrastructure |
+| **Global Connect** | Network provider, all 75 restaurants (replaced Xite) | Filip Serdarevic | Network infrastructure |
 
-| **Royal Streaming** | Restaurant music — playlist management + Barix RetailPlayer device management | Via Barix devices | Playlists and device management for all 74 restaurants |
+| **Royal Streaming** | Restaurant music — playlist management + Barix RetailPlayer device management | Via Barix devices | Playlists and device management for all 75 restaurants |
 | **Cloudspin** | Software licensing distributor — Adobe, Microsoft 365, SnagIT | Self-service web portal | License add/remove + invoicing |
 | **Effektgruppen** | Music hardware — speakers, amplifiers for restaurants | On-site hardware | Speaker/amplifier installations and support |
 | **Grassfish** | Digital signage — commercial screens, player units, CMS for content management | Grassfish CMS | Screens, players, content management per restaurant |
@@ -1148,6 +1164,6 @@ FreshService (tickets/solutions) → n8n (orchestration) → OpenAI (LLM) → Su
 - [ ] **Recruitment system** — any ATS (Applicant Tracking System) in use?
 - [ ] **Email/collaboration** — Google Workspace? Microsoft 365? What do HQ staff use?
 - [ ] **Monitoring/alerting** — any system health monitoring across restaurants?
-- [ ] **Network management** — any centralized network management for 74 locations?
+- [ ] **Network management** — any centralized network management for 75 locations?
 - [ ] **Storebrand Bedriftsportal** — referenced in Norway Daglig Leder role. Norway-specific benefits system?
 - [ ] **NAV integration** — Norway sick leave system referenced in Daglig Leder role. Manual or integrated?
