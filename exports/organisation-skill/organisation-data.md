@@ -1,5 +1,5 @@
 # Organisation — Bastard Burgers
-> Last updated: 2026-04-14 (added Annika Elworth, Ellen Mårtensson, Anton Eriksson)
+> Last updated: 2026-05-04 (Malin Hansegård → Head of Marketing under CEO; Ellen Mårtensson → Marketing Project Manager under Malin; Erik Löfgren retitled Digital Sales, CRM & Commercial Controlling Manager; Annika Elworth on parental leave 2026-05-08 → 2027-05-08)
 > Source: docs/strategy/company-strategy.md + docs/operations/hierarchy.md
 > Headcount (HQ/leadership tracked): ~40 people | Operations: 2 RMs, 6 DMs, 74 restaurants
 > Note: Restaurant Managers (RM per location) are intentionally not tracked — they change too often.
@@ -12,11 +12,12 @@ Bastard Burgers is a Swedish QSR (burger) chain, ~686 MSEK revenue, Swedish mark
 
 ```
 CEO: Simon Wanler  (reports to Board)
-  ├── Brand & Creative Manager: Annika Elworth
-  │     └── Guest Relations & Social Media: Ellen Mårtensson
+  ├── Brand & Creative Manager: Annika Elworth  (on parental leave 2026-05-08 → 2027-05-08)
+  ├── Head of Marketing: Malin Hansegård
+  │     └── Marketing Project Manager: Ellen Mårtensson
   ├── CFO: Lisa Wanler
   │     ├── Head of Finance: Filip Forsling
-  │     │     ├── Business Controller: Erik Löfgren
+  │     │     ├── Digital Sales, CRM & Commercial Controlling Manager: Erik Löfgren
   │     │     └── Accounting Manager: Maria Tornéus
   │     │           ├── Senior Accountant: Emelie Norfelt
   │     │           ├── Senior Accountant: Felicia Tenglund
@@ -37,7 +38,6 @@ CEO: Simon Wanler  (reports to Board)
   │     │     ├── District Manager — Central 2/Finland: Minna Kiira-Nymark  (6 restaurants)
   │     │     └── District Manager — South: Björn Nicklasson  (19 restaurants)
   │     ├── Head of Project and Development: Caroline Johansson
-  │     ├── Head of Local Marketing and New Business: Malin Hansegård
   │     ├── Senior Project Manager: Anton Eriksson
   │     └── Food & Beverage Manager: Jonas Ylinenjärvi
   ├── CXO (Chief Expansion Officer): Johan Gederberg
@@ -58,8 +58,9 @@ CEO: Simon Wanler  (reports to Board)
 | Name | Role | Team / Function | Manager | Skip-level | Department Head |
 |------|------|-----------------|---------|-----------|----------------|
 | Simon Wanler | CEO | Executive | Board | — | — |
-| Annika Elworth | Brand & Creative Manager | Brand / Marketing | Simon Wanler | Board | Simon Wanler |
-| Ellen Mårtensson | Guest Relations & Social Media | Brand / Marketing | Annika Elworth | Simon Wanler | Simon Wanler |
+| Annika Elworth | Brand & Creative Manager *(on parental leave 2026-05-08 → 2027-05-08)* | Brand | Simon Wanler | Board | Simon Wanler |
+| Malin Hansegård | Head of Marketing | Marketing | Simon Wanler | Board | Simon Wanler |
+| Ellen Mårtensson | Marketing Project Manager | Marketing | Malin Hansegård | Simon Wanler | Simon Wanler |
 | Anton Eriksson | Senior Project Manager | Operations | Johnny Klippmark | Simon Wanler | Johnny Klippmark |
 | Lisa Wanler | CFO | Finance | Simon Wanler | Board | Lisa Wanler |
 | Johnny Klippmark | COO | Operations | Simon Wanler | Board | Johnny Klippmark |
@@ -68,7 +69,7 @@ CEO: Simon Wanler  (reports to Board)
 | Johnny Bröms | CDTO (Chief Digital & Tech Officer) | Digital & Tech | Simon Wanler | Board | Johnny Bröms |
 | Filip Forsling | Head of Finance | Finance | Lisa Wanler | Simon Wanler | Lisa Wanler |
 | Niklas Heinermark | Head of Procurement | Finance / Procurement | Lisa Wanler | Simon Wanler | Lisa Wanler |
-| Erik Löfgren | Business Controller | Finance | Filip Forsling | Lisa Wanler | Lisa Wanler |
+| Erik Löfgren | Digital Sales, CRM & Commercial Controlling Manager | Finance | Filip Forsling | Lisa Wanler | Lisa Wanler |
 | Maria Tornéus | Accounting Manager | Finance | Filip Forsling | Lisa Wanler | Lisa Wanler |
 | Emelie Norfelt | Senior Accountant | Finance | Maria Tornéus | Filip Forsling | Lisa Wanler |
 | Felicia Tenglund | Senior Accountant | Finance | Maria Tornéus | Filip Forsling | Lisa Wanler |
@@ -87,7 +88,6 @@ CEO: Simon Wanler  (reports to Board)
 | Minna Kiira-Nymark | District Manager — Central 2/Finland | Operations | Ricardo Moses | Johnny Klippmark | Johnny Klippmark |
 | Björn Nicklasson | District Manager — South | Operations | Ricardo Moses | Johnny Klippmark | Johnny Klippmark |
 | Caroline Johansson | Head of Project and Development | Operations | Johnny Klippmark | Simon Wanler | Johnny Klippmark |
-| Malin Hansegård | Head of Local Marketing and New Business | Operations | Johnny Klippmark | Simon Wanler | Johnny Klippmark |
 | Jonas Ylinenjärvi | Food & Beverage Manager | Operations | Johnny Klippmark | Simon Wanler | Johnny Klippmark |
 | Therese Alm | HR Business Partner | People / HR | Maja Lundqvist | Simon Wanler | Maja Lundqvist |
 | André Ejneborn | Senior IT Architect | Digital & Tech / IT | Johnny Bröms | Simon Wanler | Johnny Bröms |
@@ -111,9 +111,19 @@ CEO: Simon Wanler  (reports to Board)
 
 ### Operations
 > Lead: Johnny Klippmark (COO) | Reports to: Simon Wanler (CEO)
-> Direct reports: 5 — RM North, RM South, Head of Project & Development, Head of Local Marketing, F&B Manager
+> Direct reports: 5 — RM North, RM South, Head of Project & Development, Senior Project Manager, F&B Manager
 > Two regions (North, South), 6 districts, 74 restaurants
 > Restaurant Managers not tracked (change too often)
+
+### Brand
+> Lead: Annika Elworth (Brand & Creative Manager) | Reports to: Simon Wanler (CEO)
+> Brand & Creative function — separate from Marketing
+> **Parental leave 2026-05-08 → 2027-05-08** — interim coverage / cover person not yet confirmed; clarify with CEO before routing brand decisions during this period
+
+### Marketing
+> Lead: Malin Hansegård (Head of Marketing) | Reports to: Simon Wanler (CEO)
+> Direct report: Ellen Mårtensson (Marketing Project Manager)
+> Moved from Operations (was Head of Local Marketing & New Business under COO) to a CEO-direct Marketing function on 2026-05-04
 
 ### Expansion
 > Lead: Johan Gederberg (CXO) — operates solo, no direct reports
@@ -168,8 +178,9 @@ The following are heuristics based on known structure. Verify with the user befo
 - **Brand council** — cross-functional brand governance
 - **Landvetter Airport** is a franchise location (not company-operated)
 - **Kamppi (Helsinki)** opens Spring 2026 — IT installation planned week 17 (Apr 20–24, 2026)
-- **COO direct reports**: 6 — RM North, RM South, Caroline Johansson, Malin Hansegård, Anton Eriksson, Jonas Ylinenjärvi
-- **Brand / Marketing reports to CEO**: Annika Elworth (Brand & Creative Manager) reports directly to Simon Wanler. Ellen Mårtensson (Guest Relations & Social Media) reports to Annika. This is a separate marketing function from Malin Hansegård's *Local Marketing & New Business* under the COO.
+- **COO direct reports**: 5 — RM North, RM South, Caroline Johansson, Anton Eriksson, Jonas Ylinenjärvi
+- **Brand and Marketing both report to CEO** (as of 2026-05-04): Annika Elworth (Brand & Creative Manager) leads Brand. Malin Hansegård (Head of Marketing) leads Marketing with Ellen Mårtensson (Marketing Project Manager) as her direct report. Marketing was previously under COO as *Local Marketing & New Business*; Ellen previously sat under Annika as *Guest Relations & Social Media*.
+- **Annika Elworth — parental leave 2026-05-08 → 2027-05-08**: ~12 months. Cover/interim arrangement not yet documented — confirm with Simon Wanler before routing Brand & Creative decisions during this period.
 
 ## Lookup Examples
 

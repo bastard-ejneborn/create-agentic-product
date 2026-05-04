@@ -1,5 +1,5 @@
 # Company Strategy — Bastard Burgers
-> Last updated: 2026-04-14 (added Annika Elworth, Ellen Mårtensson, Anton Eriksson)
+> Last updated: 2026-05-04 (Malin Hansegård → Head of Marketing under CEO; Ellen Mårtensson → Marketing Project Manager under Malin; Erik Löfgren retitled Digital Sales, CRM & Commercial Controlling Manager; Annika Elworth on parental leave 2026-05-08 → 2027-05-08)
 > Source: Strategi & Kickoff 2025
 > Note: This is the 2025 strategy. 2026 version pending.
 
@@ -29,20 +29,21 @@
 
 - **CXO (Chief Expansion Officer)**: Johan Gederberg operates as a one-person function — no direct reports.
 - **Head of Project and Development**: Caroline Johansson operates without a dedicated project team — she drives project and development work directly.
-- **Head of Local Marketing and New Business**: Malin Hansegård *is* the Local Marketing and New Business team — operates solo without reports.
-- **COO direct reports**: Johnny Klippmark has 6 direct reports — RM North (Johannes), RM South (Ricardo), Caroline Johansson (Head of Project and Development), Malin Hansegård (Head of Local Marketing and New Business), Anton Eriksson (Senior Project Manager), and Jonas Ylinenjärvi (F&B Manager).
-- **Brand & Marketing reports to CEO**: Annika Elworth (Brand & Creative Manager) reports directly to Simon Wanler. Ellen Mårtensson (Guest Relations & Social Media) reports to Annika. This is a separate marketing function from Malin Hansegård's *Local Marketing & New Business* under the COO.
+- **COO direct reports**: Johnny Klippmark has 5 direct reports — RM North (Johannes), RM South (Ricardo), Caroline Johansson (Head of Project and Development), Anton Eriksson (Senior Project Manager), and Jonas Ylinenjärvi (F&B Manager).
+- **Brand and Marketing both report to CEO** (as of 2026-05-04): Annika Elworth (Brand & Creative Manager) leads Brand. Malin Hansegård (Head of Marketing) leads Marketing with Ellen Mårtensson (Marketing Project Manager) as her direct report. Marketing was previously under COO as *Local Marketing & New Business*; Ellen previously sat under Annika as *Guest Relations & Social Media*.
+- **Annika Elworth — parental leave 2026-05-08 → 2027-05-08** (~12 months): Cover/interim arrangement not yet documented — confirm with Simon Wanler before routing Brand & Creative decisions during this period.
 - **Restaurant Managers not tracked**: Restaurant Managers change frequently, so individual names are intentionally not maintained in the org structure. Operations hierarchy tracks districts and restaurants only.
 
 ### Reporting Structure
 
 ```
 CEO: Simon Wanler
-  ├── Brand & Creative Manager: Annika Elworth
-  │     └── Guest Relations & Social Media: Ellen Mårtensson
+  ├── Brand & Creative Manager: Annika Elworth  (on parental leave 2026-05-08 → 2027-05-08)
+  ├── Head of Marketing: Malin Hansegård
+  │     └── Marketing Project Manager: Ellen Mårtensson
   ├── CFO: Lisa Wanler
   │     ├── Head of Finance: Filip Forsling
-  │     │     ├── Business Controller: Erik Löfgren
+  │     │     ├── Digital Sales, CRM & Commercial Controlling Manager: Erik Löfgren
   │     │     └── Accounting Manager: Maria Tornéus
   │     │           ├── Senior Accountant: Emelie Norfelt
   │     │           ├── Senior Accountant: Felicia Tenglund
@@ -57,7 +58,6 @@ CEO: Simon Wanler
   │     ├── RM North: Johannes Norrblom
   │     ├── RM South: Ricardo Moses
   │     ├── Head of Project and Development: Caroline Johansson
-  │     ├── Head of Local Marketing and New Business: Malin Hansegård
   │     ├── Senior Project Manager: Anton Eriksson
   │     └── F&B Manager: Jonas Ylinenjärvi
   ├── CXO: Johan Gederberg
@@ -79,17 +79,17 @@ CEO: Simon Wanler
 | Head of Finance | Filip Forsling | Lisa Wanler (CFO) |
 | Head of Procurement | Niklas Heinermark | Lisa Wanler (CFO) |
 | Head of Project and Development | Caroline Johansson | Johnny Klippmark (COO) |
-| Head of Local Marketing and New Business | Malin Hansegård | Johnny Klippmark (COO) |
+| Head of Marketing | Malin Hansegård | Simon Wanler (CEO) |
 
 ### Team Members
 | Role | Person | Reports To |
 |------|--------|-----------|
 | HR Business Partner | Therese Alm | Maja Lundqvist (CPO) |
 | Brand & Creative Manager | Annika Elworth | Simon Wanler (CEO) |
-| Guest Relations & Social Media | Ellen Mårtensson | Annika Elworth (Brand & Creative Manager) |
+| Marketing Project Manager | Ellen Mårtensson | Malin Hansegård (Head of Marketing) |
 | Senior Project Manager | Anton Eriksson | Johnny Klippmark (COO) |
 | Food & Beverage Manager | Jonas Ylinenjärvi | Johnny Klippmark (COO) |
-| Business Controller | Erik Löfgren | Filip Forsling (Head of Finance) |
+| Digital Sales, CRM & Commercial Controlling Manager | Erik Löfgren | Filip Forsling (Head of Finance) |
 | Accounting Manager | Maria Tornéus | Filip Forsling (Head of Finance) |
 | Payroll Administrator | Elin Danielsson | Maria Tornéus (Accounting Manager) |
 | Senior Accountant | Emelie Norfelt | Maria Tornéus (Accounting Manager) |
