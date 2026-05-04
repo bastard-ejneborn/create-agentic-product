@@ -1,42 +1,53 @@
-# Meeting Prep: AI Hackathon Pitch — 1:1 with Johnny Bröms
+# Meeting Prep: AI Hackathon + New AI Ops Team — 1:1 with Johnny Bröms
 
-> Date: **2026-05-05 13:30** (Tue) | Duration: ~30–45 min (1:1)
+> Date: **2026-05-05 13:30** (Tue) | Duration: **90 min**
 > Attendees: André Ejneborn, Johnny Bröms (CDTO)
 > Prepared: 2026-05-04
-> Plan reference: `docs/projects/plans/2026-05-ai-hackathon-lulea-hq.md`
-> Portfolio: `docs/projects/portfolio.md`
+> Plan references:
+> - Hackathon: `docs/projects/plans/2026-05-ai-hackathon-lulea-hq.md`
+> - Governance flow: `docs/policies/it-policies.md` § 2b
+> - AI Ops autonomy / escalation boundaries: `docs/policies/it-policies.md` § 2c
+> - Portfolio: `docs/projects/portfolio.md`
 
 ---
 
-## Goal of the meeting
+## Two-topic meeting
 
-Walk out with the **four open decisions** made:
+| Topic | Time | Goal |
+|-------|------|------|
+| **Part A — AI Hackathon** | ~40 min | Lock the four open decisions (date, sensitive-data, facilitators, beginner/advanced mix) |
+| **Part B — New AI Operations Team** | ~45 min | Agree on composition, cadence, intake, Digital Council interface |
+| **Wrap** | ~5 min | Action items, owners, next checkpoint |
 
-1. Event date / time
-2. Sensitive-data guardrails (concrete enforcement, not just a ground rule)
-3. Facilitator support (who, how many, briefed when)
-4. Beginner/advanced mix — accept the rotation-driver mitigation, or different format?
+The two topics are connected: the **Hackathon's 4-week regroup** is the natural intake for the new AI Ops Team's case-pipeline. Frame them as one programme of work, not two unrelated things.
 
 ---
 
-## Suggested agenda (30 min)
+## Suggested agenda (90 min)
 
 | # | Topic | Time |
 |---|-------|------|
-| 1 | Mission frame + strategic positioning | 5 min |
-| 2 | What's locked (quick run-through, no debate) | 5 min |
-| 3 | Decision 1: Date / time | 5 min |
-| 4 | Decision 2: Sensitive-data guardrails | 5 min |
-| 5 | Decision 3: Facilitator support | 5 min |
-| 6 | Decision 4: Beginner/advanced mix | 5 min |
-| 7 | Next steps + invitation timeline | wrap |
-
-If running long, decisions 3 + 4 can be a quick "here's my recommendation, do you concur?" — they have suggested mitigations in the plan.
+| 1 | One-line framing: Hackathon + new AI Ops Team are one programme | 5 |
+| 2 | Hackathon: locked items quick run-through | 5 |
+| 3 | Hackathon Decision 1: Date / time | 5 |
+| 4 | Hackathon Decision 2: Sensitive-data guardrails | 5 |
+| 5 | Hackathon Decision 3: Facilitator support | 5 |
+| 6 | Hackathon Decision 4: Beginner/advanced mix | 5 |
+| 7 | Hackathon → AI Ops Team handoff (4-week regroup as intake) | 5 |
+| 8 | **Transition** — review Digital Council ↔ AI Ops governance flow | 5 |
+| 9 | AI Ops composition — who's on it? | 15 |
+| 10 | AI Ops cadence + intake mechanism | 10 |
+| 11 | Use-case list — where does it live? Who owns it? | 10 |
+| 12 | CISO/Compliance trigger — Robert Beney involvement model | 5 |
+| 13 | Wrap: action items + next checkpoint | 5 |
 
 ---
 
-## Lead with this (one-line pitch)
+## Lead with this (one-line framing for the whole 90 min)
 
+> *"Hackathon teaches the company to use AI; the new AI Ops Team turns the resulting ideas into structured, tested, supportable cases; Digital Council decides which cases get to production. One programme, three layers."*
+
+Sub-pitch for the Hackathon specifically:
 > *"The dissolved AI Operations Team was a top-down model — a small group finding initiatives. This Hackathon flips that: we teach the whole HQ to use AI well, then initiatives emerge from any function. It's the on-ramp for the new format, not a one-off event."*
 
 That framing is the key — it positions the Hackathon as the **strategy replacement**, not extra work on top of an unclear gap.
@@ -106,6 +117,98 @@ That framing is the key — it positions the Hackathon as the **strategy replace
 
 ---
 
+---
+
+## Part B — New AI Operations Team (45 min)
+
+The full governance flow is now documented in `docs/policies/it-policies.md` § 2b. Bring it up on screen during this part of the meeting.
+
+### Recap (1 min)
+
+- **Digital Council** = decision/prioritisation forum (not a build team). Decides which cases proceed, vendors, pilot→production gating.
+- **AI Operations Team** = operational engine. Takes ideas → structured/testable/supportable cases. Drives low-risk operationally; lifts higher-risk to Digital Council.
+- **CISO/Compliance** (Robert Beney) engaged when persondata, betaldata, GDPR, PCI-DSS, vendor risk, access/logging.
+- **Autonomy boundary** (per § 2c): green = run yourselves (local/internal/reversible); yellow = check with AI Ops; red = escalate to Digital Council. The shift to repeat: *"It's not the activity that determines — it's the consequence."*
+
+### B-Decision 1 — Composition (15 min, biggest discussion)
+
+The dissolved team had 8 members, all heads/seniors from each function (Caroline, Malin, Annika, Niklas, Therese, Erik, Johannes + André as lead). That model didn't work — too senior, too broad, schedules collided.
+
+**Two models to discuss with Johnny**:
+
+**Model A — Small operator core** (recommended):
+- 3–5 people, all hands-on operators (not function heads)
+- Lead: André Ejneborn
+- Members: e.g. Erik Löfgren (Finance/CRM operator mindset), Therese Alm (HR/People), one or two ex-Hackathon facilitators who showed interest
+- Function heads consulted, not seated — they get briefed on cases that affect their function
+- Pros: faster, less calendar friction, cases actually move
+- Cons: less broad organisational coverage; relies on consultation discipline
+
+**Model B — Function-rep team** (the old model, refined):
+- 6–8 people, one per function, all able to make decisions for their function
+- Same risk that killed the previous team — meetings drift, hard to schedule
+
+**Your recommendation**: A. State the trade-off explicitly: "we trade breadth-on-paper for speed-in-practice."
+
+**Decision needed**: Model A or B; if A, who are the 3–5?
+
+**Note on ex-team members**: Annika is on parental leave from Friday — naturally out. Malin Hansegård just moved to Marketing under CEO — different reporting line, may want a different relationship to AI Ops. Caroline and Johannes are stretched on Operations. **The natural continuing operators are André, Erik, Therese — confirm.**
+
+### B-Decision 2 — Cadence (10 min)
+
+**Three options**:
+- **Weekly** — old format, didn't work, full meetings drag
+- **Bi-weekly with async case-triage in between** — recommended; meeting is for harder calls, async handles the obvious ones
+- **On-demand only** — nothing happens unless someone forces it
+
+**Your recommendation**: bi-weekly 30-min standing meeting, async triage in a Teams/Slack channel between meetings.
+
+**Decision needed**: cadence locked; channel/tool for async triage.
+
+### B-Decision 3 — Use-case list mechanism (10 min)
+
+The flow says AI Ops Team "håller koll på use case-listan: idé, pilot, produktion och sådant som bör stoppas." Where does this list live?
+
+**Options**:
+- **Confluence page** — easy to start, hard to query, no audit trail
+- **Jira project** — issue-per-case, lifecycle states map to idea/pilot/production/parked, full history. Already in the BB stack.
+- **Dedicated tracker** — overkill at this stage
+
+**Your recommendation**: Jira project ("AIOPS" or similar) with a custom workflow: *Idea → Qualifying → Pilot → Production → Parked*. One issue per case. Confluence pages link from the Jira issues for any deep documentation.
+
+**Decision needed**: where the list lives; who maintains it (default: AI Ops Team lead).
+
+### B-Decision 4 — CISO/Compliance trigger (5 min)
+
+Robert Beney (Head of Information Security and Compliance) is named in the flow as the involvement point. Concrete questions:
+
+- Does Robert sit on AI Ops Team, or only get pulled in?
+- What's the trigger checklist? (PII, payment data, vendor contracts, GDPR DPIA, etc.) — should be a fixed list in the case-qualification form, not ad-hoc.
+- Does CISO have veto on cases, or advisory only?
+
+**Your recommendation**: pulled in (not seated); fixed trigger checklist baked into the case-qualification step; advisory + escalation to Digital Council if AI Ops disagrees.
+
+**Decision needed**: Robert's involvement model; trigger checklist owner.
+
+### B-Decision 5 — Hackathon → AI Ops handoff (already in the flow — confirm)
+
+The Hackathon's 4-week regroup will produce 30+ workflow-change reports. Each report classifies naturally per the governance flow:
+- **Individual productivity** (most reports) — no AI Ops involvement; just personal capability win
+- **Internal automation** (some reports) — AI Ops Team takes them, qualifies, runs as pilot
+- **Business-critical / guest-facing** (rare from a Hackathon) — escalate to Digital Council
+
+**Your recommendation**: at the regroup, classify every report into one of those three buckets on the spot. AI Ops Team picks up the middle bucket as their first cases.
+
+**Decision needed**: confirm this is the intended handoff. If yes, the regroup serves a dual purpose (capability check + AI Ops case intake).
+
+### B-Open questions (for either now or follow-up)
+
+- Tooling beyond ChatGPT Business — does AI Ops need access to anything else (e.g., ChatGPT Team workspace shared, Anthropic API for specific cases, Microsoft Copilot for M365 integration)?
+- Budget envelope — does AI Ops have a discretionary spend, or every case goes through normal procurement?
+- Reporting cadence to Digital Council — quarterly status? On-demand when a case needs decision?
+
+---
+
 ## Anticipated hard questions (and your answers)
 
 | Likely question | Suggested answer |
@@ -117,6 +220,11 @@ That framing is the key — it positions the Hackathon as the **strategy replace
 | **"Why ChatGPT and not Microsoft Copilot in M365?"** | Already settled at AI-Council Meeting 1 (June 2024) — every department picked ChatGPT. Use what people already have working accounts for. (If Johnny pushes Copilot now, accept and adjust — neither blocks the format.) |
 | **"How do we know participants apply this back at their desks?"** | The 4-week commitment exercise — written, not verbal — is the main lever. Plus the regroup is on the calendar from day one, not announced after. |
 | **"What's the cost?"** | Already verified with CEO (per locked decisions). 50-ish people × 3.5h = ~175 person-hours, ~one Mentimeter free tier, no facilitator cost (internal). |
+| **"Why a smaller AI Ops Team than before?"** | The previous 8-person team's calendar problem killed momentum. A small operator core moves faster; function heads get consulted on cases that touch their domain, not seated by default. |
+| **"Where does the new AI Ops Team get its authority?"** | From the governance flow — Digital Council delegates operational running of low-risk cases; lifts everything else for decision. AI Ops Team isn't deciding strategy, it's executing on the structured process. |
+| **"What if a case is borderline — low risk operationally but ambiguous?"** | Default: AI Ops escalates to Digital Council. Cheaper to ask than to be wrong on guest/data exposure. |
+| **"Who classifies a case at qualification?"** | AI Ops Team lead (André, then whoever takes the lead role over time). Documented criteria from the flow — not subjective. |
+| **"Can a department run an AI case without going through AI Ops?"** | If it's pure individual productivity (personal ChatGPT use, no integration, no shared data) — yes, that's not what AI Ops is for. Anything that touches more than one person's workflow goes through AI Ops. |
 
 ---
 
@@ -134,10 +242,19 @@ That framing is the key — it positions the Hackathon as the **strategy replace
 
 ## Your asks (state these clearly)
 
-1. **Decision on the four open items above** — primary purpose of the meeting.
+**Hackathon-specific**:
+1. **Decisions on the four Hackathon open items** — primary purpose of Part A.
 2. **Sponsor endorsement in writing** — short Slack/Teams message you can quote in the invite, so it lands as a CDTO-backed initiative not an IT-team project.
-3. **Permission to ask 2–3 ex-AI-Ops-Team members to facilitate** (Caroline / Niklas / Therese / Erik are likely yeses; you want Johnny's nod before approaching).
-4. **Calendar slot from Johnny for the 4-week regroup** — book it now while it's fresh; without a forced regroup the commitments evaporate.
+3. **Permission to ask 2–3 ex-AI-Ops-Team members to facilitate** (Erik / Therese / Niklas / Caroline are likely yeses; you want Johnny's nod before approaching).
+4. **Calendar slot from Johnny for the 4-week regroup** — book it now; without a forced regroup the commitments evaporate.
+
+**AI Ops Team-specific**:
+5. **Lock composition** (Model A / B; if A, the 3–5 names).
+6. **Lock cadence** (recommend bi-weekly + async triage channel).
+7. **Lock the use-case list home** (recommend Jira project).
+8. **Robert Beney's involvement model** — pulled-in vs seated; trigger checklist owner.
+9. **First Digital Council touchpoint** — when does Johnny want to take the new format and the first batch of cases (post-regroup) to the Digital Council? Calendar that too.
+10. **Documentation handoff** — the governance flow you brought in is now in `docs/policies/it-policies.md` § 2b; any wording Johnny wants changed before it's the canonical version.
 
 ---
 
@@ -152,12 +269,20 @@ That framing is the key — it positions the Hackathon as the **strategy replace
 
 ## Concrete next steps (after the meeting)
 
+**Hackathon track**:
 1. Update `docs/projects/plans/2026-05-ai-hackathon-lulea-hq.md` — move the four open-decision rows to ✅ Locked with their values.
 2. Send the invitation (`inbjudan.html`) — fill in the bracketed date/location/contact placeholders with the agreed values.
 3. Brief facilitators (60-min session 3 days before the event).
 4. Calendar-block the event date + the 4-week regroup date.
 5. Set up Mentimeter (5-min job — do this 1 week before).
 6. Prep coffee/snacks logistics (HR or office manager).
+
+**AI Ops Team track**:
+7. Update `docs/policies/it-policies.md` — replace "**Pending follow-up**" line with the locked composition + cadence + intake details.
+8. Save a memory entry for the new AI Ops Team format (replacing the dissolved one).
+9. Reach out to the chosen members; confirm in writing.
+10. Set up the case-list (Jira project) and async-triage channel.
+11. Schedule the first Digital Council touchpoint (~6 weeks out — gives time for Hackathon + regroup + first batch of qualified cases).
 
 ---
 

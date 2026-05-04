@@ -1,5 +1,5 @@
 # IT Policies — Bastard Burgers
-> Last updated: 2026-05-04 (added current AI Operations Team roster; fixed typo)
+> Last updated: 2026-05-04 (added Digital Council ↔ AI Operations Team governance flow + autonomy/escalation boundaries; AI Ops Team composition pending 2026-05-05 1:1)
 > Owner: Johnny Bröms (CDTO)
 > Review cycle: Annual
 
@@ -101,7 +101,146 @@ This document serves as a comprehensive guide to planning, executing, and review
 - Added: Therese Alm (HR — replaced Maja Lundqvist), Erik Löfgren (Finance)
 - Removed: Filip Forsling, Emil Lundqvist, Maja Lundqvist
 
-**Pending follow-up**: Document the new meeting/team format once defined and update this section.
+**Pending follow-up**: Composition + cadence of the new AI Operations Team to be decided in the André × Johnny Bröms 1:1 (2026-05-05). Governance flow with Digital Council captured below.
+
+### 2b. Governance flow — Digital Council ↔ AI Operations Team (proposed, 2026-05)
+
+> *Digitala rådet sätter riktning och tar besluten. AI Operations Team gör arbetet möjligt i praktiken.*
+
+**Digitala rådet** är **styrforumet**. De avgör vilka AI-case som är viktiga, vilka som får gå vidare, vilka verktyg eller leverantörer som ska godkännas och när ett case är redo att gå från pilot till produktion. Ska särskilt in när ett AI-case:
+- påverkar flera funktioner
+- kräver integrationer
+- använder intern eller känslig data
+- innebär ny leverantör
+- kan påverka gäst, varumärke, drift eller försäljning
+
+**AI Operations Team** är den **operativa motorn**. De tar emot idéer, strukturerar case, ser till att syfte, ägare, data, risk, test, fallback, support och uppföljning finns på plats. De håller koll på use-case-listan: idé → pilot → produktion → parkerade.
+
+**Flöde:**
+
+1. **Idé uppstår** — någon i verksamheten ser ett problem eller en möjlighet där AI kan hjälpa.
+2. **AI Operations Team kvalificerar caset** — Vad är problemet? Vilken nytta? Vilken data behövs? Persondata/känslig info? Påverkas gäst, drift, pengar eller varumärke?
+3. **Caset klassas** — *individuell produktivitet* / *intern automation* / *affärskritisk eller gästpåverkande AI*. Ju högre påverkan, desto hårdare styrning.
+4. **Lågrisk drivs operativt** — internt, avgränsat, ingen känslig data, inga större integrationer → AI Operations Team driver vidare som test/pilot.
+5. **Högre risk lyfts till Digitala rådet** — integrationer, ny leverantör, känslig data, produktion, eller påverkan på gäst/drift/varumärke → Digitala rådet fattar beslut.
+6. **CISO/Compliance kopplas in vid behov** — persondata, betaldata, access, loggning, avtal, GDPR, PCI-DSS, eller leverantörsrisk → Robert Beney (Head of Information Security and Compliance) involveras.
+7. **Beslut → pilot → produktion → uppföljning** — när Digitala rådet godkänt ser AI Operations Team till att lösningen testas, dokumenteras, får ägare, fallback, supportväg och uppföljning.
+
+**Hård regel**: inget AI-case bör gå till produktion om det inte går att förstå, testa, uppdatera, supporta och ta över av någon annan än byggaren.
+
+**Sammanfattning för presentation**:
+> *"Digitala rådet är inte byggteamet, utan besluts- och prioriteringsforumet. AI Operations Team är arbetsmaskinen som tar idéer till strukturerade, testbara och förvaltningsbara AI-case. När caset är lågrisk kan det drivas operativt. När det påverkar data, integrationer, gäst, drift, varumärke eller produktion lyfts det till Digitala rådet för beslut."*
+
+### 2c. AI Operations autonomy — when to act vs when to escalate
+
+**Guiding rule**: anything **local, internal, and reversible** can move forward without Digital Council. Everything that **scales, connects, exposes, or has business-critical impact** must be escalated.
+
+#### What you CAN do without Digital Council
+
+**1. Individual productivity (broad freedom)**
+You can:
+- Write texts, emails, presentations
+- Summarise meetings
+- Analyse material
+- Draft decisions
+- Structure ideas
+
+As long as:
+- You use approved tools
+- You do not paste sensitive data
+- You quality-check the output yourself
+
+This is deliberately the *fast zone* in the model.
+
+**2. Small internal use cases (within a team)**
+You can usually:
+- Test AI inside a workflow
+- Build simple automations
+- Build support for reports, analysis, support handling, etc.
+
+Examples:
+- *"Help us sort support tickets"*
+- *"Compile weekly reports"*
+- *"Help HR answer standard questions"*
+
+As long as:
+- It does not involve sensitive data (or it is properly controlled)
+- It does not require integrations
+- It does not broadly affect other teams
+- It has a clear owner
+
+This is AI Operations Team's home turf.
+
+**3. Pilots (important)**
+You can:
+- Test ideas
+- Run small pilots
+- Validate value
+
+But:
+- At small scale
+- With clear scope
+- Without engaging the whole organisation
+
+**Key principle**: it's fine to experiment — as long as the experiment doesn't become production by accident.
+
+#### When you must NOT act alone
+
+This is where the misunderstanding usually starts. **It is not the activity that determines — it is the consequence.**
+
+Escalate (do not run alone) when you start to:
+
+| # | Trigger | Why |
+|---|---------|-----|
+| 1 | **Connect systems** | Integrations require Digital Council approval |
+| 2 | **Use sensitive or broad internal data** | HR, support, commercial data |
+| 3 | **Affect multiple teams** | Becomes an organisational matter |
+| 4 | **Go to production** | Almost always belongs in Digital Council |
+| 5 | **Affect guest, money, or brand** | Always escalated |
+
+#### The mental shift (good to repeat in meetings)
+
+> *"It's not the activity that determines — it's the consequence."*
+
+You can build a fair amount yourself. You can test a fair amount yourself. But you cannot **scale**, **connect**, **expose**, or cause **business-critical impact** without escalating.
+
+#### Simple traffic-light model
+
+**Green — run it yourselves**
+- Local
+- Internal
+- Low risk
+- No integration
+- No sensitive data
+- No guest impact
+
+**Yellow — check with AI Operations Team**
+- Affects one team
+- Starting to look like a "real solution"
+- Pilot with actual usage
+
+**Red — escalate to Digital Council**
+- Affects multiple teams
+- Requires integration
+- Uses sensitive data
+- Going to production
+- Affects guest / operations / money / brand
+
+#### Easy to miss
+
+Digital Council is **not there to approve ideas**. They engage when something is about to become:
+- Standard
+- Scalable
+- A dependency in the business
+
+#### Direct answer
+
+You do **not** need to bring everything to Digital Council:
+- You can experiment freely at small scale
+- You can build internal support
+- You can test and validate
+
+But the moment it gets *real* — production-grade, scaled, integrated, sensitive, or guest/brand-touching — it goes up.
 
 ### 3. Way of Working
 
