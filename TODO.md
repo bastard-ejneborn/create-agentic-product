@@ -224,11 +224,7 @@ Items flagged during document uploads and setup — need verification, correctio
 
 ### Organizational
 
-- [ ] **Kamppi project scope clarification** — Kamppi is listed as an existing restaurant in `docs/operations/hierarchy.md` (District Central 2/Finland) but was also set up as a new project opening Spring 2026. Clarify whether:
-  - This is a new location replacing a previous one
-  - It's a renovation/reopening
-  - The original listing was aspirational
-  - Files: `docs/operations/hierarchy.md` + `docs/projects/portfolio.md`
+- [x] **Kamppi project scope clarification** — Resolved 2026-05-04: confirmed as a new location. Soft opening Fri 2026-05-08; IT install completed week 17 (Apr 20–24); Grassfish + streaming follow-up week 19. Hierarchy + portfolio updated with the soft-open date. See `docs/projects/plans/2026-04-kamppi-it-installation.md` for the retrospective.
 
 ### Cross-References Needed
 

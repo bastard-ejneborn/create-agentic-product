@@ -262,4 +262,4 @@
 - [ ] Documentation updated (hierarchy, systems landscape)
 - [ ] Kamppi RM/ARM trained on basic IT (login, iPad, kiosk reboot procedures)
 - [ ] Emergency contacts provided (IT Support: **IT Helpdesk via FreshService portal** — never route to individuals)
-- [ ] Update Kamppi status in `docs/operations/hierarchy.md` from "Opening Spring 2026" to "Open"
+- [x] Update Kamppi status in `docs/operations/hierarchy.md` — set to "Soft Open — pre-opening event Fri 2026-05-08" on 2026-05-04

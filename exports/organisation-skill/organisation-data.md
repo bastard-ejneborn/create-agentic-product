@@ -146,7 +146,7 @@ CEO: Simon Wanler  (reports to Board)
 
 ### Region South — Ricardo Moses
 - **District Central 1 (Mischa Andersson)** — 11 restaurants (Stockholm inner + northern suburbs): Vasastan, Solna, Väsby, Täby, Sollentuna, Västermalm, Birkastan, Birger Jarlsgatan, Kungsholmen, Hagastaden, Barkarbystaden
-- **District Central 2/Finland (Minna Kiira-Nymark)** — 6 restaurants (Stockholm central + Finland + airports): Norrlandsgatan, Hötorget, Mikonkatu (Helsinki), Landvetter Airport (Franchise), Helsinki Airport, Kamppi (Helsinki, opening Spring 2026)
+- **District Central 2/Finland (Minna Kiira-Nymark)** — 6 restaurants (Stockholm central + Finland + airports): Norrlandsgatan, Hötorget, Mikonkatu (Helsinki), Landvetter Airport (Franchise), Helsinki Airport, Kamppi (Helsinki, soft open 2026-05-08)
 - **District South (Björn Nicklasson)** — 19 restaurants: Varberg, Malmö, Helsingborg, Helsingborg City, Helsingborg Väla, Östra Hamngatan, Södra Larmgatan, Mölndal, Emporia, Solli (Oslo), Mobilia, Torggata (Oslo), Frölunda, Nova Lund, Växjö, Grand Samarkand, Karlskrona, Halmstad, Kungsmässan
 
 ## Approval Rules
@@ -177,7 +177,7 @@ The following are heuristics based on known structure. Verify with the user befo
 - **Establishment council** — cross-functional group for new restaurant openings
 - **Brand council** — cross-functional brand governance
 - **Landvetter Airport** is a franchise location (not company-operated)
-- **Kamppi (Helsinki)** opens Spring 2026 — IT installation planned week 17 (Apr 20–24, 2026)
+- **Kamppi (Helsinki)** — soft opening Fri 2026-05-08. IT installation done week 17 (Apr 20–24, 2026); Grassfish screens + bookable-room TV streaming pending in week 19 (May 4–8). See `docs/projects/plans/2026-04-kamppi-it-installation.md` for the retrospective.
 - **COO direct reports**: 5 — RM North, RM South, Caroline Johansson, Anton Eriksson, Jonas Ylinenjärvi
 - **Brand and Marketing both report to CEO** (as of 2026-05-04): Annika Elworth (Brand & Creative Manager) leads Brand. Malin Hansegård (Head of Marketing) leads Marketing with Ellen Mårtensson (Marketing Project Manager) as her direct report. Marketing was previously under COO as *Local Marketing & New Business*; Ellen previously sat under Annika as *Guest Relations & Social Media*.
 - **Annika Elworth — parental leave 2026-05-08 → 2027-05-08**: ~12 months. Cover/interim arrangement not yet documented — confirm with Simon Wanler before routing Brand & Creative decisions during this period.

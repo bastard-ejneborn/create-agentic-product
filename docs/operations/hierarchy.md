@@ -1,5 +1,5 @@
 # Operations Hierarchy — Bastard Burgers
-> Last updated: 2026-04-05
+> Last updated: 2026-05-04
 > COO: Johnny Klippmark
 > Status: Complete at district level. Restaurant Managers intentionally not tracked (change too often).
 
@@ -128,7 +128,7 @@ Both Regional Managers (**Johannes Norrblom** and **Ricardo Moses**) report dire
 | Mikonkatu (Helsinki) | Open |
 | Landvetter Airport | Open (Franchise) |
 | Helsinki Airport | Open |
-| Kamppi (Helsinki) | Opening Spring 2026 |
+| Kamppi (Helsinki) | Soft Open — pre-opening event Fri 2026-05-08 |
 
 **Total**: 6 restaurants
 

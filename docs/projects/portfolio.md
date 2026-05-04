@@ -1,12 +1,12 @@
 # Project Portfolio — Bastard Burgers
-> Last updated: 2026-04-05
+> Last updated: 2026-05-04
 > Total active projects: 1 | At risk: 0 | Blocked: 0
 
 ## Portfolio Summary
 
 | Project | Owner | Status | Priority Alignment | Timeline | Health |
 |---------|-------|--------|-------------------|----------|--------|
-| New Restaurant — Kamppi | Johan Gederberg (CXO) | Active | Expansion | Opening Spring 2026 | Green |
+| New Restaurant — Kamppi | Johan Gederberg (CXO) | Active | Expansion | Soft Open Fri 2026-05-08 | Green |
 
 Health: Green = on track | Yellow = at risk | Red = blocked/failing
 
@@ -15,7 +15,7 @@ Health: Green = on track | Yellow = at risk | Red = blocked/failing
 ### New Restaurant — Kamppi
 > Status: **Active** | Health: **Green**
 > Project Lead: Johan Gederberg (CXO)
-> Started: TBD | Target opening: Spring 2026
+> Started: TBD | Soft opening: **Fri 2026-05-08** (pre-opening event)
 
 **Description**: Opening of new Bastard Burgers location in Kamppi, Helsinki, Finland. Part of the ongoing Finland expansion — will be the 4th Finnish location alongside Mikonkatu, Helsinki Airport, and the existing Kamppi references. District: Central 2/Finland (Region South).
 
