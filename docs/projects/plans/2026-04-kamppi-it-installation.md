@@ -1,15 +1,51 @@
-# Kamppi IT Installation Checklist
+# Kamppi IT Installation — Plan & Retrospective
 > Location: Kamppi, Helsinki, Finland
 > District: Central 2/Finland | DM: Minna Kiira-Nymark | RM: Ricardo Moses
 > Project: New Restaurant — Kamppi (Opening Spring 2026)
-> Last updated: 2026-04-08
+> Last updated: 2026-05-04
+> **Status: Trip completed (Week 17, Apr 20–24, 2026). Grassfish + bookable-room streaming follow-up in week 19 (May 4–8, 2026).** The day-by-day checklist further down is preserved as the original plan; the *Trip Summary* below captures actuals.
+
+---
+
+## Trip Summary
+
+| Field | Actual |
+|------|-------|
+| Trip dates | Apr 20–24, 2026 (Week 17) |
+| Lead on-site | André Ejneborn |
+| Network handover from Robert (Week 16) | **Did not fully hold up.** Most network work had to be redone or completed on-site by André during Week 17. Port assignments in the handed-over docs did not match real-world VLAN config; cabling between switches was wrong. New IP/port docs were produced on-site. |
+| **Mon Apr 20** | Planning and preparation for Express kiosk install (layout, unboxing, sequencing) |
+| **Tue Apr 21** | Express kiosks installed; networking documented and tested |
+| **Wed Apr 22** | Express install finished; continued network work |
+| **Thu Apr 23** | Effektgruppen sound/music install + config (Barix); KDS units installed in kitchen; further networking docs + tests |
+| **Fri Apr 24** | POS sales testing — multiple networking issues surfaced, eventually resolved. Root cause: wrong cabling between switches + port docs not matching real VLAN config |
+| Office Desktop PC + Monitor + Multi-Function Printer | Installed (backoffice) |
+| Restaurant Laptop | Handed over to RM/ARM |
+| Kitchen iPad | Handed over |
+| Barix RetailPlayer | Installed by Effektgruppen (Thu Apr 23) |
+| POS Workstations | 2 installed (final count) |
+| KDS Units | 3 installed (Thu Apr 23) |
+| Bookable-room streaming evaluation | **Outstanding** — TV streaming test in event room not yet done |
+| Open at end of Week 17 | (1) Grassfish screens (14) — patching + install scheduled this week (W19, May 4–8); (2) Network patching for Grassfish; (3) Grassfish networking docs; (4) Event-room TV streaming test |
+
+### Lessons Learned
+- **Network IP/port documentation from Week 16 did not match real-world VLAN config.** Caused a full day of troubleshooting on Friday during POS testing. Going forward: validate port-to-VLAN mapping by spot-test before André arrives, not just on paper.
+- **Electricians ran ~2 weeks behind on outlets.** Forced the on-site team to create their own outlet networking docs from scratch. For future openings: confirm electrical readiness before scheduling IT travel; build buffer or a fallback "docs from scratch" plan.
+- **Effektgruppen + Barix** sound integration is now the standard pattern for new openings (Sonos legacy only).
+
+---
 
 ## Timeline
 
-| Week | Who | Activity |
-|------|-----|---------|
-| **Week 16** (Apr 13-17) | **Robert Beney** | Network equipment installation |
-| **Week 17** (Apr 20-24) | **André Ejneborn** | IT equipment installation |
+| Week | Who | Planned Activity | Actual |
+|------|-----|------------------|--------|
+| **Week 16** (Apr 13–17) | Robert Beney | Network equipment installation | Done, but port/VLAN docs did not match real config — discovered Week 17 |
+| **Week 17 Mon** (Apr 20) | André Ejneborn | Express Kiosk install (6 kiosks) | Planning & prep for kiosk install |
+| **Week 17 Tue** (Apr 21) | André Ejneborn | Office PC / Monitor / Printer | Express kiosks installed + network docs/tests |
+| **Week 17 Wed** (Apr 22) | André Ejneborn | (open) | Finished Express install + continued network work |
+| **Week 17 Thu** (Apr 23) | André Ejneborn | (open) | Effektgruppen sound/music + KDS + network docs |
+| **Week 17 Fri** (Apr 24) | André Ejneborn | (open) | POS testing — networking issues, root-caused & resolved |
+| **Week 19** (May 4–8) | André Ejneborn | — | Grassfish patching + screen install; bookable-room TV streaming test |
 
 ---
 
@@ -76,62 +112,61 @@
 
 ---
 
-## Week 17, Tuesday — Restaurant Office Equipment (André Ejneborn)
+## Week 17, Tuesday — Office PC / Monitor / Printer (André Ejneborn)
+
+> **Primary Tuesday focus:** Install Office PC, Monitor, and Multi-Function Printer in the backoffice.
 
 ### Pre-Requisites
-- [ ] Equipment shipped and on-site (laptop, iPad, printer, Barix player)
+- [ ] Equipment shipped and on-site (Restaurant PC, monitor, printer)
 - [ ] Intune Autopilot profile configured for Kamppi device(s)
-- [ ] Jamf NOW ready for iPad enrollment
-- [ ] Caspeco location created for Kamppi
-- [ ] Get Compliant location created for Kamppi
-- [ ] Google Cloud Identity accounts created for Kamppi RM/ARM (for FO Navigator access)
-- [ ] M365 F3 licenses available for Kamppi RM/ARM
 - [ ] Entra ID accounts created for Kamppi RM/ARM
+- [ ] M365 F3 licenses available for Kamppi RM/ARM
 - [ ] Shared mailbox created for Kamppi restaurant in Exchange Online
+- [ ] **Bring from Luleå HQ: wired USB keyboard + mouse** (for Office PC and ORS (Order Ready Screen) initial setup)
 
-### Restaurant Laptop
-- [ ] Unbox laptop
-- [ ] Connect to network (ethernet or Wi-Fi)
+### Office PC (backoffice)
+- [ ] Unbox PC + camera + speakers
+- [ ] Connect to network (ethernet)
 - [ ] Boot and run Windows Autopilot (BB-%SERIAL% naming)
 - [ ] Verify Intune enrollment completes
 - [ ] Verify M365 apps install (including Teams)
-- [ ] Verify Microsoft Defender active (`mdatp health` equivalent for Windows)
-- [ ] Verify access to shared mailbox
-- [ ] Register in NinjaOne? (verify — laptops managed by Intune, not NinjaOne)
+- [ ] Verify Microsoft Defender active
 - [ ] **Test: Sign in with Kamppi RM account**
+- [ ] **Test: Teams video call works (camera + audio)**
+- [ ] **Test: Access to Kamppi shared mailbox**
 
-### Restaurant iPad
-- [ ] Unbox iPad
-- [ ] Enroll in Jamf NOW
-- [ ] Install Caspeco app — configure for Kamppi location
-- [ ] Install Get Compliant app — configure for Kamppi location
-- [ ] Install Royal Streaming app (backup music player)
-- [ ] **Test: Clock in/out via Caspeco**
-- [ ] **Test: Open Get Compliant checklist**
-- [ ] Mount iPad at designated location
+### Monitor
+- [ ] Unbox 27" monitor
+- [ ] Mount/place at backoffice workstation
+- [ ] Connect to Office PC (HDMI/DisplayPort)
+- [ ] Connect power
+- [ ] **Test: Display works at native resolution**
+- [ ] Adjust brightness/orientation as needed
 
 ### Multi-Function Printer
 - [ ] Unbox and place printer
 - [ ] Connect to network (ethernet or Wi-Fi)
-- [ ] Verify IP address
-- [ ] Configure on restaurant laptop (add as printer)
-- [ ] **Test: Print test page from laptop**
+- [ ] Verify IP address (cross-check with Robert's IP plan)
+- [ ] Add printer on Office PC
+- [ ] **Test: Print test page from Office PC**
 - [ ] **Test: Scan test document**
 
-### Barix RetailPlayer (Music)
-- [ ] Unbox and connect to network
-- [ ] Contact Royal Streaming to register device for Kamppi
-- [ ] Verify playlist loads and plays
-- [ ] Set volume to appropriate level
-- [ ] **Test: Music playing through restaurant speakers**
+### Other Office Equipment (if time permits Tuesday — otherwise schedule separately)
 
-### Restaurant PC (backoffice)
-- [ ] Unbox PC + 27" monitor + camera + speakers
-- [ ] Connect to network
-- [ ] Boot and run Windows Autopilot
-- [ ] Verify Intune enrollment
-- [ ] Verify M365 apps + Teams
-- [ ] **Test: Teams video call works (camera + audio)**
+#### Restaurant Laptop
+- [ ] Unbox, network, Autopilot, verify Intune + M365 + Defender
+- [ ] **Test: Sign in with Kamppi RM account**
+
+#### Restaurant iPad
+- [ ] Enroll in Jamf NOW
+- [ ] Install Caspeco, Get Compliant, Royal Streaming
+- [ ] **Test: Clock in/out via Caspeco**, Get Compliant checklist
+- [ ] Mount iPad at designated location
+
+#### Barix RetailPlayer (Music)
+- [ ] Unbox, network, register with Effektgruppen/Royal Streaming for Kamppi
+- [ ] Verify playlist plays through restaurant speakers
+- [ ] Note: Kamppi uses **Effektgruppen + Barix** (new setup), not Sonos
 
 ---
 
@@ -198,26 +233,27 @@
 
 ## Post-Installation Summary
 
-Fill in after installation:
-
 | Component | Count | Status | Issues |
 |-----------|-------|--------|--------|
-| Grassfish Screens (w/ built-in player) | 14 | | |
-| Express Kiosks | 6 | | |
-| POS Workstations | ~2 (TBC) | | |
-| Planet Payment Terminals | ~2 (same as POS count) | | |
-| KDS Units | 3 | | |
-| Restaurant Laptop | 1 | | |
-| Restaurant iPad | 1 | | |
-| Multi-Function Printer | 1 | | |
-| Barix RetailPlayer | 1 | | |
-| Restaurant PC (backoffice) | 1 | | |
-| Network (Global Connect) | 1 | | |
+| Grassfish Screens (w/ built-in player) | 14 | Pending (Week 19) | Network patching + Grassfish docs outstanding |
+| Express Kiosks | 6 | Installed (Tue Apr 21, finished Wed Apr 22) | — |
+| POS Workstations | 2 | Installed; tested Fri Apr 24 | Networking issues during testing — see Issue #1 |
+| Planet Payment Terminals | 2 | Installed and paired with POS | — |
+| KDS Units | 3 | Installed (Thu Apr 23) | — |
+| Restaurant Laptop | 1 | Handed over to RM/ARM | — |
+| Restaurant iPad (kitchen) | 1 | Handed over | — |
+| Multi-Function Printer | 1 | Installed (backoffice) | — |
+| Barix RetailPlayer | 1 | Installed by Effektgruppen (Thu Apr 23) | — |
+| Office Desktop PC (backoffice) + 27" Monitor | 1 | Installed | — |
+| Network (Global Connect) | 1 | Working — required re-cabling + new port/VLAN docs on-site | See Issue #1 |
 
 ### Issues Log
 | # | Issue | Severity | Resolution | Status |
 |---|-------|----------|-----------|--------|
-| | | | | |
+| 1 | Network port assignments in Week-16 handover docs did not match real-world VLAN config; wrong cabling between switches | High | Re-cabled switches; produced new port/VLAN docs on-site; resolved during Friday Apr 24 POS testing | Resolved |
+| 2 | Electricians ~2 weeks behind on outlets at handover | Medium | On-site team created own outlet networking docs from scratch | Worked around |
+| 3 | Grassfish screens (14) not installed in Week 17 — depends on network patching + docs | Medium | Scheduled for Week 19 (May 4–8) | In progress |
+| 4 | Bookable-room TV streaming test not completed in Week 17 | Low | Scheduled for Week 19 alongside Grassfish work | In progress |
 
 ### Handover
 - [ ] All equipment tested and working
@@ -225,5 +261,5 @@ Fill in after installation:
 - [ ] FreshService asset records created (if applicable)
 - [ ] Documentation updated (hierarchy, systems landscape)
 - [ ] Kamppi RM/ARM trained on basic IT (login, iPad, kiosk reboot procedures)
-- [ ] Emergency contacts provided (IT Support: Christian Ling, FreshService portal)
+- [ ] Emergency contacts provided (IT Support: **IT Helpdesk via FreshService portal** — never route to individuals)
 - [ ] Update Kamppi status in `docs/operations/hierarchy.md` from "Opening Spring 2026" to "Open"
