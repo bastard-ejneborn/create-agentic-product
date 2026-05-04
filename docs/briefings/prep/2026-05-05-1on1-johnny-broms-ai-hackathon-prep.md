@@ -11,6 +11,56 @@
 
 ---
 
+## TL;DR — at-a-glance (read 10 minutes before the meeting)
+
+### Anchor line
+> *"Hackathon → AI Ops Team → Digital Council. One programme, three layers."*
+
+Hackathon teaches the company to use AI. AI Ops Team turns ideas into structured cases. Digital Council decides which cases scale.
+
+### 9 decisions to walk out with
+
+**Hackathon (Part A, 40 min):**
+
+| # | Decision | Recommendation |
+|---|---|---|
+| 1 | Date / time | Week 21 or 22 (after Kamppi week) |
+| 2 | Sensitive-data guardrails | Pre-defined fictional task patterns + anonymisation training |
+| 3 | Facilitator support | 2–3 ex-AI-Ops members, briefed 3 days before |
+| 4 | Beginner / advanced mix | Rotating "driver" role per round (don't split tracks) |
+
+**AI Ops Team (Part B, 45 min):**
+
+| # | Decision | Recommendation |
+|---|---|---|
+| 5 | Composition | **Model A**: small operator core (André + Erik + Therese + 1–2 ex-Hackathon facilitators) |
+| 6 | Cadence | Bi-weekly + async triage channel |
+| 7 | Use-case list home | Jira project: Idea → Qualifying → Pilot → Production → Parked |
+| 8 | CISO trigger | Robert Beney pulled-in (not seated); fixed checklist |
+| 9 | Hackathon → AI Ops handoff | 4-week regroup is the case-intake moment |
+
+### Three lines you'll repeat
+
+- *"Digital Council is not the build team — it's the decision and prioritisation forum."*
+- *"It's not the activity that determines — it's the consequence."* (green/yellow/red model)
+- *"We trade breadth-on-paper for speed-in-practice."* (the small-team trade-off)
+
+### Three asks you must not forget
+
+1. **Sponsor endorsement in writing** — short Teams/Slack message you can quote in the Hackathon invite
+2. **4-week regroup calendared today** — without that booking, the commitments evaporate
+3. **First Digital Council touchpoint calendared today** — ~6 weeks out, where you bring the new format and first batch of cases
+
+### Don't get pulled into
+
+- Grand Samarkand details (different sponsor — Klippmark)
+- Reopening the *locked* Hackathon items (scope, tooling, language, cost) unless Johnny does
+- If AI Ops composition stalls: *"Lock the lead and one or two operators today; the rest within a week."*
+
+---
+
+---
+
 ## Two-topic meeting
 
 | Topic | Time | Goal |
