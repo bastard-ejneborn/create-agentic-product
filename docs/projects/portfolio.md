@@ -39,7 +39,7 @@ Health: Green = on track | Yellow = at risk | Red = blocked/failing
 | F&B | Jonas Ylinenjärvi | Menu setup, ingredient supply, kitchen standards |
 | Digital & Tech | Johnny Bröms (CDTO) | POS setup, network, IT infrastructure |
 | People/HR | Maja Lundqvist (CPO) / Therese Alm | Staffing, hiring, onboarding |
-| Marketing | Malin Hansegård | Local marketing, launch campaign |
+| Marketing | Malin Hansegård (Head of Marketing) | Local marketing, launch campaign |
 | Regional Ops | Ricardo Moses (RM South) | Regional oversight |
 | District Ops | Minna Kiira-Nymark (DM Central 2/Finland) | District-level launch execution |
 

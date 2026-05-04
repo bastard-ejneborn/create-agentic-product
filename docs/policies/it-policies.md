@@ -1,5 +1,5 @@
 # IT Policies — Bastard Burgers
-> Last updated: 2026-04-08
+> Last updated: 2026-05-04 (added current AI Operations Team roster; fixed typo)
 > Owner: Johnny Bröms (CDTO)
 > Review cycle: Annual
 
@@ -78,12 +78,27 @@ This document serves as a comprehensive guide to planning, executing, and review
 | Department | Members |
 |-----------|---------|
 | HR | TBD (Role) |
-| Marketing | Annica Elworth |
+| Marketing | Annika Elworth |
 | Procurement | Niklas Heinermark |
 | Operations & Construction | Malin Hansegård, Johannes Norrblom, Caroline Pettersson |
 | Finance | Emil Lundquist, Filip Forsling |
 
-*(Note: Team composition may have changed since May 2024. The concept has evolved from "AI-Council" to "AI Operations Team" with one member per department.)*
+**Current team members** (as of 2026-05-04):
+| Member | Department / Function | Role in Company |
+|--------|----------------------|-----------------|
+| **André Ejneborn** (Lead) | Digital & Tech / IT | Senior IT Architect |
+| Caroline Johansson | Operations | Head of Project and Development |
+| Malin Hansegård | Marketing | Head of Marketing |
+| Johannes Norrblom | Operations | Regional Manager North |
+| Annika Elworth *(on parental leave 2026-05-08 → 2027-05-08)* | Brand | Brand & Creative Manager |
+| Niklas Heinermark | Finance / Procurement | Head of Procurement |
+| Therese Alm | People / HR | HR Business Partner |
+| Erik Löfgren | Finance | Digital Sales, CRM & Commercial Controlling Manager |
+
+**Changes since May 2024**:
+- Added: Therese Alm (HR — replaced Maja Lundqvist), Erik Löfgren (Finance)
+- Removed: Filip Forsling, Emil Lundqvist, Maja Lundqvist
+- Pending: Annika's seat needs interim cover during her parental leave — confirm with CEO
 
 ### 3. Way of Working
 

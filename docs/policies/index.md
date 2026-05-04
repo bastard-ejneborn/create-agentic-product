@@ -6,7 +6,7 @@
 | Department | File | Last Updated | Owner | Policies Covered |
 |-----------|------|-------------|-------|-----------------|
 | Operations | [operations-policies.md](operations-policies.md) | 2026-04-05 | Jonas Ylinenjärvi + Driftledning & HR + COO & HR (Finland) + Operations Management & HR (Norway) | Secondary Shelf Life, Role Descriptions (Sweden: RC/ARC/SL/Employee + Finland variants: RM/ARM/SL + Norway variants: Daglig Leder/RM/ARM/SL/Co-worker), Shared Values |
-| IT | [it-policies.md](it-policies.md) | 2026-04-08 | Johnny Bröms (CDTO) | AI Policy, AI Initiatives Framework |
+| IT | [it-policies.md](it-policies.md) | 2026-05-04 | Johnny Bröms (CDTO) | AI Policy, AI Initiatives Framework |
 | Marketing | — | — | Malin Hansegård (Head of Marketing) | *Not yet uploaded* |
 | HR | — | — | Maja Lundqvist (CPO) | *Not yet uploaded* |
 | Finance | — | — | Lisa Wanler (CFO) | *Not yet uploaded* |
