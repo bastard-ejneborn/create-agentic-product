@@ -1,5 +1,48 @@
 # CLAUDE.md — Creative Product Team
 
+## Working in this repo
+
+Beyond the creative-product workflow below, this repo is also an operational toolkit for Bastard Burgers (Swedish QSR chain, 75 locations). Most current work is org/IT/ops updates, not new-product launches. Both are valid.
+
+### Source-of-truth files (consult before answering domain questions)
+
+| Question | File |
+|----------|------|
+| Who reports to whom; titles; departments | `docs/strategy/company-strategy.md` + `exports/organisation-skill/organisation-data.md` |
+| Restaurant footprint; districts; status | `docs/operations/hierarchy.md` |
+| Systems, integrations, owners | `docs/tech/systems-landscape.md` (43 systems) |
+| Operational runbooks | `docs/tech/runbooks/` |
+| Active projects + portfolio | `docs/projects/portfolio.md` |
+| Project plans + retrospectives | `docs/projects/plans/` |
+| Reusable plan templates (e.g., restaurant decommissioning) | `docs/projects/plans/templates/` |
+| IT / Ops / HR policies | `docs/policies/` |
+| Open follow-ups | `TODO.md` |
+
+When making changes, sweep the relevant files together — e.g., an org change typically touches `company-strategy.md` + `organisation-data.md`; a restaurant opening/closing touches `hierarchy.md` + `portfolio.md` + `systems-landscape.md` (footprint counts). Bump the `> Last updated:` header in any file you edit.
+
+### Memory — when to consult, when to update
+
+Memory is auto-loaded from `~/.claude/projects/<this-repo>/memory/`. The index (`MEMORY.md`) lists 8+ entries covering things like Annika's parental leave window, shared-mailbox Azure Automation, music hardware variance per restaurant, the dissolved AI Operations Team, and IT support routing rules.
+
+- **Consult memory** before answering questions about people, time-bound facts, or non-obvious org rules — but treat it as point-in-time; verify against the source-of-truth files above when stakes are high.
+- **Update memory** when the user shares a non-obvious rule, a corrected mechanism (e.g., "actually it's Azure Automation, not Entra dynamic groups"), or a fact with a decay date (parental leave, project sponsorship windows).
+- **Don't save** facts already captured in the source-of-truth files — those are the canonical store; memory is for the things that aren't.
+
+### Git workflow conventions
+
+- Edit, commit, and push are explicit, separate user requests. Don't auto-push.
+- Commit messages: imperative subject, body explains *why* not just *what*, trailer `Co-Authored-By: Claude Opus 4.7 (1M context) <noreply@anthropic.com>`.
+- When staging, prefer naming files explicitly over `git add -A` — protects pre-existing unstaged work the user is iterating on.
+
+### QSR domain conventions
+
+- **Restaurant Managers (per-location) are intentionally not tracked centrally** — they change too often. Get current names from the relevant District Manager when needed for a specific closure / event.
+- **Counts**: "75 restaurants" = 74 company-operated + 1 franchise (Landvetter Airport). Use both numbers when the distinction matters; sweep all references together when the count changes.
+- **IT support routing**: always direct issues to the IT Helpdesk via FreshService. Never name a specific person as the support contact.
+- **Music hardware** varies per restaurant: legacy Sonos, iPad-as-player, or the newer Effektgruppen + Barix setup (used at new openings like Kamppi). Check before troubleshooting or planning.
+
+---
+
 ## Vad det här projektet handlar om
 
 Det här är ett ramverk för att snabbt sätta upp ett AI-drivet kreativt team som hjälper användaren ta en produktidé från koncept till lansering. Teamet består av specialiserade agenter som samarbetar i faser.
