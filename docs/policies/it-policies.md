@@ -70,9 +70,11 @@ This document serves as a comprehensive guide to planning, executing, and review
 
 **Goal**: Find initiatives within normal daily business, kept within normal working hours.
 
-**Reporting**: Initially to CDO, who brings initiatives to the management team. *(Note: Now evolved — currently called "AI Operations Team", tasks come from Digital Council.)*
+**Reporting**: Initially to CDO, who brings initiatives to the management team. *(Evolution: AI-Council (2024) → AI Operations Team with Digital Council tasks → **dissolved 2026-05**, replacement meeting/members TBD.)*
 
-**Team Lead**: André Ejneborn
+**Team Lead**: André Ejneborn (during AI Operations Team era — through 2026-05)
+
+**Status as of 2026-05-04**: The AI Operations Team has been **dissolved**. A new meeting with new members is planned but format / attendees / cadence are TBD. The tables below are preserved as **historical record** of the team that ran from May 2024 through April 2026.
 
 **Original team members** (May 2024):
 | Department | Members |
@@ -83,22 +85,23 @@ This document serves as a comprehensive guide to planning, executing, and review
 | Operations & Construction | Malin Hansegård, Johannes Norrblom, Caroline Pettersson |
 | Finance | Emil Lundquist, Filip Forsling |
 
-**Current team members** (as of 2026-05-04):
+**Final team members** (as of dissolution, ~April 2026):
 | Member | Department / Function | Role in Company |
 |--------|----------------------|-----------------|
 | **André Ejneborn** (Lead) | Digital & Tech / IT | Senior IT Architect |
 | Caroline Johansson | Operations | Head of Project and Development |
 | Malin Hansegård | Marketing | Head of Marketing |
 | Johannes Norrblom | Operations | Regional Manager North |
-| Annika Elworth *(on parental leave 2026-05-08 → 2027-05-08)* | Brand | Brand & Creative Manager |
+| Annika Elworth | Brand | Brand & Creative Manager |
 | Niklas Heinermark | Finance / Procurement | Head of Procurement |
 | Therese Alm | People / HR | HR Business Partner |
 | Erik Löfgren | Finance | Digital Sales, CRM & Commercial Controlling Manager |
 
-**Changes since May 2024**:
+**Changes from original to final**:
 - Added: Therese Alm (HR — replaced Maja Lundqvist), Erik Löfgren (Finance)
 - Removed: Filip Forsling, Emil Lundqvist, Maja Lundqvist
-- Pending: Annika's seat needs interim cover during her parental leave — confirm with CEO
+
+**Pending follow-up**: Document the new meeting/team format once defined and update this section.
 
 ### 3. Way of Working
 

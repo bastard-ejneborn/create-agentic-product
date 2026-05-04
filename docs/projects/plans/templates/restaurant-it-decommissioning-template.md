@@ -99,7 +99,7 @@ One row per system in the systems landscape. **Action vocabulary**: Deactivate �
 | Restaurant iPad | Wipe; return to Luleå HQ | n/a | n/a | IT Helpdesk | |
 | Restaurant Multi-Function Printer | Return / redistribute | n/a | Verify lease | IT Helpdesk | |
 | Restaurant PC (Larger Locations) | Wipe (Intune retire); return to Luleå HQ | n/a | n/a | André Ejneborn | |
-| Kitchen Printer | Return / redistribute (1–2 units depending on size) | n/a | n/a | IT Helpdesk | |
+| Kitchen Printer | Return / redistribute (1–2 units depending on size) | n/a | n/a | Petron Fernandes / Roopneet Bhalla (POS TPOs); IT Helpdesk for retrieval | |
 
 ---
 

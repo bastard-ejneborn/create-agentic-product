@@ -90,7 +90,7 @@ T-0 = last day of operation. Dates filled in once T-0 is confirmed.
 | Restaurant iPad | Wipe; return to Luleå HQ | n/a | n/a | IT Helpdesk | |
 | Restaurant Multi-Function Printer | Return / redistribute | n/a | Verify lease | IT Helpdesk | |
 | Restaurant PC (Larger Locations) | Wipe (Intune retire); return to Luleå HQ — only if Grand Samarkand has one | n/a | n/a | André Ejneborn | |
-| Kitchen Printer | Return / redistribute (Grand Samarkand: 1 unit assumed unless flagged otherwise) | n/a | n/a | IT Helpdesk | |
+| Kitchen Printer | Return / redistribute (Grand Samarkand: 1 unit assumed unless flagged otherwise) | n/a | n/a | Petron Fernandes / Roopneet Bhalla (POS TPOs); IT Helpdesk for retrieval | |
 
 > **Music hardware uncertainty**: Setup unknown — could be Effektgruppen + Barix (new) or older Sonos/iPad. Verify on-site during P5 retrieval; the disposition action depends on which.
 
@@ -156,12 +156,12 @@ T-0 = last day of operation. Dates filled in once T-0 is confirmed.
 
 | Person | Role | Action | Destination | Status |
 |--------|------|--------|-------------|--------|
-| Louai Bajes | Restaurant Manager | Transfer / Leave / Terminate `<choose>` | `<destination>` | |
+| Louai Bajes | Restaurant Manager | **No redeployment needed** — already RM at the other Växjö restaurant; Grand Samarkand is a parallel role he will simply stop holding | Stays as RM at Växjö | — |
 | — | Assistant Restaurant Manager | n/a — **no ARM at this location** | — | — |
 | `<SL_NAMES>` | Shift Leader(s) | | | |
 | Co-workers (`<n>` total) | | | | |
 
-> Note: HR drives this section; IT disables accounts (Entra, Caspeco, Google Workspace) per HR's offboarding signal. Louai's accounts include Entra ID, Caspeco, Get Compliant, and possibly Google Cloud Identity (FO Navigator access). **Shared mailbox access is managed by the `UpdateSharedRestaurantMailboxes` Azure Automation runbook** (Automation Account `aa-bb-group-sync-prod`, runs hourly, driven by Title + Office location with override variable `SBX_MailboxOverridesJson`). When Louai's Entra attributes change or his account is disabled, the next hourly run drops his mailbox access — no separate manual step. The restaurant's shared mailbox itself is handled via the M365 row in the disposition matrix (convert to archive). Runbook ref: `docs/tech/runbooks/shared-mailbox-override.md`.
+> Note: HR drives this section; IT disables/transfers accounts (Entra, Caspeco, Google Workspace) per HR's offboarding signal. Since **Louai stays as RM at the other Växjö restaurant**, his Entra ID account is **not disabled** — only Grand Samarkand-specific access drops. **Shared mailbox access is managed by the `UpdateSharedRestaurantMailboxes` Azure Automation runbook** (Automation Account `aa-bb-group-sync-prod`, runs hourly, driven by Title + Office location with override variable `SBX_MailboxOverridesJson`). Once Louai's Office location attribute is consolidated to the other Växjö store (or Grand Samarkand is removed from the restaurant→mailbox variable mapping), the next hourly run drops his Grand Samarkand mailbox access automatically. The restaurant's shared mailbox itself is handled via the M365 row in the disposition matrix (convert to archive). Runbook ref: `docs/tech/runbooks/shared-mailbox-override.md`.
 
 ---
 

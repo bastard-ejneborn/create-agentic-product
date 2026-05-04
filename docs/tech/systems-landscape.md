@@ -1111,7 +1111,7 @@ FreshService (tickets/solutions) → n8n (orchestration) → OpenAI (LLM) → Su
 ### Kitchen Printer
 > Category: Restaurant Equipment | Criticality: **High** (kitchen ticket printing)
 > Vendor: TBD (verify brand/model)
-> Owner: TBD
+> Owner: Johnny Bröms (CDTO) | Managed by: Petron Fernandes, Roopneet Bhalla (same ownership chain as POS workstations and KDS)
 > Hosting: **On-premise** (network-attached, driven by Simphony POS)
 > Locations: **All 75 restaurants** — 1 unit at most locations; 2 units at larger restaurants (e.g., Kamppi, Mikonkatu)
 
