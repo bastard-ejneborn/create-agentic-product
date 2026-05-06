@@ -131,6 +131,8 @@ That framing is the key — it positions the Hackathon as the **strategy replace
 
 **Concrete proposal**: Tuesday or Wednesday in **week 21 or 22** (May 19–22 or May 26–28, 2026). Avoids Kamppi week, gives 2–3 weeks lead time.
 
+**Outcome (post-meeting)**: ✅ Locked **2026-05-26 (Tue), 09:00–12:25** — co-located with the monthly DM gathering, scope expanded to include the 6 District Managers. See `docs/projects/plans/2026-05-ai-hackathon-lulea-hq.md` for the updated plan.
+
 ---
 
 ### Decision 2 — Sensitive-data guardrails
@@ -154,7 +156,7 @@ That framing is the key — it positions the Hackathon as the **strategy replace
 
 **Decision needed**: who facilitates, and when do they get briefed? Suggest a 60-min briefing session ~3 days before the event.
 
-**Candidate facilitators** (pulling from the dissolved AI Ops Team — they already know the material): Caroline Johansson, Niklas Heinermark, Therese Alm, Erik Löfgren, Johannes Norrblom (RM North — likely not at HQ). Worth asking 2–3 of them. Note: Annika and Malin are being repositioned and unavailable; Annika on leave from Friday.
+**Candidate facilitators** (pulling from the dissolved AI Ops Team — they already know the material): Caroline Johansson, Niklas Heinermark, Therese Alm, Erik Löfgren, Johannes Norrblom (RM North — at HQ on 2026-05-26 for the DM gathering, viable). Worth asking 2–3 of them. Note: Annika and Malin are being repositioned and unavailable; Annika on leave from Friday.
 
 ---
 
@@ -311,7 +313,7 @@ The Hackathon's 4-week regroup will produce 30+ workflow-change reports. Each re
 ## Risk flags (things that might come up unexpectedly)
 
 - **Annika starts parental leave Friday May 8** — Brand isn't represented in the Hackathon. Acknowledge once, move on.
-- **Kamppi soft-open week** is also this week — André's bandwidth is split. The Hackathon date should not collide with Kamppi week 19 follow-up.
+- **Kamppi soft-open week** is also this week — André's bandwidth is split. (Resolved: Hackathon locked to 2026-05-26 / week 22, no collision with Kamppi week 19.)
 - **AI Ops Team members may feel demoted** — they were the centralised group; now everyone gets the capability. Frame the Hackathon as them becoming **internal coaches** (facilitator role), not getting their special status removed.
 - **Grand Samarkand decommissioning** is also active and waits on Johnny Klippmark for T-0 — flag this as a separate thing if the meeting drifts. Don't let it derail the Hackathon pitch.
 

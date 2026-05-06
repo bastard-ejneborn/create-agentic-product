@@ -1,5 +1,5 @@
 # Project Portfolio — Bastard Burgers
-> Last updated: 2026-05-04
+> Last updated: 2026-05-05
 > Total active projects: 2 | At risk: 0 | Blocked: 0
 
 ## Portfolio Summary
@@ -7,7 +7,7 @@
 | Project | Owner | Status | Priority Alignment | Timeline | Health |
 |---------|-------|--------|-------------------|----------|--------|
 | New Restaurant — Kamppi | Johan Gederberg (CXO) | Active | Expansion | Soft Open Fri 2026-05-08 | Green |
-| AI Hackathon — Luleå HQ | André Ejneborn (Senior IT Architect) / Sponsor: Johnny Bröms (CDTO) | Planning | Digital & Tech / AI capability | Pitch 2026-05-05; date TBD | Green |
+| AI Hackathon — Luleå HQ + DMs | André Ejneborn (Senior IT Architect) / Sponsor: Johnny Bröms (CDTO) | Planning | Digital & Tech / AI capability | Event 2026-05-26 (Tue); regroup target 2026-06-23 | Green |
 
 Health: Green = on track | Yellow = at risk | Red = blocked/failing
 
@@ -73,34 +73,35 @@ Health: Green = on track | Yellow = at risk | Red = blocked/failing
 
 ---
 
-### AI Hackathon — Luleå HQ
+### AI Hackathon — Luleå HQ + District Managers
 > Status: **Planning** | Health: **Green**
 > Project Lead: André Ejneborn (Senior IT Architect)
 > Sponsor: Johnny Bröms (CDTO)
-> Pitch meeting: **2026-05-05 13:30** | Event date: TBD | 4-week regroup: TBD
+> Event: **2026-05-26 (Tue), 09:00–12:25** | 4-week regroup target: **2026-06-23 (Tue)**
 
-**Description**: Half-day internal hackathon for Luleå HQ employees, designed to teach AI usage in daily work through cross-functional teams competing on shared tasks (warm-up + 3 voted rounds), all using the company's ChatGPT Business accounts. Run in Swedish.
+**Description**: Half-day internal hackathon for Luleå HQ employees plus the 6 District Managers (in town that day for the monthly DM gathering), designed to teach AI usage in daily work through cross-functional teams competing on shared tasks (warm-up + 3 voted rounds), all using the company's ChatGPT Business accounts. Run in Swedish.
 
-**Strategic alignment**: This Hackathon is the **on-ramp for the new AI capability format** that replaces the dissolved AI Operations Team. Goal: bottom-up AI initiatives emerging from any function, vs the previous top-down "AI-Council" model.
+**Strategic alignment**: This Hackathon is the **on-ramp for the new AI capability format** that replaces the dissolved AI Operations Team. Goal: bottom-up AI initiatives emerging from any function, vs the previous top-down "AI-Council" model. The DM expansion seeds AI thinking into Operations one layer above the restaurants — each DM oversees ~12 restaurants, multiplying the reach.
 
-**Goal per participant**: leave with one concrete AI use case they have actually tried, plus a written commitment to change one workflow within 4 weeks.
+**Goal per participant**: leave with one concrete AI use case they have actually tried, plus a written commitment to change one workflow within 4 weeks. For DMs, the commitment can be a workflow they trial in their district.
 
 **Format**:
-- Scope: Luleå HQ only
+- Scope: Luleå HQ (~40) + 6 District Managers (~46 total). Restaurants out of scope this run.
 - Tooling: ChatGPT Business
 - Language: Swedish
 - Voting: Mentimeter, can't vote for own team, cumulative scoreboard
-- Follow-up: 4-week regroup where each participant returns with one workflow they actually changed
+- Follow-up: 4-week regroup where each participant returns with one workflow they actually changed; DMs can join via Teams from their districts
 
 **Plan**: see `docs/projects/plans/2026-05-ai-hackathon-lulea-hq.md`
 
-**Open decisions** (to resolve in pitch meeting):
-| Decision | Owner |
-|---|---|
-| Event date / time | Johnny Bröms |
-| Sensitive-data guardrails | André + Johnny |
-| Facilitator support (who, how many) | Johnny |
-| Beginner/advanced mix mitigation | André |
+**Open decisions**:
+| Decision | Owner | Target close |
+|---|---|---|
+| DM-morning held (no clash with monthly DM agenda) | Johnny Klippmark (COO), via RMs Johannes Norrblom + Ricardo Moses | Week of 2026-05-11 |
+| Sensitive-data guardrails | André + Johnny | Before invites go out |
+| Facilitator support (who, how many) | André (proposes) → Johnny (signs off) | Week of 2026-05-11 |
+| Beginner/advanced mix mitigation | André | Same as above |
+| Round 2 task patterns include 1–2 operations-flavoured ones | André | Before invites |
 
 **Risks**:
 | Risk | Mitigation |

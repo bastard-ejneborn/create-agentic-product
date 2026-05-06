@@ -1,7 +1,7 @@
 # AI Hackathon — Luleå HQ
 
-> Status: **Planning** — pitch meeting with Johnny Bröms 2026-05-05 13:30 (Tue)
-> Last updated: 2026-05-04
+> Status: **Planning** — date locked **2026-05-26 (Tue)**, post-Johnny pitch
+> Last updated: 2026-05-05
 > Project lead: André Ejneborn (Senior IT Architect)
 > Project sponsor: Johnny Bröms (CDTO)
 
@@ -19,19 +19,21 @@ Replace the dissolved AI Operations Team's centralised "AI-Council" format with 
 
 | Decision | Status | Value |
 |---|---|---|
-| Scope | ✅ Locked | **Luleå HQ only** (not whole-company; restaurants out of scope for this run) |
+| Scope | ⚙️ Expanded | **Luleå HQ + 6 District Managers** (DMs in town for monthly DM gathering — leveraged to seed AI thinking into Operations). Restaurants still out of scope. |
 | Tooling | ✅ Locked | **ChatGPT Business** (BB-managed accounts — no rate-limit / personal-account issues) |
-| Language | ✅ Locked | **Swedish** (all HQ staff speak Swedish) |
+| Language | ✅ Locked | **Swedish** (all HQ staff + all 6 DMs speak Swedish, incl. Minna for Finland) |
 | Cost | ✅ Locked | Verified with CEO |
 | Strategic framing | ✅ Locked | On-ramp for the new (post-AI-Operations-Team) AI format |
 | Format | ✅ Locked | Half-day, cross-functional teams, Mentimeter voting, cumulative scoreboard |
 | Round 1 length | ⚙️ Refined | Extended from 20 → 30 min |
 | Round 2 length | ⚙️ Refined | Extended from 35 → 45 min |
 | Follow-up cadence | ✅ Locked | **4-week regroup** — each participant returns with one changed workflow they actually applied |
-| Date / time | ❓ Open | To confirm with Johnny in tomorrow's meeting |
+| Date / time | ✅ Locked | **2026-05-26 (Tue), 09:00–12:25** — co-located with monthly DM gathering, so all 6 District Managers are at HQ that day |
+| 4-week regroup | 🎯 Target | **2026-06-23 (Tue)** — calendar-block before invites go out |
 | Beginner/advanced mix | ❓ Open | Mitigation: rotate "driver" role per team so less-experienced person types in some rounds |
-| Facilitator ratio | ❓ Open | Suggested 1 facilitator per ~3 teams |
+| Facilitator ratio | ❓ Open | Suggested 1 facilitator per ~3 teams (with ~46 participants → ~6 teams of 7–8 → 2–3 facilitators) |
 | Sensitive-data guardrails | ❓ Open | "Don't paste real customer/financial data" — to firm up before Round 2 launches |
+| DM logistics | ❓ Open | Confirm DMs available the *full* morning (09:00–12:25), not just visiting. Travel-back time to home districts. |
 
 ---
 
@@ -79,6 +81,7 @@ Pick an internal concept/process/term; use AI to explain it for three audiences 
 - Cross-functional only — **no two people from the same department on the same team**
 - Reason: same-department teams solve only same-department tasks and miss the point that AI is broadly applicable
 - Mitigation for beginner/advanced gap: rotate a "driver" role each round so less-experienced people type at least once
+- **District Managers**: distribute 1 DM per team where possible (6 DMs × ~6 teams = ~1 each). DMs bring an Operations perspective HQ rarely sees firsthand; pairing them with HQ functions (Finance, HR, IT, Marketing) maximises cross-functional friction in a good way.
 
 ---
 
@@ -131,23 +134,21 @@ The three things that improve any prompt:
 | 3 | Single host can't facilitate + Mentimeter + unstick teams | Medium | 1 facilitator per ~3 teams; brief them in advance |
 | 4 | Energy drops in the 3.5-hour run | Medium | Coffee break after Round 1 if needed; live scoreboard reveal moment after each vote |
 | 5 | "One workflow change" commitments collected but never followed up on | Medium | 4-week regroup date set at the wrap-up, calendar invite sent in the same week |
+| 6 | DM gathering agenda collides with Hackathon morning slot | High | Coordinate with Johnny Klippmark (COO) — and through him Johannes Norrblom (RM North) and Ricardo Moses (RM South) — **this week** — agree the morning is held for the Hackathon; DM operational agenda runs in the afternoon |
+| 7 | DMs treat the Hackathon as "extra" they sit through, not participate in | Medium | Frame as "first DM-level AI session — your district's seed". Make their workflow-commitment about something they'll trial in their district, not their personal inbox. |
+| 8 | Tasks are HQ-flavoured; DMs disengage on Round 2 | Medium | Round 2 task patterns explicitly include 1–2 operations-flavoured ones (e.g. shift-handover summary, restaurant FAQ for new staff) |
 
 ---
 
-## Pitch meeting prep — 2026-05-05 13:30 with Johnny Bröms
+## Pitch meeting — 2026-05-05 13:30 with Johnny Bröms (held)
 
-Lead the pitch with these in order:
+Outcome to capture after the meeting:
+- ✅ **Date locked**: 2026-05-26 (Tue), leveraging the monthly DM gathering to expand scope and seed AI thinking into Operations.
+- ⏳ Sensitive-data guardrails — to firm up.
+- ⏳ Facilitator support — pick 2–3 ex-AI-Ops members; brief 3 days before.
+- ⏳ Beginner/advanced mix — confirm rotating-driver mitigation.
 
-1. **Mission frame** (1 line): teach the company to use AI well so initiatives emerge from the bottom up — replacing top-down AI-Council with bottom-up capability.
-2. **What's locked** (above table) — short.
-3. **The four open questions** that should be decided in the meeting:
-   - Date / time
-   - Sensitive-data guardrails (firm-up)
-   - Facilitator support (who, how many)
-   - Beginner/advanced mix (mitigation acceptable, or different format?)
-4. **Materials handed over** — pitch deck as backup, don't read from it.
-
-Hand-off goal: leave with all four open decisions made, then we move to scheduling the date and sending invitations.
+Full meeting brief and recommendations: `docs/briefings/prep/2026-05-05-1on1-johnny-broms-ai-hackathon-prep.md`.
 
 ---
 
@@ -169,8 +170,9 @@ Filled in after the event. Capture: what worked, what didn't, which tasks landed
 
 ---
 
-## 4-week regroup (placeholder)
+## 4-week regroup
 
-- Date: TBD (target: 4 weeks after event date)
+- **Target date: 2026-06-23 (Tue)** — exactly 4 weeks after the event. Calendar-block before invites go out so participants see both dates from day one.
 - Format: 30-min meeting, each participant shares one workflow they actually changed
-- Output: short write-up captured here as Lessons Learned input + portfolio status update
+- For DMs (likely not in Luleå that day): join via Teams, or share their workflow change in writing if they've already trialled it back in-district
+- Output: short write-up captured here as Lessons Learned input + portfolio status update + first AI Ops Team case-intake batch (per Johnny meeting agreement — see `docs/policies/it-policies.md` § 2b)
